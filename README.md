@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Banner](https://res.cloudinary.com/dujkjy2e2/image/upload/v1709003968/README_cm0z53.png)
 
-## Getting Started
+<br>
 
-First, run the development server:
+# Debonair Fox Creative Studio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a revision and update to my current web [portfolio](https://www.kbrandon19.github.io). In addition to updating the visuals and experience I will use this project as a learning opportunity to improve my UI/UX skill, design system implementation, Nextjs, TypeScript and to add some depth to my site I want to include GSAP for the animations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## The Process
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+It started with viewing pieces on dribbble and awwwards to get some inspiration and try to narrow the style and direction I wanted for the different sections.
 
-## Learn More
+Everything has been arranged and designed with Figma. I'm still in the process of ensuring everything is organized the way I want it to ensure my thought process is translated the best for everyone to understand. 
 
-To learn more about Next.js, take a look at the following resources:
+You can see the Figma project with this [link](https://www.figma.com/file/zH09pv19FgwoF38qMjGd5z/Portfolio-2.0?type=design&node-id=537%3A774&mode=design&t=4kKf7GXJL7iTkQiz-1).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I hope to stream this build process on [Twitch](https://www.twitch.tv/mrdebfx) so be sure to follow and stay tuned.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Languages & Frameworks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div>
+
+ <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TYPESCRIPT" alt="Typescript" width="50" height="50"/>&nbsp;
+ <img src="https://github.com/devicons/devicon/blob/master/icons/nextjs/nextjs-original-wordmark.svg" title="Nextjs" alt="NextJS" width="50" height="50"/>&nbsp;
+ <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg" title="Tailwind-CSS" alt="Tailwind-CSS" width="50" height="50"/>&nbsp;
+
+</div>
+
+### Tools & Platforms
+<div>
+ <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="50" height="50"/>&nbsp;
+  <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="50" height="50"/>&nbsp;
+ <img src=" https://github.com/devicons/devicon/blob/master/icons/vercel/vercel-original.svg" title="Vercel" alt="Vercel" width="50" height="50"/>&nbsp;
+
+
+</div>
+
+### Design & UI/UX
+<div>
+ <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="50" height="50"/>&nbsp;
+  <img src="https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256" title="GSAP" alt="GSAP" width="50" height="50"/>
+  <img src="https://avatars.githubusercontent.com/u/139895814?s=280&v=4" title="shadecn/ui" alt="shadecn/ui" width="50px" height="50px">
+ </div>
