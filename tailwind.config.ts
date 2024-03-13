@@ -13,14 +13,21 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
+    },
+    screens: {
         "sm": "375px",
         "md": "1024px",
         "lg": "1280px",
         "2xl": "1440px",
         "3xl": "1920px",
       },
-    },
+      fontSize: {
+        sm: '0.875rem', //14px
+        base: '1rem', //16px
+        l: '1.25rem',//20px
+        xl: '1.5rem', //24px
+      },
+    
     extend: {
       colors: {
         //custom colors
@@ -56,51 +63,9 @@ const config = {
           '100':'#7C8393',
           '200':'#505A6F',
         },
-
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: '#E9E2D2',
-        foreground: "hsl(var(--foreground))",
-
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+    background: '#E9E2D2',
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
+  },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
