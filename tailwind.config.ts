@@ -16,12 +16,15 @@ const config = {
     },
     screens: {
         "sm": "375px",
+        "smd":"768px",
         "md": "1024px",
         "lg": "1280px",
         "2xl": "1440px",
         "3xl": "1920px",
       },
       fontSize: {
+       
+        xs: '0.6875rem', //11px
         sm: '0.875rem', //14px
         base: '1rem', //16px
         l: '1.25rem',//20px
