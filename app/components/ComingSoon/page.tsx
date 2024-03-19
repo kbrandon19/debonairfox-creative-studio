@@ -1,16 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import HeroBanner from '../backgroundBanner/page'
+import TextBackground from '../TextBackground/page'
 
 function ComingSoon() {
   return (
 
-    <div className='hero-wrapper h-[calc(100%-8rem)] w-full relative '>
+    <div className='hero-wrapper h-[calc(100%-8rem)] md:h-[calc(100%-6rem)] w-full  flex'>
 
-        <HeroBanner/>
+        <TextBackground/>
 
-        <div className='w-full h-full px-4 flex flex-col content-center justify-center'>
+        <div className=' h-auto px-4 flex flex-col justify-center'>
           <h1>Coming Soon</h1>
           <p>Subscribe now to stay ahead with insights and updates on cutting-edge digital services and innovations. </p>
 
@@ -22,7 +22,7 @@ function ComingSoon() {
             </form>
           </div>
 
-          <div className='w-full h-auto social flex gap-x-4 justify-center content-center'>
+          {/* <div className='w-full h-auto social flex gap-x-4 justify-center content-center'>
           <Link href="/">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837682/Debonair%20Fox%20Creative%20Studio/social-icons/LinkedIn_voqnk9.png"
@@ -63,9 +63,9 @@ function ComingSoon() {
               alt="Twitch"
             />
           </Link>
-          </div>
+          </div> */}
 
-          </div>
+        </div>
     </div>
   )
 }

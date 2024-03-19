@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button"
 
 function Header() {
   return (
-    <header className='md:flex justify-center'>
-        <div className='nav w-full md:max-w-screen-2xl h-16 flex justify-between pt-2.5 px-10 items-center'>
+    <header className='md:flex justify-center content-center'>
+        <div className='nav w-full md:max-w-screen-2xl h-16 flex justify-between  px-10 items-center'>
             <div className='logo'>
                 <Link href="/">
                     <Image
