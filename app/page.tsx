@@ -1,10 +1,11 @@
 import Image from "next/image";
+import ComingSoon from "./components/ComingSoon/page";
 
 export default function Home() {
   return (
     
     
-    <div className='text-xl'>This will be the display page</div>
+    <ComingSoon/>
 
     
     
