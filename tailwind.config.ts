@@ -32,6 +32,15 @@ const config = {
       },
     
     extend: {
+      fontSize:{
+        titleSm:'5rem', //80px
+        titleMd:'6.25rem', //100px
+        titleLg:'9.375rem', //150px
+        titleXl:'12.5rem', //200px
+      },
+      lineHeight:{
+        titleSm:'4.3rem', //80px
+      },
       colors: {
         //custom colors
         transparent: 'transparent',

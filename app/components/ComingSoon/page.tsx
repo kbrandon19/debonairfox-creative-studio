@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import TextBackground from '../TextBackground/page'
+import Form from '../Form/page'
 
 function ComingSoon() {
   return (
@@ -10,17 +11,21 @@ function ComingSoon() {
 
         <TextBackground/>
 
-        <div className=' h-auto px-4 flex flex-col justify-center'>
-          <h1>Coming Soon</h1>
-          <p>Subscribe now to stay ahead with insights and updates on cutting-edge digital services and innovations. </p>
-
-          <p>Your daily dose of inspiration and innovation starts here.</p>
+        <div className=' h-auto px-4 flex flex-col justify-center text-center '>
+          <h1 className='text-titleSm leading-titleSm uppercase font-semibold text-accent-default'>Coming Soon</h1>
+          <div className=' h-auto w-auto text-base mt-5'>
+            <p className=''>Subscribe now to stay ahead with insights and updates on cutting-edge digital services and innovations. </p>
+            <br />
+            <p className=''>Your daily dose of inspiration and innovation starts here.</p>
+          </div>
           
           <div className='form'>
             <form action="">
               
             </form>
           </div>
+
+          <Form/>
 
           {/* <div className='w-full h-auto social flex gap-x-4 justify-center content-center'>
           <Link href="/">
