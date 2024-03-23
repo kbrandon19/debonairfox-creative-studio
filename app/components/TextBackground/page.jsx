@@ -9,14 +9,14 @@ function page() {
   //   </p>
   // )
  
-     <div className='hero-background -z-50 absolute'>
+     <div className="absolute">
        <Image
                 src={'https://res.cloudinary.com/dujkjy2e2/image/upload/v1710820177/Debonair%20Fox%20Creative%20Studio/Images/1920_x_banner_u5tgoc.png'}
                 fill={true}
                 quality={80}
                 priority={true}
                 alt='mobile-background'
-                style={{objectFit:"cover"}}
+                style={{objectFit:"cover", zIndex:'-5'}}
                 />
      </div>
 
