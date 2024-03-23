@@ -3,17 +3,8 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
-
 import { Button } from "@/components/ui/button"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
+import {Form,FormControl,FormDescription,FormField,FormItem,FormLabel,FormMessage,} from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
@@ -32,7 +23,7 @@ function ProfileForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-2 flex flex-col justify-center items-center">
         <FormField
           control={form.control}
           name="emailAddress"
@@ -40,14 +31,14 @@ function ProfileForm() {
             <FormItem>
               <FormLabel></FormLabel>
               <FormControl>
-                <Input placeholder="Email Address" type="email" {...field}/>
+                <Input className="bg-neutral-default w-64 placeholder:text-black-text uppercase rounded-none border-none tracking-widest text-xs" placeholder="Email Address" type="email" {...field}/>
               </FormControl>
               <FormMessage/> 
 
             </FormItem>
           )}
         />
-        <Button className="w-full bg-accent-default text-white rounded-none tracking-wide mt-0" type="submit">Submit</Button>
+        <Button className="w-64 bg-accent-default text-white rounded-none tracking-widest text-xs" type="submit">Submit</Button>
 
       </form>
     </Form>
