@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ComingSoon from "./components/ComingSoon/page";
+import ComingSoon from "../components/ComingSoon/page";
 
 export default function Home() {
   return (

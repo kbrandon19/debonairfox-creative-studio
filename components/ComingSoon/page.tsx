@@ -25,7 +25,7 @@ function ComingSoon() {
             </form>
           </div>
 
-          <Form/>
+          {/* <Form/> */}
 
           
         </div>
