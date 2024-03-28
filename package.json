@@ -1,6 +1,6 @@
 {
   "name": "debonairfox-creative-studio",
-  "homepage": "https://debonairfox-creative-studio.vercel.app/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "scripts": {
