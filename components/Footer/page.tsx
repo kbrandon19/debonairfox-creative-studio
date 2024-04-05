@@ -11,7 +11,7 @@ function Footer() {
 
 {/* social links */}
         <div className="flex gap-x-4 md:justify-center md:order-2">
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/kdbrand">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837682/Debonair%20Fox%20Creative%20Studio/social-icons/LinkedIn_voqnk9.png"
               width={15}
@@ -19,7 +19,7 @@ function Footer() {
               alt="LinkedIn"
             />
           </Link>
-          <Link href="/">
+          <Link href="https://www.instagram.com/mrdebonairfox">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837730/Debonair%20Fox%20Creative%20Studio/social-icons/Instagram_yyqg9d.png"
               width={15}
@@ -27,7 +27,7 @@ function Footer() {
               alt="Instagram"
             />
           </Link>
-          <Link href="/">
+          <Link href="https://github.com/kbrandon19">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837820/Debonair%20Fox%20Creative%20Studio/social-icons/GitHub_ceujuk.png"
               width={15}
@@ -35,7 +35,7 @@ function Footer() {
               alt="GitHub"
             />
           </Link>
-          <Link href="/">
+          <Link href="mailto:kbrandon319@gmail.com">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837822/Debonair%20Fox%20Creative%20Studio/social-icons/Email_zixsy3.png"
               width={15}
@@ -43,7 +43,7 @@ function Footer() {
               alt="Gmail"
             />
           </Link>
-          <Link href="/">
+          <Link href="https://www.twitch.tv/mrdebfx">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837847/Debonair%20Fox%20Creative%20Studio/social-icons/Twitch_zc1buy.png"
               width={15}
