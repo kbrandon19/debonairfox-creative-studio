@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function Footer() {
   return (
-    <footer className="md:flex justify-center content-center">
+    <footer className="md:flex justify-center content-center sticky bottom-0">
 
       <div className="w-full md:max-w-screen-2xl grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1 h-auto px-10 content-center">
 
@@ -57,7 +57,7 @@ function Footer() {
 {/* Back to top icon/text */}
         <div className="grid justify-end md:col-start-3 md:order-3">
           <Link href="/">
-            <p>Top</p>
+            <p></p>
           </Link>
         </div> 
         

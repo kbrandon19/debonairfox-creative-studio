@@ -20,10 +20,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-<>
-      <Header/>
+
+<html suppressHydrationWarning={true} lang="en">
+  <body>
+   <Header/>
       <main className={poppins.className}>{children}</main>
       <Footer/>
-</>
+</body>
+</html>
+
+     
+
   );
 }

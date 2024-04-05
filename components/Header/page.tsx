@@ -20,7 +20,7 @@ function Header() {
                 </Link>
             </div>
 
-            <div className='menu w-auto flex flex-row gap-x-12 items-center'>
+            {/* <div className='menu w-auto flex flex-row gap-x-12 items-center'>
                 
                     <ul className='hidden smd:flex gap-x-12 font-normal text-sm'>
                         <li>
@@ -40,7 +40,8 @@ function Header() {
                                 </Link>
                             </li>
                     </ul>
-                    {/* Links to other pages but will only show when at certain screen size */}
+
+                
                 
                     
                     <Button className='ct bg-accent-default text-white text-xs  tracking-widest font-normal contact block'>
@@ -48,7 +49,7 @@ function Header() {
                     </Button>                 
     
                
-            </div>
+            </div> */}
         </div>
 
     </header>
