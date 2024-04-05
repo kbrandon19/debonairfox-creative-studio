@@ -27,7 +27,7 @@ function ComingSoon() {
             </form>
           </div>
 
-          <EmailNewsletter/>
+          {/* <EmailNewsletter/> */}
 
           
         </div>
