@@ -14,9 +14,11 @@ function ComingSoon() {
         <div className=' h-[calc(100vh-6rem)] px-4 flex flex-col justify-center text-center items-center gap-y-4'>
           <h1 className='text-titleSm smd:text-titleMd lg:text-titleLg l leading-titleSm uppercase font-semibold text-accent-default'>Coming Soon</h1>
           <div className=' h-auto w-80 smd:w-1/3 text-base  mt-5  md:text-l sd:mt-8 lg:mt-10'>
-            <p >Subscribe now to stay ahead with insights and updates on cutting-edge digital services and innovations. </p>
+            <p>Get ready to embark on a creative journey with our upcoming creative studio, where innovation thrives.</p> 
             <br />
-            <p className=''>Your daily dose of inspiration and innovation starts here.</p>
+            <p> We specialize in developing captivating websites, engaging emails, and more, infusing each project with our unique blend of creativity and expertise. </p>
+            <br />
+            <p>Your daily dose of inspiration and innovation starts here.</p>
             <br />
           
           </div>
