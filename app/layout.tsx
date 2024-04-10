@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header/page";
 import Footer from "../components/Footer/page";
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({ 
   subsets: ["latin"],
