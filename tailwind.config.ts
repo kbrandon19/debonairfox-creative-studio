@@ -29,10 +29,12 @@ const config = {
         base: '1rem', //16px
         l: '1.25rem',//20px
         xl: '1.5rem', //24px
+        
       },
     
     extend: {
       fontSize:{
+        secTitle: '2.5rem', //40px
         titleSm:'5rem', //80px
         titleMd:'6.25rem', //100px
         titleLg:'9.375rem', //150px
