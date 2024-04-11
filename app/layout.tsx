@@ -25,7 +25,9 @@ export default function RootLayout({
 <html suppressHydrationWarning={true} lang="en">
   <body>
    <Header/>
-      <main className={poppins.className}>{children}</main>
+      <main className={poppins.className}>{children}
+      <Analytics/>
+      </main>
       <Footer/>
 </body>
 </html>
