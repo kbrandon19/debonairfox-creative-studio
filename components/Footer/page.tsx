@@ -10,7 +10,7 @@ function Footer() {
       <div className="w-full md:max-w-screen-2xl grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1 h-auto px-10 content-center">
 
 {/* social links */}
-        <div className="flex gap-x-4 md:justify-center md:order-2">
+        {/* <div className="flex gap-x-4 md:justify-center md:order-2">
           <Link href="https://www.linkedin.com/in/kdbrand">
             <Image
               src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1706837682/Debonair%20Fox%20Creative%20Studio/social-icons/LinkedIn_voqnk9.png"
@@ -51,7 +51,7 @@ function Footer() {
               alt="Twitch"
             />
           </Link>
-        </div>
+        </div> */}
 
 
 {/* Back to top icon/text */}
