@@ -5,7 +5,9 @@ import { Button } from "@/components/ui/button";
 
 function Footer() {
   return (
-    <footer className="md:flex justify-center content-center sticky bottom-0">
+
+
+    <footer className="md:flex justify-center content-center ">
 
       <div className="w-full md:max-w-screen-2xl grid grid-cols-2 grid-rows-2 md:grid-cols-3 md:grid-rows-1 h-auto px-10 content-center">
 
@@ -65,8 +67,8 @@ function Footer() {
         <div className="grid col-span-2 smd:col-start-1 smd:col-span-1 smd:col-end-2 smd:order-1">
           <p className="text-xs uppercase">
             &copy; {new Date().getFullYear()}{" "}
-            <span className="font-bold"> Kenneth Brandon </span>
-            <span className="hidden smd:inline">All Rights Reserved</span>
+            <span className="font-bold"> DF Creative Studio. </span>
+            <span className="hidden smd:inline">All Rights Reserved.</span>
           </p>
         </div>
       </div>

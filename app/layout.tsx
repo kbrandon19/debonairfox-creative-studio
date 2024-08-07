@@ -4,21 +4,22 @@ import { Lora } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header/page";
 import Footer from "../components/Footer/page";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
-const poppins = Poppins({ 
+
+const poppins = Poppins({
   subsets: ["latin"],
-  style:['normal','italic'],
-  weight: ['400','500','600','700','800'],  
-  variable: "--font-poppins", });
-
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
 
 const lora = Lora({
   subsets: ["latin"],
-  style:['normal','italic'],
-  weight: ['400','500','600','700',],
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-lora",
-})
+});
 
 export const metadata: Metadata = {
   title: "Debonair Fox Creative Studio",
@@ -31,18 +32,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <html suppressHydrationWarning={true} lang="en">
+      <body>
+        
+          {/* <Header/> */}
+          <main className={`${poppins.variable} ${lora.variable}`}>
+            {children}
+            <Analytics />
+          </main>
 
-<html suppressHydrationWarning={true} lang="en">
-  <body>
-   {/* <Header/> */}
-      <main className={`${poppins.variable} ${lora.variable}`}>{children}
-      <Analytics/>
-      </main>
-
-</body>
-</html>
-
-     
-
+      </body>
+    </html>
   );
 }

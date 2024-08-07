@@ -1,0 +1,60 @@
+export const revalidate = 0;
+
+import React from "react";
+import ContactForm from "../../components/Forms/contact-form";
+import Image from "next/image";
+// import { client } from "../../../sanity/lib/client";
+// import { contactSection } from "@/lib/interface";
+// import { urlForImage } from "../../../sanity/lib/image";
+
+// async function getData() {
+//   const query = `
+//   *[_type == 'contact'][0]{
+//     contactTitle,
+//     contactHeading,
+//     contactImage
+//   }`;
+
+//   const data = await client.fetch(query,{
+//     revalidate: new Date().getSeconds(),
+//   });
+//   return data;
+// }
+
+async function Contact() {
+  // const data: contactSection = await getData();
+
+  return (
+    <div className="w-full h-fit bg-background ">
+      <div
+        id="Contact"
+        className="w-full h-auto flex flex-col lg:flex-row gap-4 justify-between "
+      >
+        <div className="flex flex-col w-full mt-10 gap-y-10 lg:gap-y-6 justify-center lg:basis-3/5 mx-auto p-5 lg:px-10 pt-16 2xl:pt-0">
+          <h1 className="text-5xl lg:text-6xl">Let&apos;s Talk</h1>
+          <p className="font-regular text-xl lg:text-2xl">
+          No matter your digital service needs, I’ll work with you to define a strong visual identity. One that communicates your personality and vision through a visual cohesive story.
+          </p>
+          <div className="">
+            <ContactForm />
+          </div>
+        </div>
+
+      {/* Image */}
+        <div className="hidden lg:flex lg:items-center">
+          {/* <Image
+            height={0}
+            width={0}
+            src={urlForImage(data.contactImage)}
+            alt="image"
+            priority
+            sizes="100vh"
+            style={{ width: "auto", height: "100%" }}
+          /> */}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Contact;
