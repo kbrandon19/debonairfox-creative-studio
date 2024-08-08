@@ -40,6 +40,7 @@ export default function RootLayout({
             {children}
             <Analytics />
           </main>
+          <Footer/>
 
       </body>
     </html>
