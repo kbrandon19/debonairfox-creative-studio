@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning={true} lang="en">
-      <body>
+      <body className="w-screen overflow-x-hidden">
         
           {/* <Header/> */}
           <main className={`${poppins.variable} ${lora.variable}`}>
