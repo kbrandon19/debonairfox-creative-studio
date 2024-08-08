@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import TextBackground from '../TextBackground/page'
-import EmailNewsletter from '../Form/EmailNewsletter'
+import EmailNewsletter from '../Forms/EmailNewsletter'
 import {motion} from 'framer-motion'
 
 function ComingSoon() {
