@@ -48,7 +48,7 @@ function About() {
         </div>
         <div className="basis-1/2 flex gap-y-5 flex-col">
           <p className="text-secTitle leading-[3rem] md:text-secTitle uppercase font-semibold opacity-30">
-            &quot;This should be some sort of quote&quot;
+            &quot;Creating a digital presence doesn’t have to be hard.&quot;
           </p>
           <p className="bodyText text-l md:text-xl">
             I have a deep passion for all things art, from the intricacies of

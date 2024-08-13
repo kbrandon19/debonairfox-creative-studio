@@ -62,7 +62,7 @@ function ContactForm() {
         <div className="md:col-start-1 md:col-end-2">
           <input
             placeholder="FIRST NAME"
-            className=" indent-2.5 h-14 w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className=" indent-2.5 h-14 w-full rounded-sm border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 text-white bg-accent-default"
             {...register("firstname")}
           />
           {errors.firstname?.message && (
@@ -75,7 +75,7 @@ function ContactForm() {
         <div className="md:col-start-2 md:col-end-3">
           <input
             placeholder="LAST NAME"
-            className="indent-2.5 h-14 w-full  bg-charcoal rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2  "
+            className="indent-2.5 h-14 w-full rounded-sm border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2  bg-accent-default text-white"
             {...register("lastname")}
           />
           {errors.lastname?.message && (
@@ -90,7 +90,7 @@ function ContactForm() {
           <input
             placeholder="EMAIL"
             {...register("email")}
-            className="indent-2.5 h-14 w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="indent-2.5 h-14 w-full rounded-sm border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 bg-accent-default text-white" 
           />
           {errors.email?.message && (
             <p className="mt-2 text-sm text-red-400 tracking-widest">
@@ -101,13 +101,14 @@ function ContactForm() {
 
         {/* services */}
         <div className="md:col-span-2 md:row-start-3">
+        
           <select
             {...register("services")}
-            className="w-full rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            className="w-full rounded-sm  border-t-0 border-x-0 border-b-2  tracking-widest py-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 bg-accent-default text-white "
           >
-            <option value="Service Not Selected">
+            <option value="Service Not Selected" >
               {" "}
-              Please select a service...
+              WHAT CAN I HELP YOU WITH?
             </option>
             <option value="Strategic Communications">
               Strategic Communications
@@ -136,8 +137,9 @@ function ContactForm() {
         <div className="md:col-span-2 md:row-start-4">
           <Textarea
             placeholder="MESSAGE"
-            className="indent-2.5 px-0 resize-none rounded-sm bg-charcoal border-t-0 border-x-0 border-b-2 tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
             {...register("message")}
+            className="indent-2.5 px-0 resize-none bg-accent-default rounded-sm  border-t-0 border-x-0 border-b-2 text-white tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 "
+            
           />
           {errors.message?.message && (
             <p className="mt-2 text-sm text-red-400 tracking-widest">
@@ -148,14 +150,14 @@ function ContactForm() {
 
         <Button
           disabled={isSubmitting}
-          className="flex justify-center content-center h-10 px-4 py-2 w-24 mt-10 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 bg-transparent border-plum hover:drop-shadow-lg hover:bg-plum hover:text-white transition-all"
+          className="flex justify-center content-center h-10 px-4 py-2 w-24 mt-10 max-w-44 uppercase tracking-widest disabled:cursor-not-allowed text-sm font-normal rounded-none hover:rounded-lg border-2 border-plum hover:drop-shadow-lg hover:text-white transition-all"
         >
           {isSubmitting ? "Sending..." : "Submit"}
         </Button>
       </form>
-      <div className="flex-1 rounded-lg bg-cyan-600 p-8 ">
+      {/* <div className="flex-1 rounded-lg bg-primary-default p-8 ">
         <pre>{JSON.stringify(data, null, 2)}</pre>
-      </div>
+      </div> */}
     </>
   );
 }

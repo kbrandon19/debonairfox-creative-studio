@@ -6,8 +6,9 @@ export interface Services{
 
 export interface servArr{
     serviceTitle:string;
-    serviceInfo: Block[];
-    serviceInfoTest:string;
+    // serviceInfo: Block[];
+    serviceInfo: string;
+    // serviceInfoTest:string;
 }
 
 //Block

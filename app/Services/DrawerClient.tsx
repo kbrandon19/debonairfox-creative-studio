@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,13 @@ import { Services, servArr } from "@/lib/interface";
 import { RichTextComponents } from "@/components/RichTextComponents";
 import { PortableText } from "@portabletext/react";
 
-const words = ["UI Design.", "Web Development.", "Email Templates.", "Product Pages.", "Content Creation."];
+const words = [
+  "UI Design.",
+  "Web Development.",
+  "Email Templates.",
+  "Product Pages.",
+  "Content Creation.",
+];
 
 interface DrawerClientProps {
   data: Services;
@@ -27,15 +33,15 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   const [content, setContent] = useState<servArr | null>(null);
 
   useEffect(() => {
-    console.log('Active Word:', activeWord);
-    console.log('Data:', data);
+    console.log("Active Word:", activeWord);
+    console.log("Data:", data);
 
     if (activeWord && data && Array.isArray(data.servicesDescription)) {
       const selectedContent = data.servicesDescription.find(
         (service) => service.serviceTitle === activeWord
       );
       setContent(selectedContent || null);
-      console.log('Selected Content:', selectedContent);
+      console.log("Selected Content:", selectedContent);
     }
   }, [activeWord, data]);
 
@@ -43,29 +49,47 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
     <div className="w-auto text-wrap">
       {words.map((word, index) => (
         <Drawer key={index}>
-          <DrawerTrigger className="text-titleSm leading-[4rem] md:text-titleMd md:leading-[5rem] lg:text-titleXl font-medium lg:leading-[10rem] text-left hover:text-primary-100"
-            asChild
-            onClick={() => setActiveWord(word)}
-          >
-            <Button className="whitespace-break-spaces" variant="ghost">{word}</Button>
+          <DrawerTrigger onClick={() => setActiveWord(word)}>
+            {/* <Button
+              variant="ghost"
+              className="whitespace-normal"
+            >
+              {word}
+            </Button> */}
+            <div className="w-auto h-auto text-titleMid leading-[3rem] md:text-titleMid md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] 2xl:text-titleXl font-medium xl:leading-[10rem]  hover:text-primary-100">
           
+              {word}
+            </div>
           </DrawerTrigger>
           <DrawerContent>
             {content && (
               <>
                 <DrawerHeader>
-                  <DrawerTitle>{content.serviceTitle}</DrawerTitle>
+                  <DrawerTitle className="pl-4 opacity-25">{content.serviceTitle}</DrawerTitle>
                   <DrawerDescription>
-                     <PortableText
-                      value={content.serviceInfo}
-                      components={RichTextComponents}
-                    />
-                
+                    <div className=" w-auto h-auto flex flex-col md:flex-row pl-4 justify-center
+                    gap-x-5 items-center">
+                      <div className="md:basis-1/2 mt-5">
+                        <p className="text-l lg:text-secTitle text-black-text">{content.serviceInfo}</p>
+                      </div>
+                      {/* Work Examples */}
+                      <div className="hidden md:flex basis-1/2 gap-4 flex-wrap">
+                      <div className="w-56 h-52 bg-secondary-100">
+                      </div>
+                      <div className="w-56 h-52 bg-secondary-100">
+                      </div>
+                      <div className="w-56 h-52 bg-secondary-100">asdf
+                      </div>
+                      <div className="w-56 h-52 bg-secondary-100">df
+                      </div>
+                      </div>
+                      
+                    </div>
                   </DrawerDescription>
                 </DrawerHeader>
                 <DrawerFooter>
-                  <DrawerClose>
-                    <Button variant="outline">Close</Button>
+                  <DrawerClose className="hidden lg:block">
+                    <Button variant="outline">x</Button>
                   </DrawerClose>
                 </DrawerFooter>
               </>

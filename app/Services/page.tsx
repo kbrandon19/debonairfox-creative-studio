@@ -6,7 +6,7 @@ import DrawerClient from "./DrawerClient";
 async function getData() {
   const query = `
     *[_type == 'services'][0]{
-      servicesDescription[]{serviceTitle,serviceInfo,serviceInfoTest}
+      servicesDescription[]{serviceTitle,serviceInfo}
     }`;
   const data = await client.fetch(query);
   return data;

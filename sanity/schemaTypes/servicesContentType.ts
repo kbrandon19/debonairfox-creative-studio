@@ -16,15 +16,15 @@ export const servicesContentType = defineType ({
         //     title:'Service Description',
         //     type:'string'
         // },
+        // {
+        // name:'serviceInfo',
+        // title:'Service Info',
+        // type:'array',
+        // of: [{type: 'block'}]
+        // },
         {
-        name:'serviceInfo',
-        title:'Service Info',
-        type:'array',
-        of: [{type: 'block'}]
-        },
-        {
-            name:'serviceInfoTest',
-            title:'Service InfoTest',
+            name:'serviceInfo',
+            title:'Service Info',
             type:'string',
         
             }

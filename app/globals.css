@@ -16,6 +16,14 @@
   font-family: var(--font-lora);
 }
 
+/* input,select,text-area{
+  background-color: #24314B;
+  color:#e9e2d2;
+} */
+
+/* input::placeholder{
+  color:#e9e2d2;
+} */
 .blob{
   
     animation: rotation 50s infinite ease-in-out;
