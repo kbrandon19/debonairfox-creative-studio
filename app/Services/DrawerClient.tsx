@@ -56,7 +56,14 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             >
               {word}
             </Button> */}
-            <div className="w-auto h-auto text-titleMid leading-[3rem] md:text-titleMid md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] 2xl:text-titleXl font-medium xl:leading-[10rem]  hover:text-primary-100">
+            <div className="w-auto h-auto text-left font-medium 
+            text-titleMid leading-[3rem]
+            sm:text-titleSmd sm:leading-[4rem]
+            smd:text-titleMd smd:leading-[5rem]
+            md:text-titleLg md:leading-[7rem] 
+            lg:text-titleLg lg:leading-[8rem] 
+            2xl:text-titleXl 2xl:leading-[11rem] 
+            hover:text-primary-100">
           
               {word}
             </div>
@@ -70,18 +77,11 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                     <div className=" w-auto h-auto flex flex-col md:flex-row pl-4 justify-center
                     gap-x-5 items-center">
                       <div className="md:basis-1/2 mt-5">
-                        <p className="text-l lg:text-secTitle text-black-text">{content.serviceInfo}</p>
+                        <p className="text-l lg:text-xl text-black-text">{content.serviceInfo}</p>
                       </div>
                       {/* Work Examples */}
                       <div className="hidden md:flex basis-1/2 gap-4 flex-wrap">
-                      <div className="w-56 h-52 bg-secondary-100">
-                      </div>
-                      <div className="w-56 h-52 bg-secondary-100">
-                      </div>
-                      <div className="w-56 h-52 bg-secondary-100">asdf
-                      </div>
-                      <div className="w-56 h-52 bg-secondary-100">df
-                      </div>
+                      this will be keywords
                       </div>
                       
                     </div>

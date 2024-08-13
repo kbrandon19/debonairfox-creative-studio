@@ -14,8 +14,8 @@ export default function Home() {
  {/* <ComingSoon/> */}
     <Hero/>
     <Banner/>
-    <About/>
     <Services/>
+    <About/>
     <Contact/>
     <Footer/>
   
