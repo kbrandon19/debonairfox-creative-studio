@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import TextBackground from '../TextBackground/page'
-import EmailNewsletter from '../Forms/EmailNewsletter'
 import {motion} from 'framer-motion'
 
 function ComingSoon() {
@@ -26,14 +25,7 @@ function ComingSoon() {
             <br />
           
           </div>
-          
-          <div className='form'>
-            <form action="">
-              
-            </form>
-          </div>
-
-          {/* <EmailNewsletter/> */}
+      
 
           
         </motion.div>
