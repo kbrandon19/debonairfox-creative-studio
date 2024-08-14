@@ -26,7 +26,12 @@ export const servicesContentType = defineType ({
             name:'serviceInfo',
             title:'Service Info',
             type:'string',
-        
-            }
+        },
+        {
+            name:'servicesKeyword',
+        title:'ServicesKeyword',
+        type:'array',
+      of:[{type:'servicesKeyword'}]
+        }
     ]
 })

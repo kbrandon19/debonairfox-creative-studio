@@ -12,7 +12,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { Services, servArr } from "@/lib/interface";
+import { Services, servArr, keywordArr } from "@/lib/interface";
 import { RichTextComponents } from "@/components/RichTextComponents";
 import { PortableText } from "@portabletext/react";
 
@@ -31,6 +31,7 @@ interface DrawerClientProps {
 const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   const [activeWord, setActiveWord] = useState<string | null>(null);
   const [content, setContent] = useState<servArr | null>(null);
+  // const [contentTwo, setContentTwo] = useState<keywordArr | null>(null);
 
   useEffect(() => {
     console.log("Active Word:", activeWord);
@@ -63,7 +64,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             md:text-titleLg md:leading-[7rem] 
             lg:text-titleLg lg:leading-[8rem] 
             2xl:text-titleXl 2xl:leading-[11rem] 
-            hover:text-primary-100 hover:underline transition-all">
+            hover:text-primary-default transition-all opacity-40 hover:opacity-100">
           
               {word}
             </div>
@@ -80,8 +81,8 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                         <p className="text-l lg:text-xl text-black-text">{content.serviceInfo}</p>
                       </div>
                       {/* Work Examples */}
-                      <div className="hidden md:flex basis-1/2 gap-4 flex-wrap">
-                      this will be keywords
+                      <div className="flex basis-1/2 gap-4 flex-wrap">
+                      {content.keywordArr.keyword}
                       </div>
                       
                     </div>

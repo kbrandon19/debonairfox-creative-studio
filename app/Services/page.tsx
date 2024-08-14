@@ -6,7 +6,7 @@ import DrawerClient from "./DrawerClient";
 async function getData() {
   const query = `
     *[_type == 'services'][0]{
-      servicesDescription[]{serviceTitle,serviceInfo}
+      servicesDescription[]{serviceTitle,serviceInfo,servicesKeyword[]{keyword}}
     }`;
   const data = await client.fetch(query);
   return data;
@@ -17,7 +17,7 @@ export default async function Page() {
   
 
   return (
-    <div className="w-full h-auto bg-background py-20">
+    <div className="w-full h-auto bg-background py-40">
      
         <DrawerClient data={data} />
         {/* <div className="w-1/2 h-screen mx-auto flex gap-y-5 flex-col">

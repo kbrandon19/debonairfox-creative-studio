@@ -9,6 +9,11 @@ export interface servArr{
     // serviceInfo: Block[];
     serviceInfo: string;
     // serviceInfoTest:string;
+    servicesKeyword:keywordArr[];
+}
+
+export interface keywordArr{
+  keyword:string;
 }
 
 //Block
