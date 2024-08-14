@@ -6,9 +6,9 @@ import TextCarousel from '../../components/TextCarousel/page'
 
 function About() {
   return (
-    <div className="w-auto h-auto bg-background py-36 px-5 flex flex-col gap-y-20">
+    <div className="w-auto h-auto bg-background py-36  flex flex-col gap-y-20">
       {/* First Line */}
-      <div className="w-full  lg:w-5/6 mx-auto h-auto flex flex-col md:flex-row ">
+      <div className="w-full  lg:w-5/6 mx-auto h-auto flex flex-col md:flex-row px-5">
         <div className="basis-1/2  flex gap-y-5 flex-col">
           <p className="text-titleMid leading-[3rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-30">
             Crafting Unique Digital Experiences
@@ -37,7 +37,7 @@ function About() {
       </div>
 
       {/* Second Row */}
-      <div className="w-full lg:w-5/6 mx-auto h-auto flex flex-col-reverse md:flex-row">
+      <div className="w-full lg:w-5/6 mx-auto h-auto flex flex-col-reverse md:flex-row px-5">
         <div className="h-auto basis-1/2 flex justify-center items-center">
           <Image
             src={profileImg}

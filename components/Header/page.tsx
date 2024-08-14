@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 function Header() {
   return (
     <header className='md:flex justify-center content-center'>
-        <div className='nav w-full md:max-w-screen-2xl h-16 flex justify-between  px-10 items-center'>
+        <div className='nav w-full md:max-w-screen-2xl h-16 flex justify-between  px-10 items-center fixed'>
             <div className='logo'>
                 <Link href="/">
                     <Image
@@ -20,39 +20,17 @@ function Header() {
                 </Link>
             </div>
 
-            {/* <div className='menu w-auto flex flex-row gap-x-12 items-center'>
-                
-                    <ul className='hidden smd:flex gap-x-12 font-normal text-sm'>
-                        <li>
-                            <Link href="/about">
-                            <p>about</p>
-                            </Link>
-                           
-                        </li>
-                        <li>
-                            <Link href="/services">
-                                <p>services</p>
-                                </Link>
-                        </li>
-                            <li>
-                                <Link href="/work">
-                                <p>work</p>
-                                </Link>
-                            </li>
-                    </ul>
-
-                
-                
-                    
-                    <Button className='ct bg-accent-default text-white text-xs  tracking-widest font-normal contact block'>
-                        Lets Chat
-                    </Button>                 
-    
-               
-            </div> */}
         </div>
 
     </header>
+
+    // Side Nav
+    // <div className='w-screen h-screen relative'>
+    //     <div className='h-64 w-fit p-5 bg-red-300  right-0 bottom-1/2 fixed'>
+    //         H
+    //     </div>
+
+    // </div>
   )
 }
 

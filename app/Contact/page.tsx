@@ -25,55 +25,42 @@ async function Contact() {
   // const data: contactSection = await getData();
 
   return (
-    // <div className="w-full h-screen bg-accent-default py-20">
-    //   <div
-    //     className="w-5/6 h-full mx-auto flex flex-col lg:flex-row"
-    //   >
-    //     <div className="flex w-full  gap-10 lg:gap-6 justify-center  mx-auto">
+    <div className="w-full h-screen bg-accent-default py-20">
+      <div className=" w-full md:w-5/6 h-full mx-auto flex justify-between lg:flex-row px-5 lg:px-0">
+        <div className=" h-full flex flex-col justify-between gap-y-10 p-2">
+
           
+            
+            <div className="max-w-screen-sm">
+            <h1 className=" text-titleMid leading-[3rem] md:text-titleLg md:leading-[7rem] 2xl:leading-[7.5rem] 2xl:text-titleLg text-accent-100">Let&apos;s Create Something!</h1>
+            </div>
+
+            <div className="text-titleMid md:text-secTitle flex flex-col md:flex-row lg:justify-between gap-x-20">
+              <div className="flex flex-row justify-start items-end">
+                <div>
+                  <p className="text-l text-accent-100 ">
+                    Request Information.
+                  </p>
+                  <p className="hover:underline transition-all ">info@dfsc.com</p>
+                </div>
+              </div>
+              <div className="">
+                <p className="text-l text-accent-100 ">
+                  Stay Connected.</p>
+                <div className="flex flex-col md:flex-row gap-x-4 lowercase ">
+                  <p className="hover:underline transition-all">LinkedIn</p>
+                  <p className="hover:underline transition-all">Instagram</p>
+                </div>
+              </div>
+            </div>
           
-    //       <div className="h-full w-auto basis-1/2 flex flex-col justify-end items-start text-secTitle gap-y-5">
-    //         <ContactForm />
 
-    //         <div>
-    //           ec.southamerica
-    //         </div>
+         
 
-    //         <div className="h-auto w-auto flex flex-row justify-start items-end gap-x-5">
-    //           <div>
-    //             <p className="text-l text-accent-100 ">Request Information.</p>
-    //             <p className=" ">email@gmail.com</p>
-    //           </div>
-              
-    //           <div className="">
-    //             <p className="text-l text-accent-100 ">
-    //               Stay Connected.</p>
-    //             <div className="flex flex-row gap-x-4">
-    //               <p>LinkedIn</p>
-    //               <p>Instagram</p>
-    //             </div>
-    //           </div>
-    //         </div>
+        </div> 
 
-            
-            
-            
-            
-            
-    //       </div>
-          
-    //       <div className=" h-full w-auto basis-1/2 text-accent-100 ">
-    //         <h1 className=" leading-[7rem] 2xl:text-titleLg">Let&apos;s Create Something!</h1>
-    //         {/* <p className="font-regular font-lora text-xl lg:text-secTitle leading-[4rem] text-accent-100">
-    //         No matter your digital service needs, I’ll work with you to define a strong visual identity. One that communicates your personality and vision through a visual cohesive story.
-            
-    //         </p> */}
-    //       </div>
-    //     </div>
-
-    //   </div>
-    // </div>
-    <div></div>
+      </div>
+    </div>
   );
 }
 

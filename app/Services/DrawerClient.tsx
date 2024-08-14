@@ -46,7 +46,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   }, [activeWord, data]);
 
   return (
-    <div className="w-auto text-wrap">
+    <div className="px-1">
       {words.map((word, index) => (
         <Drawer key={index}>
           <DrawerTrigger onClick={() => setActiveWord(word)}>
@@ -63,7 +63,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             md:text-titleLg md:leading-[7rem] 
             lg:text-titleLg lg:leading-[8rem] 
             2xl:text-titleXl 2xl:leading-[11rem] 
-            hover:text-primary-100">
+            hover:text-primary-100 hover:underline transition-all">
           
               {word}
             </div>
