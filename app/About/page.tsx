@@ -7,22 +7,22 @@ import { Button } from "@/components/ui/button";
 
 function About() {
   return (
-    <div className="w-auto h-auto bg-background py-36  flex flex-col gap-y-20">
+    <div className="w-auto h-auto bg-white py-36  flex flex-col gap-y-20">
       {/* First Line */}
       <div className="w-full  lg:w-5/6 mx-auto h-auto flex flex-col md:flex-row px-5">
       <div className="h-auto basis-1/2 flex justify-center items-center ">
           <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
+            src={profileImg}
             width={516}
             height={556}
             alt="profile photo"
           />
         </div>
-        <div className="basis-1/2  flex gap-y-5 flex-col">
-          <p className="text-titleMid leading-[3rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-30">
+        <div className="basis-1/2  flex gap-y-32 flex-col">
+          <p className="text-titleMid leading-[3rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-75 text-accent-100 ">
             Crafting Unique Digital Experiences
           </p>
-          <p className="font-regular text-l md:text-xl">
+          <p className="bodyText font-regular text-l md:text-xl opacity-75 text-accent-100">
             At Debonair Fox Creative Studio, we believe that every story
             deserves to be told with elegance and creativity. With a background
             steeped in diverse creative pursuits, we’ve honed a keen eye for
@@ -35,7 +35,7 @@ function About() {
             resonate and inspire.
           </p>
 
-          <Button className="bg-red-300 w-36">Read More</Button>
+          <Button className="bg-background w-36">Read More</Button>
         </div>
         
       </div>

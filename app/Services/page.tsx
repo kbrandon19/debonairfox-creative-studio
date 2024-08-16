@@ -17,7 +17,7 @@ export default async function Page() {
   
 
   return (
-    <div className="w-full h-auto bg-background py-40">
+    <div className="w-full h-auto bg-white py-40">
      
         <DrawerClient data={data} />
         {/* <div className="w-1/2 h-screen mx-auto flex gap-y-5 flex-col">

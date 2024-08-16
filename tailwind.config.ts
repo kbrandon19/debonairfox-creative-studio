@@ -50,12 +50,13 @@ const config = {
         //custom colors
         transparent: 'transparent',
         current: 'currentColor',
-        white:'#FFFFFF',
+        white:'#F4F4F4',
         black:{
           main:'#000000',
           text:'#212427'
         },
         teal:'#1D5B80',
+        tangerine:'#F08700',
         //Light Blue
         primary:{
           default:'#6EA0C6',
