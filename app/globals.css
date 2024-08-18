@@ -10,6 +10,7 @@
   body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .bodyText {
@@ -48,7 +49,36 @@
     }
   }
   
-
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  height: 40px;
+  --test: #F08700;
+  --g: radial-gradient(farthest-side,#0000 calc(95% - 3px),#fff calc(100% - 3px) 98%,#0000 101%) no-repeat;
+  background: var(--test), var(--test), var(--test);
+  background-size: 30px 30px;
+  animation: l9 1s infinite alternate;
+}
+@keyframes l9 {
+  0% {
+    background-position: 0 50%, 50% 50%, 100% 50%;
+  }
+  20% {
+    background-position: 0 0, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0 100%, 50% 0, 100% 50%;
+  }
+  60% {
+    background-position: 0 50%, 50% 100%, 100% 0;
+  }
+  80% {
+    background-position: 0 50%, 50% 50%, 100% 100%;
+  }
+  100% {
+    background-position: 0 50%, 50% 50%, 100% 50%;
+  }
+}
 
  /* styling for dark mode*/
   /* .dark {

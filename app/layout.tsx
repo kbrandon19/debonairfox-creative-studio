@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "../components/Header/page";
 import Footer from "../components/Footer/page";
 import { Analytics } from "@vercel/analytics/react";
+import SmoothScroll from '@/components/SmoothScroll';
 
 
 const poppins = Poppins({
@@ -37,7 +38,10 @@ export default function RootLayout({
         
           <Header/>
           <main className={`${poppins.variable} ${lora.variable}`}>
+            <SmoothScroll>
             {children}
+            </SmoothScroll>
+            
             <Analytics />
           </main>
 

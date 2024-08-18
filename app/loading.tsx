@@ -1,0 +1,13 @@
+import React from "react";
+
+function Loading() {
+  return (
+    <div className="w-full h-screen bg-white flex flex-col items-center content-center justify-center align-center">
+      <div className="align-center w-auto mt-5">
+        <div className="loader"></div>
+      </div>
+    </div>
+  );
+}
+
+export default Loading;

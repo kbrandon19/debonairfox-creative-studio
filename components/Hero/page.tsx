@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TextBackground from "../TextBackground/page";
+import Transition from '@/lib/transitions/heroTran';
 
 function Hero() {
   return (
@@ -27,6 +28,7 @@ function Hero() {
 
       {/* Option 2 */}
       <div className="w-full h-screen relative">
+        <Transition>
         <div className="h-full w-full fixed -mt-16 -z-10">
           <Image
             src={
@@ -39,6 +41,7 @@ function Hero() {
             style={{ objectFit: "cover", opacity: ".5" }}
           />
         </div>
+        </Transition>
 
 {/* 
         <div className='w-5/6 h-full mx-auto flex justify-center items-center italic font-semibold tracking-wide'>
@@ -50,6 +53,7 @@ function Hero() {
             Debonair Fox Creative Studio
           </p>
         </div>
+        
       </div>
     </>
   );
