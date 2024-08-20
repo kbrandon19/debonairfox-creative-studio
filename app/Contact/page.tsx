@@ -4,6 +4,7 @@ import React from "react";
 import ContactForm from "../../components/Forms/contact-form";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeIn } from "@/lib/transitions/fadeIn";
 // import { client } from "../../../sanity/lib/client";
 // import { contactSection } from "@/lib/interface";
 // import { urlForImage } from "../../../sanity/lib/image";
@@ -26,28 +27,34 @@ async function Contact() {
   // const data: contactSection = await getData();
 
   return (
-    <div id="contact" className="w-full h-auto md:h-screen bg-accent-default py-20">
+    <div
+      id="contact"
+      className="w-full h-auto md:h-screen bg-accent-default py-20"
+    >
       <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-4 md:p-0">
         <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">
           {/* top div */}
-          <div className="w-full h-auto flex flex-col md:flex-row md:justify-between content-center md:items-center">
-            <div className="w-1/3">
-              <h1 className="text-titleMid leading-[2.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-75 text-accent-100 ">
-                Let<span className="text-tangerine">&apos;</span>s Create
-                Something
-              </h1>
+          <FadeIn>
+            <div className="w-full h-auto flex flex-col gap-y-5 lg:gap-y-0 lg:flex-row lg:justify-between content-center lg:items-center">
+              <div className="w-1/3">
+                <h1 className="text-titleMid leading-[2.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-75 text-accent-100 ">
+                  Let<span className="text-tangerine">&apos;</span>s Create
+                  Something
+                </h1>
+              </div>
+              <div className="font-light  w-auto md:w-2/4 text-xl opacity-75 text-white">
+                <p>
+                  No matter your digital service needs, I’ll work with you to
+                  define a strong visual identity. One that communicates your
+                  personality and vision through a visual cohesive story.
+                  Available for local and international projects.
+                </p>
+              </div>
             </div>
-            <div className="font-thin  w-auto md:w-2/4 text-xl opacity-65 text-white">
-              <p>
-                No matter your digital service needs, I’ll work with you to
-                define a strong visual identity. One that communicates your
-                personality and vision through a visual cohesive story.
-                Available for local and international projects.
-              </p>
-            </div>
-          </div>
+          </FadeIn>
 
           {/* bottom div */}
+
           <div className="w-1/2 h-auto text-secTitle md:text-titleMid flex flex-col md:flex-row lg:justify-between gap-10">
             <div className="flex flex-row justify-start items-end">
               <div>

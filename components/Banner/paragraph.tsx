@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useScroll, motion, useTransform } from 'framer-motion';
 
-// Define the type for the props
+// Define the type for the props offset: ['start 0.9', 'start 0.25'],
 interface ParagraphProps {
   value: string;
 }
@@ -12,14 +12,20 @@ export default function Paragraph({ value }: ParagraphProps) {
   const element = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start 0.9', 'start 0.25'],
+    offset: ['start .9', 'start start'],
+    
+
   });
 
   const words = value.split(' ');
 
   return (
     <div
-      className="w-5/6 h-auto mx-auto text-secTitle lg:text-titleSm font-semibold leading-tight uppercase text-background drop-shadow-md flex flex-wrap"
+      className="w-5/6 h-auto mx-auto 
+      text-titleMid
+      smd:text-titleSmd
+      lg:text-titleSm 
+      2xl:text-titleMd font-semibold leading-tight uppercase text-background drop-shadow-md flex flex-wrap "
       ref={element}
     >
       {words.map((word, i) => {
@@ -48,10 +54,12 @@ const Word: React.FC<WordProps> = ({ children, range, progress }) => {
 
   return (
     <span className="relative mr-4">
-      <span className="absolute opacity-5">{children}</span>
-      <motion.span style={{ opacity }} className="mr-4">
-        {children}
-      </motion.span>
+      <span className="absolute opacity-20">{children}</span>
+  <motion.span style={{ opacity }} className="mr-4">
+{children}
+</motion.span>
     </span>
+
+
   );
 };
