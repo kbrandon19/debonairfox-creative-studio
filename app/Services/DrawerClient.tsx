@@ -13,8 +13,9 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Services, servArr } from "@/lib/interface";
-import { PortableText } from "@portabletext/react";
-import Image from 'next/image';
+import Image from "next/image";
+import BkgImage from "../assets/kelsey-curtis-sqdt0Gm613o-unsplash.jpg";
+
 
 const words = ["Web Development.", "Email Templates.", "Content Creation."];
 
@@ -56,18 +57,17 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             >
               {word}
             </div>
-
           </DrawerTrigger>
           <DrawerContent>
             {content && (
               <>
-                <DrawerHeader>
+                <DrawerHeader className="">
                   <DrawerTitle className="pl-4 opacity-25">
                     {content.serviceTitle}
                   </DrawerTitle>
-                  <DrawerDescription>
-                    <div className="w-auto h-full flex flex-col md:flex-row p-4 justify-between gap-x-5">
-                      <div className="md:basis-1/2 mt-5">
+                  <DrawerDescription className="  md:h-screen flex">
+                    <div className="md:basis-2/3 h-full flex flex-col md:flex-row p-4 justify-between gap-x-5">
+                      <div className=" w-auto mt-5">
                         <p className="text-l lg:text-xl text-black-text">
                           {content.serviceInfo}
                         </p>
@@ -81,77 +81,19 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                         </div>
 
                         <div className="mt-10">
-                          <Button className="border-2  text-accent-default border-tangerine hover:bg-accent-default  hover:text-background hover:border-0 transition duration-200 ease-in-out">View Work</Button>
+                          <Button className="border-2 bg-accent-default text-background border-accent-default hover:bg-background hover:border-tangerine hover:text-accent-default hover:drop-shadow-lg transition duration-200 ease-in-out">
+                            View Work
+                          </Button>
                         </div>
                       </div>
-
-
-                            {/* Left side of the area*/}
-                      {/* <div className=" h-auto md:basis-1/2 grid grid-cols-5 grid-rows-7 gap-4">
-                        <div className=" w-full bg-red-200 row-span-3 col-start-1 row-start-3">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="row-span-3 h-24 w-full bg-blue-300 col-start-2 row-start-1">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="bg-pink-300 row-span-3 h-24 w-full col-start-2 row-start-5">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="h-24 w-full row-span-3 bg-blue-300 col-start-3 row-start-3">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="bg-green-200 row-span-3 col-start-4 row-start-1">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="bg-pink-300 row-span-3 col-start-4 row-start-5">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                        <div className="row-span-3 bg-red-200 col-start-5 row-start-3">
-                        <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1712800074/Debonair%20Fox%20Creative%20Studio/Images/ProfImage_snopge.png"
-            width={116}
-            height={256}
-            alt="profile photo"
-          />
-                        </div>
-                      </div> */}
                     </div>
+
+                    {/* Right Div */}
+                    <div className="md:basis-3/4 h-auto  justify-between gap-x-5"></div>
                   </DrawerDescription>
                 </DrawerHeader>
                 <DrawerFooter>
-                  <DrawerClose className="hidden lg:block">
-                    {/* <Button variant="outline">x</Button> */}
-                  </DrawerClose>
+                  <DrawerClose className="hidden lg:block"></DrawerClose>
                 </DrawerFooter>
               </>
             )}

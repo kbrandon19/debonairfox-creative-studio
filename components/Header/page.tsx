@@ -7,30 +7,19 @@ import { Button } from "@/components/ui/button"
 
 function Header() {
   return (
-    <header className='md:flex justify-center content-center'>
-        <div className='nav w-full md:max-w-screen-2xl h-16 flex justify-between  px-10 items-center fixed'>
-            <div className='logo'>
-                <Link href="/">
-                    <Image
-                    src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1710306493/Debonair%20Fox%20Creative%20Studio/logos/logo-03_enyv1m.svg"
-                    width={40}
-                    height={40}
-                    alt="DFCS Logo"
-                    />
-                </Link>
+    <header className='justify-center content-center px-5'>
+        <div className=' w-full md:w-5/6 mx-auto h-16 flex justify-between  px-10 items-center sticky'>
+                      
+              <div className="logo flex flex-row gap-2 -ml-10 absolute bottom-18">
+                <div className="h-5 w-5 bg-accent-default rounded-full  ">{" "}</div>
+                <div className="h-5 w-5 bg-tangerine rounded-full  ">{" "}</div>
+                <div className="h-5 w-5 bg-background rounded-full ">{" "}</div>
+              
             </div>
-
         </div>
 
     </header>
 
-    // Side Nav
-    // <div className='w-screen h-screen relative'>
-    //     <div className='h-64 w-fit p-5 bg-red-300  right-0 bottom-1/2 fixed'>
-    //         H
-    //     </div>
-
-    // </div>
   )
 }
 
