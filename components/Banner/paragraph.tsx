@@ -12,7 +12,7 @@ export default function Paragraph({ value }: ParagraphProps) {
   const element = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start .9', 'start start'],
+    offset: ['start .8', 'start start'],
     
 
   });
@@ -54,7 +54,7 @@ const Word: React.FC<WordProps> = ({ children, range, progress }) => {
 
   return (
     <span className="relative mr-4">
-      <span className="absolute opacity-20">{children}</span>
+      <span className="absolute opacity-5">{children}</span>
   <motion.span style={{ opacity }} className="mr-4">
 {children}
 </motion.span>
