@@ -14,11 +14,11 @@ export default function Home() {
     
  {/* <ComingSoon/> */}
  <CaseStudy/>
-    <Hero/>
+    {/* <Hero/>
     <Banner/>
     <Services/>
     <About/>
-    <Contact/>
+    <Contact/> */}
     {/* <Footer/> */}
   
     
