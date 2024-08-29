@@ -6,20 +6,17 @@ import About from "./About/page";
 import Services from "./Services/page";
 import Footer from '../components/Footer/page';
 import Contact from "./Contact/page";
-import CaseStudy from "./CaseStudy/page";
 
 export default function Home() {
   return (
     <>
     
  {/* <ComingSoon/> */}
- <CaseStudy/>
-    {/* <Hero/>
+    <Hero/>
     <Banner/>
     <Services/>
     <About/>
-    <Contact/> */}
-    {/* <Footer/> */}
+    <Contact/>
   
     
 </>

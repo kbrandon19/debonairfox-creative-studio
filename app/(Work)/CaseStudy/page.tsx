@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import phoneImg from "../assets/mockup.png";
-import phoneImg2 from "../assets/mockup2.png";
-import Image3 from "../assets/image3.png";
-import Gif from "../assets/download.gif";
-import screenShot from "../assets/screenshot.png";
+import phoneImg from "../../assets/mockup.png";
+import phoneImg2 from "../../assets/mockup2.png";
+import Image3 from "../../assets/image3.png";
+import Gif from "../../assets/download.gif";
+import screenShot from "../../assets/screenshot.png";
 import Link from "next/link";
 
 function page() {
