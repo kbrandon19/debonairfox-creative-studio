@@ -42,7 +42,7 @@ async function Contact() {
                   Something
                 </h1>
               </div>
-              <div className="font-light  w-full  md:w-1/2 text-xl opacity-75 text-white">
+              <div className="font-light  w-full  md:w-1/2  text-l xl:text-xl opacity-75 text-white">
                 <p>
                   No matter your digital service needs, I’ll work with you to
                   define a strong visual identity. One that communicates your
@@ -55,7 +55,7 @@ async function Contact() {
 
           {/* bottom div */}
 
-          <div className="w-1/2 h-auto text-secTitle md:text-titleMid flex flex-col md:flex-row lg:justify-between gap-10">
+          <div className="w-1/2 h-auto text-secTitle xlg:text-titleMid flex flex-col md:flex-row lg:justify-between gap-10">
             <div className="flex flex-row justify-start items-end">
               <div>
                 <p className="text-l text-accent-100 ">Request Information.</p>

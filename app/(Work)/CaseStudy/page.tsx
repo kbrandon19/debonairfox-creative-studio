@@ -2,14 +2,14 @@ import Image from "next/image";
 import React from "react";
 import phoneImg from "../../assets/mockup.png";
 import phoneImg2 from "../../assets/mockup2.png";
-import Image3 from "../../assets/image3.png";
+import Image3 from "../../assets/Image3.png";
 import Gif from "../../assets/download.gif";
 import screenShot from "../../assets/screenshot.png";
 import Link from "next/link";
 
 function page() {
   return (
-    <div className="w-full h-auto bg-white pb-20">
+    <div className="w-full h-auto bg-white">
       {/* Intro */}
       <div className="w-full h-full  flex flex-col lg:flex-row">
         <div className=" h-screen md:basis-4/6 p-4 md:p-24 flex flex-col gap-y-5 md:gap-y-10 justify-center content-center">
