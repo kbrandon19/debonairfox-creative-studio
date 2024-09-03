@@ -7,7 +7,6 @@ import { FadeIn } from "@/lib/transitions/fadeIn";
 
 function About() {
   return (
-    <FadeIn>
     <div id="about" className="w-auto h-auto bg-white py-36  flex flex-col gap-y-20">
       {/* First Line */}
       {/* <div className="w-full  lg:w-5/6 mx-auto h-auto flex flex-col md:flex-row px-5">
@@ -99,7 +98,6 @@ function About() {
    
       </div>
     </div>
-    </FadeIn>
   );
 }
 

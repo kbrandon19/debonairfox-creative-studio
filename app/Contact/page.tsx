@@ -59,7 +59,7 @@ async function Contact() {
             <div className="flex flex-row justify-start items-end">
               <div>
                 <p className="text-l text-accent-100 ">Request Information.</p>
-                <Link href="mailto:kbrandon319@gmail.com?subject=Digital%20Services%20Inquiry">
+                <Link href={"mailto:kbrandon319@gmail.com?subject=Digital%20Services%20Inquiry"}>
                   <p className="text-background hover:underline hover:text-tangerine transition duration-200 ease ">
                     info@dfsc.com
                   </p>
@@ -77,13 +77,13 @@ async function Contact() {
                 </Link>
 
                 <Link
-                  href="https://instagram.com/mrdebonairfox"
+                  href={"https://instagram.com/mrdebonairfox"}
                   className=" text-background hover:underline transition hover:text-tangerine duration-200 ease"
                 >
                   Instagram
                 </Link>
                 <Link
-                  href="https://github.com/kbrandon19"
+                  href={"https://github.com/kbrandon19"}
                   className="text-background hover:underline transition hover:text-tangerine duration-200 ease"
                 >
                   GitHub

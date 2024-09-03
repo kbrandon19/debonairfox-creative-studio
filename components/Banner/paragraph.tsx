@@ -12,7 +12,7 @@ export default function Paragraph({ value }: ParagraphProps) {
   const element = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ['start .8', 'start start'],
+    offset: ['start .8', 'end .8'],
     
 
   });

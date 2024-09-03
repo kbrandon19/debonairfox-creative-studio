@@ -41,19 +41,22 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   }, [activeWord, data]);
 
   return (
-    <div className="px-1 break-words h-screen w-auto flex flex-col justify-center">
+    <div className="px-1  h-auto w-auto flex flex-col justify-center">
       {words.map((word, index) => (
         <Drawer key={index}>
-          <DrawerTrigger onClick={() => setActiveWord(word)}>
+          <DrawerTrigger onClick={(event) => {
+                event.stopPropagation(); 
+
+            setActiveWord(word)}} >
             <div
               className="w-auto h-auto text-left font-medium 
               text-titleMid leading-[4rem]
               sm:text-titleSmd
               smd:text-titleMd smd:leading-[6rem]
               md:text-titleLg md:leading-[8rem] 
-              lg:text-titleLg lg:leading-[8rem] 
+              lg:text-titleLg lg:leading-[10rem] 
               2xl:text-titleXl 2xl:leading-[11rem]
-              opacity-75 text-accent-100 
+              opacity-75 text-accent-200 
               hover:opacity-100  hover:text-accent-default  
                duration-300 ease-in-out"
             >
@@ -82,11 +85,12 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                           ))}
                         </div>
 
-                        <div className="mt-10">
+{/* View More Button */}
+                        {/* <div className="mt-10">
                           <Button className="border-2 bg-accent-default text-background border-accent-default hover:bg-background hover:border-tangerine hover:text-accent-default hover:drop-shadow-lg transition duration-200 ease-in-out">
                             View Work
                           </Button>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
 
@@ -96,7 +100,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                 </DrawerHeader>
                 <DrawerFooter>
                   <DrawerClose>
-                  <Button variant="outline">Close</Button>
+                  {/* <Button variant="outline">Close</Button> */}
                   </DrawerClose>
                 </DrawerFooter>
               </>

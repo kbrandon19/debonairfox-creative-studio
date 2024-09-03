@@ -40,7 +40,6 @@ function Hero() {
 
       {/* Option 2 */}
       <div className="w-full h-screen relative pl-2">
-        <TextTransition>
           {/* this is be hidden but when the y progress is at a certain point it will be 100 opacity */}
           <div className="h-full w-full fixed -mt-16 -z-10">
             <Image
@@ -54,7 +53,6 @@ function Hero() {
               style={{ objectFit: "cover", opacity: ".5" }}
             />
           </div>
-        </TextTransition>
 
         <HeroTextTransition>
           <div className="w-full h-auto mx-auto  fixed -z-10 bottom-5 flex justify-center items-center text-left">

@@ -18,11 +18,10 @@ function Header() {
             </div>
         </div>
 
-        <div className='w-full h-auto flex flex-row items-center justify-end gap-x-5'>
-          <Link href={"/CaseStudy"}>CaseStudy</Link>
-          <Link href={""}>Link2</Link>
-          <Link href={""}>Link3</Link>
-          <Link href={""}>Link4</Link>
+        <div className='w-full hidden h-auto md:flex flex-row items-center justify-end gap-x-5'>
+          <Link href={"/About"}>About</Link>
+          <Link href={""}>Services</Link>
+          <Link href={"/CaseStudy"}>Case Study</Link>
           <Button>Contact</Button>
 
         </div>
