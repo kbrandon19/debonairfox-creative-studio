@@ -31,19 +31,21 @@ async function Contact() {
       id="contact"
       className="w-full h-auto md:h-screen bg-accent-default py-10"
     >
-      <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-4 md:p-0">
+      <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0">
         <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">
           {/* top div */}
           
-            <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0 xl:flex-row xl:justify-between content-center xl:items-center">
-              <div className="w-full">
-                <h1 className="text-titleMid leading-[2.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-75 text-accent-100 ">
+            <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
+              
+              <div className="max-w-96 ">
+                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold opacity-75 text-accent-100 ">
                   Let<span className="text-tangerine">&apos;</span>s Create
                   Something
                 </h1>
               </div>
-              <div className="font-light  w-full  md:w-1/2  text-l xl:text-xl opacity-75 text-white">
-                <p>
+              
+              <div className="font-light  w-full  md:w-1/2  text-l lg:text-xl opacity-75 text-white ">
+                <p >
                   No matter your digital service needs, I’ll work with you to
                   define a strong visual identity. One that communicates your
                   personality and vision through a visual cohesive story.
@@ -90,6 +92,8 @@ async function Contact() {
                 </Link>
               </div>
             </div>
+          
+
           </div>
         </div>
       </div>

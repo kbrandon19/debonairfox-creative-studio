@@ -5,8 +5,8 @@ import { Button } from '../ui/button'
 
 function Header() {
   return (
-    <header className='relative flex justify-center content-center px-5 '>
-        <div className='w-full md:w-5/6 mx-auto h-16 flex justify-between  px-10 items-center sticky z-10'>
+    <header className='w-5/6 mx-auto  relative flex justify-between content-center   '>
+        <div className=' w-auto h-16 flex justify-between  items-center sticky z-10 '>
                       
               <div className="logo flex flex-row gap-2">
                 <Link href={'/'} className='flex flex-row gap-2'>
@@ -18,11 +18,15 @@ function Header() {
             </div>
         </div>
 
-        <div className='w-full hidden h-auto md:flex flex-row items-center justify-end gap-x-5'>
-          <Link href={"/About"}>About</Link>
-          <Link href={""}>Services</Link>
-          <Link href={"/CaseStudy"}>Case Study</Link>
-          <Button>Contact</Button>
+        <div className='w-auto h-auto md:flex flex-row items-center content-center justify-center gap-x-2 text-sm uppercase tracking-wider '>
+          <div className='hidden md:flex h-auto flex-row items-center gap-x-5'>
+            <Link href={"/About"}>About</Link>
+            <Link href={"/Services"}>Services</Link>
+            <Link href={"/CaseStudy"}>Case Study</Link>
+          </div>
+          <Button className='border-2 border-transparent  hover:border-accent-default font-semibold  tracking-widest hover:text-tangerine text-accent-default'>
+          <Link href={"/Contact"}>Contact</Link>
+            </Button>
 
         </div>
 

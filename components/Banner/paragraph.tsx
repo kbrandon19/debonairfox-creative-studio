@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useScroll, motion, useTransform } from 'framer-motion';
 
-// Define the type for the props offset: ['start 0.9', 'start 0.25'],
 interface ParagraphProps {
   value: string;
 }

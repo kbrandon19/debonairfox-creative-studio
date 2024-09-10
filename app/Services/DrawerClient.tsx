@@ -49,17 +49,19 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
 
             setActiveWord(word)}} >
             <div
-              className="w-auto h-auto text-left font-medium 
-              text-titleMid leading-[4rem]
-              sm:text-titleSmd
-              smd:text-titleMd smd:leading-[6rem]
-              md:text-titleLg md:leading-[8rem] 
-              lg:text-titleLg lg:leading-[10rem] 
-              2xl:text-titleXl 2xl:leading-[11rem]
-              opacity-75 text-accent-200 
-              hover:opacity-100  hover:text-accent-default  
-               duration-300 ease-in-out"
-            >
+            className="relative w-auto h-auto text-left font-medium 
+            text-titleSmd leading-[4rem]
+            sm:text-titleMd sm:leading-[5rem] 
+            smd:text-titleMd smd:leading-[6rem]
+            md:text-titleLg md:leading-[8rem] 
+            lg:text-titleLg lg:leading-[10rem] 
+            2xl:text-titleXl 2xl:leading-[11rem]
+            opacity-75 text-accent-200 
+            hover:opacity-100 hover:text-accent-default  
+            duration-300 ease-in-out cursor-pointer break-words
+         "
+          >
+
               {word}
             </div>
           </DrawerTrigger>
