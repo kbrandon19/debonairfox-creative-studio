@@ -17,18 +17,18 @@ function Header() {
               
             </div>
         </div>
-
+{/* 
         <div className='w-auto h-auto md:flex flex-row items-center content-center justify-center gap-x-2 text-sm uppercase tracking-wider '>
           <div className='hidden md:flex h-auto flex-row items-center gap-x-5'>
-            <Link href={"/About"}>About</Link>
-            <Link href={"/Services"}>Services</Link>
+            <Link href={"#about"}>About</Link>
+            <Link href={"#services"}>Services</Link>
             <Link href={"/CaseStudy"}>Case Study</Link>
           </div>
           <Button className='border-2 border-transparent  hover:border-accent-default font-semibold  tracking-widest hover:text-tangerine text-accent-default'>
-          <Link href={"/Contact"}>Contact</Link>
+          <Link href={"#contact"}>Contact</Link>
             </Button>
 
-        </div>
+        </div> */}
 
     </header>
 

@@ -82,7 +82,7 @@ const config = {
           '200':'#505A6F',
         },
         //Florece Colors
-        'fc-charcoal':'#353a47',
+        'fc-charcoal':'#353A47',
         'fc-plum':'#E0A1D1',
         'fc-white':'#FAF9F9',
     background: '#E9E2D2',
