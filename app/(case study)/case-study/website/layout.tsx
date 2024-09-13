@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lora } from "next/font/google";
-import "../../globals.css";
+import "../../../globals.css";
 import Header02 from "@/components/Header/header02";
 
 import { Analytics } from "@vercel/analytics/react";
