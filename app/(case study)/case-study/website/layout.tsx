@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lora } from "next/font/google";
 import "../../globals.css";
-import Header from "@/components/Header/header02";
+import Header02 from "@/components/Header/header02";
 
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <> 
           <main className={`${poppins.variable} ${lora.variable}`}>
             <SmoothScroll>
-                <Header/>
+                <Header02/>
             {children}
             </SmoothScroll>
             

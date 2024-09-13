@@ -22,7 +22,7 @@ function Header() {
           <div className='hidden md:flex h-auto flex-row items-center gap-x-5'>
             <Link href={"/About"}>About</Link>
             <Link href={"#services"}>Services</Link>
-            <Link href={"/CaseStudy"}>Case Study</Link>
+            <Link href={"/case-study"}>Case Study</Link>
           </div>
           <Button className='border-2 border-transparent  hover:border-accent-default font-semibold  tracking-widest hover:text-tangerine text-accent-default'>
           <Link href={"#contact"}>Contact</Link>

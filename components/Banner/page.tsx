@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Paragraph from "./paragraph";
-import WindowPane from "../WindowPane/page";
+import WindowPane from "../WindowPane/windowpane01";
 
 const paragraph =
   "Transform your brand with our unique blend of creativity and tech-savvy expertise—crafting dynamic websites, immersive content, and captivating campaigns that leave a lasting impression.";
@@ -15,7 +15,7 @@ function page() {
         </div>
       </div>
 
-      <WindowPane />
+
     </>
   );
 }
