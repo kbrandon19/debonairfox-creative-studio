@@ -4,6 +4,7 @@ import React from "react";
 import screenShot from "../../assets/screenshot.png";
 import jdaniel from "../../assets/jdaniel.png";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 function page() {
   return (
@@ -25,33 +26,35 @@ function page() {
             </div>
       </div>
 
-      <div className="w-full md:w-5/6 h-full  mx-auto flex flex-col md:flex-row md:gap-5">
+      <div className="w-full md:w-5/6  h-auto  mx-auto flex flex-col flex-wrap md:flex-row gap-5 md:justify-center">
 
-        <div className="w-ful md:w-1/2 h-1/2  bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl">
-          {/* <h1 className="text-secTitle md:text-titleMid leading-[3rem] font-normal text-fc-charcoal">
-            florece consulting
-          </h1> */}
-<div className="w-full h-full flex ">
-    <Link href={"case-study/website"} className="flex justify-center items-center">
- 
-        <Image
-          src={screenShot}
-          width={0}
-          height={0}
-          alt="Profile photo"
-          style={{ objectFit: "contain", width: "90%", height: "90%" }}
-          className="drop-shadow-xl block"
-        />
-      
-    </Link>
-  </div>
-        </div>
+{/* Case Study 1 */}
+        
+          <div className="w-full h-1/2  bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+   
+          <div className="w-full h-full flex ">
+              <Link href={"case-study/florece"} className="flex justify-center items-center">
+          <Image
+            src={screenShot}
+            width={0}
+            height={0}
+            alt="Profile photo"
+            style={{ objectFit: "contain", width: "90%", height: "90%" }}
+            className="drop-shadow-xl block"
+          />
+                
+              </Link>
+            </div>
+          </div>
 
-        <div className="w-ful md:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl">
-          {/* <h1 className="text-secTitle md:text-titleMid leading-[3rem] font-normal text-fc-charcoal">
-            j daniel
-          </h1> */}
-          <div className="w-full h-full flex  justify-center items-center">
+          
+     
+
+{/* Case Study 2 */}
+        <div className="w-full  h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+
+          <div className="w-full h-full flex ">
+          <Link href={"case-study/website"} className="flex justify-center items-center">
             <Image
               src={jdaniel}
               width={0}
@@ -60,8 +63,30 @@ function page() {
               style={{ objectFit: "contain", width: "90%", height: "90%" }}
               className="drop-shadow-xl"
             />
+            </Link>
           </div>
+
+         
         </div>
+
+{/* Case Study 3 */}
+        <div className="w-full h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+
+<div className="w-full h-full flex ">
+<Link href={"case-study/website"} className="flex justify-center items-center">
+  <Image
+    src={jdaniel}
+    width={0}
+    height={0}
+    alt="profile photo"
+    style={{ objectFit: "contain", width: "90%", height: "90%" }}
+    className="drop-shadow-xl"
+  />
+  </Link>
+</div>
+
+
+</div>
 
       </div>
     </div>

@@ -10,10 +10,11 @@ function page() {
   return (
     <div className="w-full h-auto bg-white">
       {/* Intro */}
-      <div className="w-full h-full  flex flex-col lg:flex-row">
+      <div className="w-full h-full  flex flex-col md:flex-row">
         <div className=" h-screen md:basis-4/6 p-4 md:p-24 flex flex-col gap-y-5 md:gap-y-10 justify-center content-center">
           <h1
-            className="text-titleSm leading-[4rem] md:text-titleMd md:leading-[5rem]
+            className="text-titleSmd leading-[3rem] 
+            smd:text-titleMd smd:leading-[4.5rem]
           xl:text-titleXl xl:leading-[9.375rem] 
           font-semibold opacity-75 text-accent-100 "
           >
@@ -38,16 +39,16 @@ function page() {
             width={0}
             height={0}
             alt="profile photo"
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            style={{ objectFit: "cover", objectPosition: 'right',width: "100%", height: "100%" }}
           />
         </div>
       </div>
 
       {/* Case Study 1 */}
       <div className="w-5/6 h-full mx-auto bg-white flex flex-col md:flex-row py-20 ">
-        <div className="flex flex-col gap-y-20 lg:gap-y-0 ">
+        <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
-            <h1 className="text-secTitle md:text-titleMid leading-[3rem] font-normal opacity-75 text-accent-100 ">
+            <h1 className="text-Xl leading-[2.5rem] md:leading-[4.5rem]font-normal opacity-75 text-accent-100 ">
               Stephanie, a seasoned communications expert, decided to launch her
               own consulting firm, Florece Consulting, to focus on the causes
               she’s passionate about. She reached out for a website that would
@@ -56,8 +57,8 @@ function page() {
             </h1>
           </div>
 
-          <div className="h-auto w-auto flex flex-row gap-x-5 justify-between">
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default">
+          <div className="h-auto w-auto flex flex-col md:flex-row gap-x-5 justify-between">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               The Need<span className="text-tangerine">.</span>
             </h3>
 
@@ -104,7 +105,7 @@ function page() {
       </div>
 
       {/* Large Image */}
-      <div className="w-full h-auto bg-white my-20">
+      <div className="w-full md:w-5/6 h-auto mx-auto bg-white my-20 drop-shadow-xl">
         <div>
           <Image
             src={screenShot}
@@ -117,10 +118,10 @@ function page() {
       </div>
 
       {/* Case Study 2 */}
-      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 mt-40">
+      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
         <div className="basis-1/2 flex flex-col gap-y-10 ">
-          <div>
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default">
+          <div className="flex flex-col gap-3">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               Web Design<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
@@ -137,8 +138,8 @@ function page() {
             </p>
           </div>
 
-          <div>
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default">
+          <div className="flex flex-col gap-3">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               Content Management System<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
@@ -150,6 +151,8 @@ function page() {
             </p>
           </div>
         </div>
+
+        {/* image */}
         <div className="basis-1/2 ">
           <Image
             src={Image3}
@@ -162,7 +165,9 @@ function page() {
       </div>
 
       {/* Case Study 3 */}
-      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 mt-40">
+      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
+
+      {/* image */}
         <div className="basis-1/2">
           <Image
             src={Gif}
@@ -174,8 +179,8 @@ function page() {
         </div>
 
         <div className="basis-1/2 flex flex-col gap-y-10">
-          <div>
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default">
+          <div className="flex flex-col gap-3">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               Brand Identity<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
@@ -189,8 +194,8 @@ function page() {
             </p>
           </div>
 
-          <div>
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default">
+          <div className="flex flex-col gap-3">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               Technology Integration<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
