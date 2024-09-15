@@ -33,7 +33,7 @@ function page() {
           </div>
         </div>
 
-        <div className="h-screen md:basis-3/6">
+        <div className="h-screen md:basis-3/6 drop-shadow-xl">
           <Image
             src={phoneImg2}
             width={0}
@@ -48,7 +48,7 @@ function page() {
       <div className="w-5/6 h-full mx-auto bg-white flex flex-col md:flex-row py-20 ">
         <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
-            <h1 className="text-Xl leading-[2.5rem] md:leading-[4.5rem]font-normal opacity-75 text-accent-100 ">
+            <h1 className="text-Xl leading-[2.5rem] md:text-titleSmd md:leading-[3.5rem] font-normal opacity-75 text-accent-100 ">
               Stephanie, a seasoned communications expert, decided to launch her
               own consulting firm, Florece Consulting, to focus on the causes
               she’s passionate about. She reached out for a website that would
@@ -56,7 +56,7 @@ function page() {
               functionality she needed to manage her business efficiently.
             </h1>
           </div>
-
+<hr />
           <div className="h-auto w-auto flex flex-col md:flex-row gap-x-5 justify-between">
             <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               The Need<span className="text-tangerine">.</span>
@@ -153,7 +153,7 @@ function page() {
         </div>
 
         {/* image */}
-        <div className="basis-1/2 ">
+        <div className="basis-1/2 drop-shadow-xl">
           <Image
             src={Image3}
             width={0}
@@ -168,7 +168,7 @@ function page() {
       <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
 
       {/* image */}
-        <div className="basis-1/2">
+        <div className="basis-1/2 drop-shadow-xl">
           <Image
             src={Gif}
             width={0}

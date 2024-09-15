@@ -13,7 +13,7 @@ function page() {
       <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
               <div className="max-w-96 ">
-                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold opacity-75 text-accent-100 ">
+                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold  text-accent-default ">
                   Case Study<span className="text-tangerine">.</span>
                 </h1>
               </div>
