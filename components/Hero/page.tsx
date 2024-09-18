@@ -38,7 +38,7 @@ function Hero() {
         </div> */}
 
         <HeroTextTransition>
-          <div className="w-full h-auto mx-auto  fixed -z-10 bottom-5  text-left pl-2">
+          <div className="w-full h-auto mx-auto  fixed -z-10 bottom-10  text-left pl-2">
             
             <p className="h-auto mx-auto text-titleSmd smd:text-titleMd md:text-titleLg lg:text-titleLg 2xl:text-titleXl  font-bold uppercase text-accent-default drop-shadow-lg leading-[3.5rem] smd:leading-[5rem] md:leading-[7.5rem] 2xl:leading-[10rem]">
               Debonair Fox Creative Studio<span className="text-tangerine">.</span>

@@ -42,7 +42,7 @@ function Header() {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   return (
-    <div className=" fixed z-20 top-[50px] right-[50px]">
+    <div className=" fixed z-20 top-[25px] md:top-[50px] right-[25px] md:right-[50px] ">
       {/* Logo */}
         {/* <div className="logo flex flex-row gap-2">
           <Link href={"/"} className="flex flex-row gap-2">
@@ -52,8 +52,8 @@ function Header() {
           </Link>
         </div> */}
      
-       
-          <motion.div className="w-[480px] h-[650px] bg-neutral-default rounded-[25px] relative opacity-60"
+       {/* md:w-[480px]  */}
+          <motion.div className="w-screen md:w-[480px] h-[650px] bg-neutral-default rounded-[25px] relative opacity-60"
           
           variants={menu}
 
