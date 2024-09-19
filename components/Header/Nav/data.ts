@@ -1,19 +1,19 @@
 export const Links = [
-
     {
-       title: "Home",
-        href: "/" 
-    },{
-        title: "Services",
+        title: "Home",
          href: "/" 
+     },
+    {
+        title: "Services",
+         href: "/Services" 
      },{
         title: "About",
-         href: "/" 
+         href: "/About" 
      },{
         title: "Case Studies",
-         href: "/" 
+         href: "/case-study" 
      },{
         title: "Contact",
-         href: "/" 
+         href: "/Contact" 
      },
 ]

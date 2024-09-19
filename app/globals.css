@@ -22,7 +22,7 @@
 
   body {
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     height:auto;
     margin: 0;
     padding: 0;
@@ -158,9 +158,9 @@
   transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);}
 
 
-  .perspectiveText:hover{
+  /* .perspectiveText:hover{
 
-    transform: rotateX(90deg);}
+    transform: rotateX(90deg);} */
 
 
 
@@ -171,8 +171,8 @@
     pointer-events: none;
 
     text-transform: uppercase;}
-
-  .perspectiveText p:nth-of-type(1):hover{transform:translateY(-100%); opacity:0;}
+/* 
+  .perspectiveText p:nth-of-type(1):hover{transform:translateY(-100%); opacity:0;} */
 
   .perspectiveText p:nth-of-type(2){
 
@@ -186,4 +186,4 @@
 
   }
 
-  .perspectiveText p:nth-of-type(2):hover{ opacity: 1;}
+  /* .perspectiveText p:nth-of-type(2):hover{ opacity: 1;} */
