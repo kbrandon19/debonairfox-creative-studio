@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import { Links } from "./data"; // Assuming you have link data
+import { useRouter } from "next/navigation";
+import { Links } from "./data";
 
 const perspective = {
   initial: {
@@ -22,22 +25,31 @@ const perspective = {
     },
   }),
   exit: {
-
     opacity: 0,
-
-    transition: { duration: 0.5, type: "linear", ease: [0.76, 0, 0.24, 1]}
-
-}
+    transition: { duration: 0.5, type: "linear", ease: [0.76, 0, 0.24, 1] },
+  },
 };
 
 interface PageProps {
   isActive: boolean;
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Page: React.FC<PageProps> = ({ isActive }) => {
+const Nav: React.FC<PageProps> = ({ isActive, setIsActive }) => {
+  const router = useRouter();
+
+  const handleLinkClick = (href: string) => {
+    setIsActive(false); // Close the menu
+
+    // Delay navigation to match animation close time
+    setTimeout(() => {
+      router.push(href); // Navigate to the new page
+    }, 750); // Adjust based on the duration of the animation
+  };
+
   return (
     <div className="flex flex-col justify-between h-full box-border pt-24 px-10 pb-12">
-      <div className="flex gap-[10px] flex-col">
+      <div className="flex gap-[10px] flex-col cursor-pointer">
         {Links.map((link, i) => {
           const { title, href } = link;
           return (
@@ -46,10 +58,13 @@ const Page: React.FC<PageProps> = ({ isActive }) => {
                 custom={i}
                 variants={perspective}
                 initial="initial"
-                animate={isActive ? "enter" : "initial"}  // Trigger enter on isActive
+                animate={isActive ? "enter" : "initial"}
                 exit="exit"
               >
-                <a href={href} className="text-black text-secTitle">
+                <a
+                  className="text-white text-secTitle hover:text-accent-default transition-all ease-in-out flex items-center gap-2"
+                  onClick={() => handleLinkClick(href)} // Handle click manually
+                >
                   {title}
                 </a>
               </motion.div>
@@ -61,4 +76,4 @@ const Page: React.FC<PageProps> = ({ isActive }) => {
   );
 };
 
-export default Page;
+export default Nav;

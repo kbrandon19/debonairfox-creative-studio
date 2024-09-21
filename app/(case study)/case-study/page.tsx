@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 function page() {
   return (
-    <div className="w-full h-screen bg-white my-20">
+    <div className="w-full h-auto md:h-screen bg-white my-20">
       <div className="w-5/6 h-auto mx-auto my-10">
       <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
@@ -26,11 +26,11 @@ function page() {
             </div>
       </div>
 
-      <div className="w-full md:w-5/6  h-auto  mx-auto flex flex-col flex-wrap md:flex-row gap-5 md:justify-center">
+      <div className="w-full md:w-5/6 h-auto  mx-auto flex flex-col  md:flex-row gap-5 md:justify-center">
 
 {/* Case Study 1 */}
         
-          <div className="w-full h-1/2  bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+          <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
    
           <div className="w-full h-full flex ">
               <Link href={"case-study/florece"} className="flex justify-center items-center">
@@ -51,7 +51,7 @@ function page() {
      
 
 {/* Case Study 2 */}
-        <div className="w-full  h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+        <div className="w-full  lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
 
           <div className="w-full h-full flex ">
           <Link href={"case-study/website"} className="flex justify-center items-center">
@@ -70,7 +70,7 @@ function page() {
         </div>
 
 {/* Case Study 3 */}
-        <div className="w-full h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+        <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
 
 <div className="w-full h-full flex ">
 <Link href={"case-study/website"} className="flex justify-center items-center">

@@ -9,6 +9,7 @@ interface Props {
 
 const Transition: React.FC<Props> = ({ children }) => {
   const [opacity, setOpacity] = useState<number>(0);
+  const [display, setDisplay] = useState<string>("none");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -21,12 +22,13 @@ const Transition: React.FC<Props> = ({ children }) => {
         // Log the scrollYProgress value
         console.log("Scroll Y Progress:", scrollYProgress);
 
-        // Set opacity based on scrollYProgress
+        // Set opacity and display based on scrollYProgress
         if (scrollYProgress >= 0.2) {
-          // 20% as a decimal
-          setOpacity(0); //Transparent
+          setOpacity(0); // Transparent
+          setDisplay("none"); // Element is not displayed
         } else {
           setOpacity(1); // Full opacity
+          setDisplay("block"); // Element is displayed
         }
       };
 
@@ -42,9 +44,9 @@ const Transition: React.FC<Props> = ({ children }) => {
   }, []);
 
   return (
-    <div className={`w-auto h-auto`} style={{ opacity }}>
+    <motion.div className="w-auto h-auto" style={{ opacity, display }}>
       {children}
-    </div>
+    </motion.div>
   );
 };
 

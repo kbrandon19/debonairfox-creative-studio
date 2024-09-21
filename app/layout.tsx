@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
 import { ReactNode } from "react";
 import Header01 from "@/components/Header/header01";
+import Footer from "@/components/Footer/page";
 
 
 const poppins = Poppins({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <SmoothScroll>
               <Header01 />
             {children}
+            <Footer/>
             </SmoothScroll>
             
             <Analytics />

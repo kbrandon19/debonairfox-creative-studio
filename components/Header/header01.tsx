@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Nav from "../Header/Nav/page";
 import Menu from "../Header/Menu/page";
+import Link from "next/link";
 
 const menu = (isLargeScreen: boolean) => ({
   open: {
@@ -17,7 +18,12 @@ const menu = (isLargeScreen: boolean) => ({
     height: "40px",
     top: "0px",
     right: "0px",
-    transition: { duration: 0.75, delay: 0.10, type: "tween", ease: [0.76, 0, 0.24, 1] },
+    transition: {
+      duration: 0.75,
+      delay: 0.1,
+      type: "tween",
+      ease: [0.76, 0, 0.24, 1],
+    },
   },
 });
 
@@ -30,29 +36,36 @@ function Header() {
       setIsLargeScreen(window.matchMedia("(min-width: 1080px)").matches);
     };
 
-    // Check the screen size on initial render
     handleResize();
-
-    // Add resize event listener
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="fixed z-20 top-[25px] md:top-[50px] right-[25px] md:right-[50px]">
-      <motion.div
-        className="w-screen h-[550px] bg-neutral-default rounded-[25px] relative opacity-95"
-        variants={menu(isLargeScreen)}
-        animate={isActive ? "open" : "closed"}
-        initial="closed"
-      >
-        {/* Pass isActive to Nav for controlling link animations */}
-        <Nav isActive={isActive} />
-      </motion.div>
-      <Menu isActive={isActive} setIsActive={setIsActive} />
-    </div>
+    <>
+      <div className="fixed z-20  top-[25px] md:top-[50px] left-[25px] md:left-[50px]">
+        <div className="flex items-center w-auto h-auto">
+          <Link href={"/"} className="flex flex-row gap-2">
+            <div className="h-5 w-5 bg-accent-default rounded-full  "> </div>
+            <div className="h-5 w-5 bg-tangerine rounded-full  "> </div>
+            <div className="h-5 w-5 bg-background rounded-full "> </div>
+          </Link>
+        </div>
+      </div>
+      <div className="fixed z-20 top-[25px] md:top-[50px] right-[25px] md:right-[50px]">
+        <motion.div
+          className="w-screen h-[550px] bg-accent-100 rounded-[25px] relative opacity-95"
+          variants={menu(isLargeScreen)}
+          animate={isActive ? "open" : "closed"}
+          initial="closed"
+        >
+          {/* Pass setIsActive to Nav */}
+          <Nav isActive={isActive} setIsActive={setIsActive} />
+        </motion.div>
+        <Menu isActive={isActive} setIsActive={setIsActive} />
+      </div>
+    </>
   );
 }
 
