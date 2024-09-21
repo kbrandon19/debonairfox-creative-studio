@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
 /* Add to the respective elements if needed */
 .z-hero-text {
   z-index: -10; /* Ensure it's above the background image */
