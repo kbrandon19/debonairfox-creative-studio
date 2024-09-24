@@ -29,7 +29,7 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className="w-full h-auto md:h-screen bg-accent-default py-10"
+      className=" relative z-20 w-full h-auto md:h-screen bg-accent-default py-10"
     >
       <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0">
         <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">

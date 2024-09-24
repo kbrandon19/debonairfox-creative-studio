@@ -56,6 +56,7 @@ function Page() {
   }, []);
 
   return (
+  
     <div className="gallery">
       <div className="galleryWrapper" ref={gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y} />
