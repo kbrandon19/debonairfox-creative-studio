@@ -1,13 +1,7 @@
-import React from "react";
-
-function Loading() {
+export default function Loading() {
   return (
-    <div className="w-full h-screen bg-white flex flex-col items-center content-center justify-center align-center">
-      <div className="align-center w-auto mt-5">
-        <div className="loader"></div>
-      </div>
+    <div className="flex items-center justify-center h-screen">
+      <div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-blue-500"></div>
     </div>
   );
 }
-
-export default Loading;

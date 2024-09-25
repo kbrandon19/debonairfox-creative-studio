@@ -1,3 +1,4 @@
+import { Suspense } from "react"; // Add the import for Suspense
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lora } from "next/font/google";
@@ -7,7 +8,7 @@ import SmoothScroll from '@/components/SmoothScroll';
 import { ReactNode } from "react";
 import Header01 from "@/components/Header/header01";
 import Footer from "@/components/Footer/page";
-
+import Loading from "./loading";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,20 +33,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html suppressHydrationWarning={true} lang="en">
       <body className="w-screen overflow-x-hidden">
-
-      
-        
-        
-          <main className={`${poppins.variable} ${lora.variable}`}>
-            <SmoothScroll>
-              <Header01 />
-            {children}
-            <Footer/>
-            </SmoothScroll>
-            
-            <Analytics />
-          </main>
-          
+        <main className={`${poppins.variable} ${lora.variable}`}>
+          <SmoothScroll>
+            <Header01 />
+            {/* Wrap the `children` in Suspense */}
+            <Suspense fallback={<Loading />}>
+              {children}
+            </Suspense>
+            <Footer />
+          </SmoothScroll>
+          <Analytics />
+        </main>
       </body>
     </html>
   );

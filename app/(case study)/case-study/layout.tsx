@@ -1,3 +1,5 @@
+
+import { Suspense } from "react"; // Add the import for Suspense
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Lora } from "next/font/google";
@@ -7,6 +9,8 @@ import Header01 from "@/components/Header/header01";
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
 import { ReactNode } from "react";
+import Loading from "../../loading";
+
 
 
 const poppins = Poppins({
@@ -35,7 +39,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <main className={`${poppins.variable} ${lora.variable}`}>
             <SmoothScroll>
                 <Header01/>
-            {children}
+                <Suspense fallback={<Loading />}>
+              {children}
+            </Suspense>
             </SmoothScroll>
             
             <Analytics />

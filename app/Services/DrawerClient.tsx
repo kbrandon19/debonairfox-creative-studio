@@ -52,7 +52,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   return (
     <div className="px-1 h-auto w-auto flex flex-col justify-center">
       {words.map((word, index) => (
-        <Drawer key={index} open={open} onOpenChange={setOpen}>
+        <Drawer key={index} open={open} onOpenChange={setOpen} >
           <DrawerTrigger
             onClick={(event) => {
               event.stopPropagation();

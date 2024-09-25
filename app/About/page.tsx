@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profileImg from "../assets/IMG_3498-Edit.png";
+import profileImg from "../assets/IMG_1329.jpg";
 import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/lib/transitions/fadeIn";
@@ -8,7 +8,7 @@ import WindowPane from "@/components/WindowPane/windowpane01";
 
 function About() {
   return (
-    <div id="about" className=" relative w-full h-auto  flex flex-col">
+    <div id="about" className=" relative w-full h-auto  flex flex-col ">
       <div className="h-full w-full fixed -mt-16 z-[1]">
         <Image
           src={
@@ -24,11 +24,11 @@ function About() {
 
       <div className="w-full h-full flex flex-col md:flex-row justify-center items-center mt-[500px] lg:mt-[300px] lg:pl-10">
         <div className="max-w-3xl mx-auto h-auto md:px-5 gap-y-10 flex flex-col">
-          <p className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-85 text-neutral-default p-5">
+          <p className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-85 text-neutral-default pl-2">
             Crafting Unique Digital Experiences.
           </p>
-          <div className="w-auto h-full bg-white md:bg-transparent py-10">
-            <p className="tracking-wide text-xl lg:text-secTitle text-accent-default font-normal uppercase  p-5">
+          <div className="w-auto h-full bg-white md:bg-transparent p-2">
+            <p className="tracking-wide text-xl lg:text-secTitle text-accent-default font-normal uppercase ">
               <span className="bodyText capitalize italic font-bold">
                 Hello!
               </span>{" "}
@@ -38,7 +38,7 @@ function About() {
               pursuits, I have honed a keen eye for intriguing visuals and the
               subtleties of our environment.
             </p>
-            <p className="tracking-wide text-xl lg:text-secTitle text-accent-default font-normal uppercase  p-5">
+            <p className="tracking-wide text-xl lg:text-secTitle text-accent-default font-normal uppercase ">
               This heightened awareness allows me to find beauty in the most
               unexpected places, transforming the ordinary into extraordinary.
               As a thoughtful creative, I&apos;m passionate about making
@@ -60,7 +60,7 @@ function About() {
       </div>
 
       {/* Test fixed image */}
-      <div className="h-full w-full fixed mt-16 -z-10 left-0 bottom-0 flex justify-end ">
+      <div className="h-full w-full fixed mt-20 -z-10 left-0 bottom-0 flex justify-end ">
         <Image
           src={profileImg}
           width={0}

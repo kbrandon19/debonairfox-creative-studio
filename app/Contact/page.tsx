@@ -29,13 +29,13 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-auto md:h-screen bg-accent-default py-10"
+      className=" relative z-20 w-full h-auto md:h-screen bg-accent-default pt-20 pb-20 "
     >
-      <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0">
+      <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0 ">
         <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">
           {/* top div */}
           
-            <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
+            <div className="w-full h-auto flex flex-col gap-y-4 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
               <div className="max-w-96 ">
                 <h1 className="text-titleMid leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold opacity-75 text-accent-100 ">

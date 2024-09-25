@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Nav from "../Header/Nav/page";
 import Menu from "../Header/Menu/page";
 import Link from "next/link";
@@ -11,7 +11,7 @@ const menu = (isLargeScreen: boolean) => ({
     height: "550px",
     top: "-25px",
     right: "-25px",
-    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1], },
   },
   closed: {
     width: "80px",
@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <>
-      <div className="fixed z-20  top-[25px] md:top-[50px] left-[25px] md:left-[50px]">
+      <div className="fixed z-50  top-[25px] md:top-[50px] left-[25px] md:left-[50px]">
         <div className="flex items-center w-auto h-auto">
           <Link href={"/"} className="flex flex-row gap-2">
             <div className="h-5 w-5 bg-accent-default rounded-full  "> </div>
@@ -53,7 +53,7 @@ function Header() {
           </Link>
         </div>
       </div>
-      <div className="fixed z-20 top-[25px] md:top-[50px] right-[25px] md:right-[50px]">
+      <div className="fixed z-50 top-[25px] md:top-[50px] right-[25px] md:right-[50px]">
         <motion.div
           className="w-screen h-[550px] bg-accent-100 rounded-[25px] relative opacity-95"
           variants={menu(isLargeScreen)}
