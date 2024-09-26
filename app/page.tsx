@@ -14,10 +14,10 @@ export default function Home() {
     <>
       <Hero />
       <Banner />
-      <WindowPane01 />
       <PalScroll />
-      <WindowPane02 />
-      {/* <About/> */}
+      <WindowPane01 />
+      {/* <WindowPane02 /> */}
+      <About/>
       {/* <Services/> */}
       {/* <WindowPane02/> */}
       <Contact />

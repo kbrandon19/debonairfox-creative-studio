@@ -5,6 +5,7 @@ import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/lib/transitions/fadeIn";
 import WindowPane from "@/components/WindowPane/windowpane01";
+import AboutImg from '@/lib/transitions/aboutImg'
 
 function About() {
   return (
@@ -60,6 +61,7 @@ function About() {
       </div>
 
       {/* Test fixed image */}
+      <AboutImg>
       <div className="h-full w-full fixed mt-20 -z-10 left-0 bottom-0 flex justify-end ">
         <Image
           src={profileImg}
@@ -74,7 +76,7 @@ function About() {
             objectPosition: "left",
           }}
         />
-      </div>
+      </div></AboutImg>
 
       <div className="w-full h-auto flex justify-center items-center bg-accent-default py-20">
         <div
