@@ -34,14 +34,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html suppressHydrationWarning={true} lang="en">
       <body className="w-screen overflow-x-hidden">
         <main className={`${poppins.variable} ${lora.variable}`}>
-          <SmoothScroll>
             <Header01 />
             {/* Wrap the `children` in Suspense */}
             <Suspense fallback={<Loading />}>
               {children}
             </Suspense>
             <Footer />
-          </SmoothScroll>
           <Analytics />
         </main>
       </body>
