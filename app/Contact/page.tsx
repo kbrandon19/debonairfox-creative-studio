@@ -29,7 +29,7 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-auto md:h-screen bg-accent-default pt-20 pb-20 "
+      className=" relative z-20 w-full h-auto xl:h-screen bg-accent-default pt-20 pb-20 "
     >
       <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0 ">
         <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">

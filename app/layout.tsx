@@ -1,14 +1,19 @@
+"use client"
+
 import { Suspense } from "react"; // Add the import for Suspense
-import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { metadata } from '@/lib/metadata/home/metadata';
 import { Lora } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
 import { ReactNode } from "react";
 import Header01 from "@/components/Header/header01";
-import Footer from "@/components/Footer/page";
+import Footer from "@/components/Footer/footer01";
 import Loading from "./loading";
+
+import { usePathname } from 'next/navigation';
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,12 +29,16 @@ const lora = Lora({
   variable: "--font-lora",
 });
 
-export const metadata: Metadata = {
-  title: "Debonair Fox Creative Studio",
-  description: "Welcome to Debonair Fox Creative Studio, where creativity knows no bounds. We specialize in crafting dynamic websites, immersive social media content, captivating email campaigns, and innovative marketing materials. With a unique approach that blends creativity and technical prowess, we redefine digital experiences to leave a lasting impression.",
-};
+
 
 export default function RootLayout({ children }: { children: ReactNode }) {
+
+  const pathname = usePathname();
+
+  // Set the condition to hide footer for specific routes
+  const hideFooter = pathname === "/Services" ; // Replace "/your-page" with the actual route
+
+
   return (
     <html suppressHydrationWarning={true} lang="en">
       <body className="w-screen overflow-x-hidden">
@@ -40,7 +49,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Suspense fallback={<Loading />}>
               {children}
             </Suspense>
-            <Footer />
+            {/* Conditionally render the footer */}
+            {!hideFooter && <Footer />}
           </SmoothScroll>
           <Analytics />
         </main>

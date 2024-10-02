@@ -6,7 +6,7 @@ import Header from "../../components/Header/header01";
 
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
-import { ReactNode } from "react";
+import React,{ ReactNode } from "react";
 
 
 const poppins = Poppins({
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
 
-    <> 
+    <>
           <main className={`${poppins.variable} ${lora.variable}`}>
             <Header/>
             <SmoothScroll>

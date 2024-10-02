@@ -6,9 +6,10 @@ import { Lora } from "next/font/google";
 import "../../globals.css";
 import Header01 from "@/components/Header/header01";
 
+
 import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from '@/components/SmoothScroll';
-import { ReactNode } from "react";
+import React,{ ReactNode } from "react";
 import Loading from "../../loading";
 
 

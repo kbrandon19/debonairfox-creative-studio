@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/drawer";
 import { Services, servArr } from "@/lib/interface";
 
-const words = ["Web Development.", "Email Templates.", "Content Creation."];
+const words = ["Web Design & Development.", "Email Templates.", "Content Creation."];
 
 interface DrawerClientProps {
   data: Services;
@@ -60,13 +60,13 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             }}
           >
             <div
-              className="relative w-auto h-auto text-left font-medium 
+              className="bodyText relative w-auto h-auto text-left font-semibold 
               text-titleSmd leading-[4rem]
-              sm:text-titleMd sm:leading-[5rem] 
-              smd:text-titleMd smd:leading-[6rem]
+              sm:text-titleMd sm:leading-[6rem] 
+              smd:text-titleMd smd:leading-[6.5rem]
               md:text-titleLg md:leading-[8rem] 
               lg:text-titleLg lg:leading-[10rem] 
-              2xl:text-titleXl 2xl:leading-[11rem]
+              2xl:text-titleXl 2xl:leading-[12.5rem]
               opacity-75 text-accent-200 
               hover:opacity-100 hover:text-accent-default  
               duration-300 ease-in-out cursor-pointer break-words"

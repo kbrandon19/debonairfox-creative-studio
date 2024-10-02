@@ -215,8 +215,8 @@
 
 .rainbow-text {
   display: inline-block;
-  font-size: 16px;
-  color: black; /* Initial color */
+  font-size: 14px;
+  color: #24314b; /* Initial color */
 
   /* Make text transparent to show gradient */
   transition: color 0.3s ease; /* Transition for color change */

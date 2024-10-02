@@ -70,11 +70,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className=" w-full h-auto p-5 text-md text-black-text">
+      <div className=" w-full h-auto p-5 text-sm text-accent-default">
         © 2024{" "}
-        <span className="rainbow-text">Debonair Fox Creative Studio</span>{" "}
-        <br />
-        All Right Reserved.
+        <span className="rainbow-text text-sm">Debonair Fox Creative Studio</span>.{" "}All Right Reserved.
       </div>
     </footer>
   );

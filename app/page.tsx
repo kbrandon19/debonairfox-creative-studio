@@ -17,7 +17,7 @@ export default function Home() {
       <PalScroll />
       <WindowPane01 />
       {/* <WindowPane02 /> */}
-      <About/>
+      {/* <About/> */}
       {/* <Services/> */}
       {/* <WindowPane02/> */}
       <Contact />
