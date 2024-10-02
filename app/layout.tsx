@@ -44,6 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="w-screen overflow-x-hidden">
         <main className={`${poppins.variable} ${lora.variable}`}>
             <Header01 />
+            <SmoothScroll>
             {/* Wrap the `children` in Suspense */}
             <Suspense fallback={<Loading />}>
               {children}
@@ -54,6 +55,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Analytics />
         </main>
       </body>
-    </html>
-  );
+   </html>
+  )
 }
