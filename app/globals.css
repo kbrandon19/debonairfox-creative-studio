@@ -2,8 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+} */
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }
 
 /* Add to the respective elements if needed */
@@ -222,6 +242,8 @@
   transition: color 0.3s ease; /* Transition for color change */
 }
 
+/* Footer Animation */
+
 .rainbow-text:hover {
   animation: rainbow-hover 1.5s ease-in-out infinite;
   color: transparent; /* Ensure text remains transparent to show gradient */
@@ -289,6 +311,7 @@
   gap: 2vw;
 
   white-space: nowrap;
+
 }
 
 .imageContainer {

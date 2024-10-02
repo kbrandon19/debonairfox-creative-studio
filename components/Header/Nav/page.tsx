@@ -62,7 +62,7 @@ const Nav: React.FC<PageProps> = ({ isActive, setIsActive }) => {
                 exit="exit"
               >
                 <a
-                  className="text-white text-secTitle hover:text-accent-default transition-all ease-in-out flex items-center gap-2"
+                  className="tracking-wider text-white text-secTitle font-semibold hover:text-accent-default transition-all ease-in-out flex items-center gap-2"
                   onClick={() => handleLinkClick(href)} // Handle click manually
                 >
                   {title}

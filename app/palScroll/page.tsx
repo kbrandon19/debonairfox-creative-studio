@@ -30,13 +30,17 @@ function Page() {
   });
 
   const { height } = dimension;
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5]); // Adjusted for testing
+  const y = useTransform(scrollYProgress, [0, 1], [0, height ]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.5]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.3]); // Adjusted for testing
 
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      lerp:1,
+      duration: 2, // Adjust the scroll duration (higher means smoother but slower)
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing 
+    });
     const raf = (time: any) => {
       lenis.raf(time);
       requestAnimationFrame(raf);

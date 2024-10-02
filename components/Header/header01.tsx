@@ -44,7 +44,7 @@ function Header() {
 
   return (
     <>
-      <div className="fixed z-50  top-[25px] md:top-[50px] left-[25px] md:left-[50px]">
+      <div className="fixed z-50  top-[35px] md:top-[60px] left-[25px] md:left-[50px]">
         <div className="flex items-center w-auto h-auto">
           <Link href={"/"} className="flex flex-row gap-2">
             <div className="h-5 w-5 bg-accent-default rounded-full  "> </div>
@@ -55,7 +55,7 @@ function Header() {
       </div>
       <div className="fixed z-50 top-[25px] md:top-[50px] right-[25px] md:right-[50px]">
         <motion.div
-          className="w-screen h-[550px] bg-accent-100 rounded-[25px] relative opacity-95"
+          className="w-screen h-[550px] bg-accent-200  rounded-[25px] relative opacity-95"
           variants={menu(isLargeScreen)}
           animate={isActive ? "open" : "closed"}
           initial="closed"

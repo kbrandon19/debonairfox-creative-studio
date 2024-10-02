@@ -18,7 +18,7 @@ export default async function Page() {
   
 
   return (
-    <div id="services" className="w-full h-auto  xl:h-screen py-40">
+    <div id="services" className="w-full h-auto  xl:h-screen pt-36 overflow-y-hidden">
            <div className="h-full w-full fixed -mt-16 -z-[20] -py-40">
         <Image
           src={
