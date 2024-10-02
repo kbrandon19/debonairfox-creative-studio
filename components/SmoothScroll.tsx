@@ -10,9 +10,11 @@ function SmoothScroll({ children }: SmoothScrollProps) {
   useEffect(() => {
     const lenis = new Lenis({
       lerp: 0.1, // Linear interpolation for smooth scrolling
-      duration: 1.5, // Adjust the scroll duration
+      // duration: 1.5, // Adjust the scroll duration
       gestureOrientation: 'vertical', // Vertical scroll only
+      orientation:'vertical',
       wrapper: window, // Apply Lenis to the window
+      smoothWheel:true,
       // other options here
     });
 
