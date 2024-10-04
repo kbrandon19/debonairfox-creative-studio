@@ -29,16 +29,29 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-auto xl:h-screen bg-accent-default pt-20 pb-20 "
+      className=" relative z-20 w-full h-screen bg-accent-default py-20 "
     >
+      <div className="h-full w-full fixed -mt-16 -z-[20] -py-40">
+        <Image
+          src={
+            "https://res.cloudinary.com/dujkjy2e2/image/upload/v1710820177/Debonair%20Fox%20Creative%20Studio/Images/1920_x_banner_u5tgoc.png"
+          }
+          fill={true}
+          quality={80}
+          priority={true}
+          alt="mobile-background"
+          blurDataURL="blur"
+          style={{ objectFit: "cover", opacity: ".3" }}
+        />
+      </div>
       <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0 ">
-        <div className="h-full flex flex-col justify-between gap-y-20 p-2 gap-x-10">
+        <div className="h-full flex flex-col justify-evenly gap-y-20 p-2 gap-x-10">
           {/* top div */}
           
             <div className="w-full h-auto flex flex-col gap-y-4 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
               <div className="max-w-96 ">
-                <h1 className="text-titleMid leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold opacity-75 text-accent-100 ">
+                <h1 className="text-titleMid leading-[3.5rem] md:text-titleMd md:leading-[5rem]  uppercase font-semibold opacity-75 text-accent-100 ">
                   Let<span className="text-tangerine">&apos;</span>s Create
                   Something
                 </h1>

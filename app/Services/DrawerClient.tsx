@@ -54,8 +54,8 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             md:text-titleMd md:leading-[8rem] 
             lg:text-titleLg lg:leading-[10rem] 
             2xl:text-titleXl 2xl:leading-[12.5rem]
-            opacity-75 text-accent-200 
-            hover:opacity-100 hover:text-accent-default  
+            opacity-75 text-accent-100 
+            hover:opacity-100 hover:text-accent-default 
             duration-300 ease-in-out break-words">
             {word}
           </div>

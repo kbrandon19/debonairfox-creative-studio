@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 function Footer() {
   return (
-    <footer className="w-5/6 relative z-40 h-64 mx-auto flex flex-col py-10 my-10 gap-y-10">
+    <footer className="w-5/6 relative z-40 h-64 mx-auto flex flex-col py-5 my-5 gap-y-10">
       <div className="w-full h-auto flex flex-col gap-10 md:flex-row justify-start p-5">
         <div className="basis-1/4">
           <p className="text-l font-medium">Menu</p>
