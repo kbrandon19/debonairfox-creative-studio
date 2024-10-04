@@ -17,10 +17,7 @@ export default function Home() {
       <Banner />
       <PalScroll />
       <WindowPane01 />
-      {/* <WindowPane02 /> */}
       {/* <About/> */}
-      {/* <Services/> */}
-      {/* <WindowPane02/> */}
       <Contact />
     </>
   );

@@ -15,7 +15,7 @@ function HeroTextTransition({ children }: { children: React.ReactNode }) {
     <motion.div
       initial={{ opacity: 0, display: "hidden" }}
       animate={{ opacity: isMounted ? 1 : 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: .5 }}
     >
       {children}
     </motion.div>

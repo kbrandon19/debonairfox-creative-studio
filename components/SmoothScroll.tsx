@@ -10,8 +10,11 @@ interface SmoothScrollProps {
 function SmoothScroll({ children }: SmoothScrollProps) {
   useEffect(() => {
     const lenis = new Lenis({
-      lerp: 0.08, // Adjust interpolation speed for smoother scroll (lower is faster)
-      duration: 1.2, // Adjust the scroll duration (higher means smoother but slower)
+      lerp: 0.5, // Adjust interpolation speed for smoother scroll (lower is faster)
+      duration: 1.8, // Adjust the scroll duration (higher means smoother but slower)
+      // Original Values
+      // lerp: 0.08, // Adjust interpolation speed for smoother scroll (lower is faster)
+      // duration: 1.2, // Adjust the scroll duration (higher means smoother but slower)
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function for a smoother scroll
       gestureOrientation: 'vertical', // Vertical scroll only
       smoothWheel: true, // Enable smooth scrolling for wheel

@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import React from "react";
 import { client } from "../../sanity/lib/client";
 import { Services } from "@/lib/interface";
@@ -28,6 +30,7 @@ export default async function Page() {
           quality={80}
           priority={true}
           alt="mobile-background"
+          blurDataURL="blur"
           style={{ objectFit: "cover", opacity: ".3" }}
         />
       </div>
