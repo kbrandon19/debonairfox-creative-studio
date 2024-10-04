@@ -26,20 +26,20 @@ function Page() {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const { scrollYProgress } = useScroll({
     target: gallery,
-    offset: ["start end", "end start"],
+    offset: ["start .8", "end start"],
   });
 
   const { height } = dimension;
   const y = useTransform(scrollYProgress, [0, 1], [0, height ]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.5]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.3]); // Adjusted for testing
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]); // Adjusted for testing
 
   useEffect(() => {
     const lenis = new Lenis({
       lerp:1,
       duration: 2, // Adjust the scroll duration (higher means smoother but slower)
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing 
+      // easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing 
     });
     const raf = (time: any) => {
       lenis.raf(time);

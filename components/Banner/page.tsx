@@ -9,7 +9,7 @@ const paragraph =
 function page() {
   return (
     <>
-      <div className="w-full h-auto bg-accent-default flex justify-center content-center items-center py-64 xl:py-32">
+      <div className="w-full h-auto bg-accent-default flex justify-center content-center items-center pt-64 pb-32 xl:py-32">
         <div className="text-left">
           <Paragraph value={paragraph} />
         </div>
