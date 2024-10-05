@@ -5,7 +5,7 @@ import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/lib/transitions/fadeIn";
 import WindowPane from "@/components/WindowPane/windowpane01";
-import AboutImg from '@/lib/transitions/aboutImg'
+import AboutImg from "@/lib/transitions/aboutImg";
 
 function About() {
   return (
@@ -23,11 +23,15 @@ function About() {
         />
       </div>
 
-      <div className="w-full h-full flex flex-col md:flex-row justify-center items-center mt-[500px] lg:mt-[300px] lg:pl-10">
-        <div className="max-w-3xl mx-auto h-auto md:px-5 gap-y-10 flex flex-col">
-          <p className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold opacity-85 text-neutral-default pl-2">
-            Crafting Unique Digital Experiences.
-          </p>
+      <div className="w-full h-full flex flex-col md:flex-row justify-center items-center lg:mt-28 xl:mt-40 lg:pl-10">
+        <div className="w-full mx-auto h-auto md:px-5 gap-y-10 flex flex-col">
+          <div className="w-5/6 mx-auto h-auto">
+            <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem]  font-semibold  text-accent-default ">
+            I don&apos;t just design; I craft bespoke digital experiences
+            that resonate and inspire
+              <span className="text-tangerine">.</span>
+            </h1>
+          </div>
           <div className="w-auto h-full bg-white md:bg-transparent p-2">
             <p className="tracking-wide text-xl lg:text-secTitle text-accent-default font-normal uppercase ">
               <span className="bodyText capitalize italic font-bold">
@@ -61,7 +65,7 @@ function About() {
       </div>
 
       {/* Test fixed image */}
-      <AboutImg>
+      {/* <AboutImg>
       <div className="h-full w-full fixed mt-20 -z-10 left-0 bottom-0 flex justify-end ">
         <Image
           src={profileImg}
@@ -76,7 +80,7 @@ function About() {
             objectPosition: "left",
           }}
         />
-      </div></AboutImg>
+      </div></AboutImg> */}
 
       <div className="w-full h-auto flex justify-center items-center bg-accent-default py-20">
         <div
