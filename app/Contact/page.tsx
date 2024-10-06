@@ -29,7 +29,7 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-screen bg-accent-default py-20 "
+      className=" relative z-20 w-full h-auto xl:h-screen bg-accent-default py-20 "
     >
       <div className="h-full w-full fixed -mt-16 -z-[20] -py-40">
         <Image
