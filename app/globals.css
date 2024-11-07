@@ -278,7 +278,8 @@ html.lenis, html.lenis body {
 
   overflow: hidden;
 
-  background: rgb(45, 45, 45);
+  /* background: rgb(45, 45, 45); */
+  background:#969777;
 }
 
 .galleryWrapper {
