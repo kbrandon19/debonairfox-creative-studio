@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useTransform, useScroll, motion } from "framer-motion";
+import { useTransform, useScroll, motion, MotionValue } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Lenis from "lenis";
@@ -21,27 +21,35 @@ const images = [
   "12.png",
 ];
 
-function Page() {
-  const gallery = useRef(null);
-  const [dimension, setDimension] = useState({ width: 0, height: 0 });
+interface Dimension {
+  width: number;
+  height: number;
+}
+
+const FIXED_HEIGHT = 600; // Define a fixed height for screens 800px or less
+
+const Page: React.FC = () => {
+  const gallery = useRef<HTMLDivElement>(null);
+  const [dimension, setDimension] = useState<Dimension>({ width: 0, height: 0 });
   const { scrollYProgress } = useScroll({
     target: gallery,
     offset: ["start .8", "end start"],
   });
 
-  const { height } = dimension;
-  const y = useTransform(scrollYProgress, [0, 1], [0, height ]);
+  const height = dimension.width > 800 ? dimension.height : FIXED_HEIGHT;
+
+  // Conditional transforms based on screen width
+  const y = useTransform(scrollYProgress, [0, 1], [0, height]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]); // Adjusted for testing
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
 
   useEffect(() => {
     const lenis = new Lenis({
-      lerp:1,
-      duration: 2, // Adjust the scroll duration (higher means smoother but slower)
-      // easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing 
+      lerp: 1,
+      duration: 2,
     });
-    const raf = (time: any) => {
+    const raf = (time: number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
@@ -60,7 +68,6 @@ function Page() {
   }, []);
 
   return (
-  
     <div className="gallery">
       <div className="galleryWrapper" ref={gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -74,12 +81,17 @@ function Page() {
 
 export default Page;
 
-const Column = ({ images, y }: { images: string[]; y: any }) => {
+interface ColumnProps {
+  images: string[];
+  y: MotionValue<number>;
+}
+
+const Column: React.FC<ColumnProps> = ({ images, y }) => {
   return (
     <motion.div className="column" style={{ y }}>
       {images.map((src, i) => (
         <div key={i} className="imageContainer hover:cursor-pointer">
-          <Link href={"https://www.github.com.kbrandon19"}>
+          <Link href={"https://www.github.com/kbrandon19"}>
             <Image src={`/assets/images/${src}`} alt="image" fill />
           </Link>
         </div>
