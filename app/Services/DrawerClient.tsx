@@ -47,13 +47,13 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
     <div className="px-1 h-auto w-auto flex flex-col justify-center">
       {words.map((word, index) => (
         <div key={index} onClick={() => handleOpen(word)} className="cursor-pointer">
-          <div className="bodyText relative w-auto h-auto text-left font-semibold 
+          <div className=" relative w-auto h-auto text-left font-semibold 
             text-titleSmd leading-[4rem]
             sm:text-titleMd sm:leading-[6rem] 
             smd:text-titleMd smd:leading-[6.5rem]
             md:text-titleMd md:leading-[8rem] 
             lg:text-titleLg lg:leading-[10rem] 
-            2xl:text-titleXl 2xl:leading-[12.5rem]
+            2xl:text-titleLg 2xl:leading-[8rem]
             opacity-75 text-accent-100 
             hover:opacity-100 hover:text-accent-default 
             duration-300 ease-in-out break-words">
