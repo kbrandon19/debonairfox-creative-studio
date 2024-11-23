@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from 'next/link'
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -53,7 +54,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
             smd:text-titleMd smd:leading-[6.5rem]
             md:text-titleMd md:leading-[8rem] 
             lg:text-titleLg lg:leading-[10rem] 
-            2xl:text-titleLg 2xl:leading-[8rem]
+            2xl:text-titleXl 2xl:leading-[11.75rem]
             opacity-75 text-accent-100 
             hover:opacity-100 hover:text-accent-default 
             duration-300 ease-in-out break-words">
@@ -73,16 +74,24 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                 <DrawerDescription className="md:h-screen flex">
                   <div className="md:basis-2/3 h-full flex flex-col md:flex-row p-4 justify-between gap-x-5">
                     <div className="w-auto mt-5">
-                      <p className="text-l lg:text-xl 2xl:text-Xl text-black-text">
-                        {content.serviceInfo}
-                      </p>
-                      <div className="flex md:basis-1/2 gap-4 flex-wrap mt-10">
+                    <div className="flex md:basis-1/2 gap-4 flex-wrap my-5">
                         {content.servicesKeyword.map((keywordObj, idx) => (
                           <span key={idx} className="p-2 bg-gray-200 rounded">
                             {keywordObj.keyword}
                           </span>
                         ))}
                       </div>
+                      <p className="text-l lg:text-xl 2xl:text-Xl text-black-text">
+                        {content.serviceInfo}
+                      </p>
+                      <div className="w-max my-10 border-b-2 border-tangerine p-2">
+                        <Link href="#" className="text-lg tracking-widest uppercase mb-4 text-accent-default ">View Work</Link>
+                       
+                      </div>
+                      
+                      
+
+
                     </div>
                   </div>
                 </DrawerDescription>
