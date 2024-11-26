@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button";
 function page() {
   return (
     <div className="w-full h-auto xl:h-screen bg-white my-20 2xl:my-0 pt-20 xl:pt-0">
-      <div className="w-5/6 h-auto mx-auto my-10">
+
+      <div className="w-5/6 h-auto mx-auto my-10 ">
       <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
               <div className="max-w-96 ">

@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   // Set the condition to hide footer for specific routes
-  const hideFooter = ["/Services", "/case-study"].includes(pathname); // Replace "/your-page" with the actual route
+  const hideFooter = ["/Services", "/case-study","/content-creation"].includes(pathname); // Replace "/your-page" with the actual route
 
   return (
     <html suppressHydrationWarning={true} lang="en">

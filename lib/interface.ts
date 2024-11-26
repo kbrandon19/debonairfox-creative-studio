@@ -10,6 +10,7 @@ export interface servArr{
     serviceInfo: string;
     // serviceInfoTest:string;
     servicesKeyword:keywordArr[];
+    serviceLink:string;
 }
 
 export interface keywordArr{

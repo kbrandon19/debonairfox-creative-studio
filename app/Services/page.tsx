@@ -9,7 +9,7 @@ import Image from "next/image";
 async function getData() {
   const query = `
     *[_type == 'services'][0]{
-      servicesDescription[]{serviceTitle,serviceInfo,servicesKeyword[]{keyword}}
+      servicesDescription[]{serviceTitle,serviceInfo,servicesKeyword[]{keyword},serviceLink}
     }`;
   const data = await client.fetch(query);
   return data;

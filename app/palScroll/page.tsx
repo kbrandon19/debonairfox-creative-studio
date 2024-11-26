@@ -70,9 +70,9 @@ const Page: React.FC = () => {
   return (
     <div className="gallery">
       <div className="galleryWrapper" ref={gallery}>
-        <Column images={[images[0], images[1], images[2]]} y={y} />
-        <Column images={[images[3], images[4], images[5]]} y={y2} />
-        <Column images={[images[6], images[2], images[8]]} y={y3} />
+        <Column images={[images[3], images[0], images[2]]} y={y} />
+        <Column images={[images[3], images[4], images[1]]} y={y2} />
+        <Column images={[images[8], images[2], images[6]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} y={y4} />
       </div>
     </div>

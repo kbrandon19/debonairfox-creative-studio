@@ -32,23 +32,35 @@ function About() {
       <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-28 xl:mt-40">
         <div className="w-full mx-auto h-auto  gap-y-10 flex flex-col">
           {/* Top Intro Text */}
-          <div className="w-3/4 h-screen xl:h-auto mt-36 md:mt-10 lg:mt-0 pl-2 md:pl-0 flex align-center">
-            <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5.5rem]  2xl:text-titleLg 2xl:leading-[8rem] font-semibold  text-accent-default uppercase ">
+          <div className="w-full h-screen xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-center break-words">
+            <h1 className="text-titleMid leading-[2.5rem] md:text-titleSmd md:leading-[3.5rem] lg:text-titleMd lg:leading-[5.5rem]  2xl:text-titleLg 2xl:leading-[8rem] font-semibold  text-accent-default uppercase ">
               Creating unique digital experiences that resonate and inspire
               <span className="text-tangerine">.</span>
             </h1>
           </div>
-          {/* Bio */}
-          <div className="h-auto w-full flex flex-col md:flex-row gap-x-5 justify-between p-4 mb-40">
-            <div className="w-full md:w-2/3">
-              {/* <h3 className=" uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
-                Bio<span className="text-tangerine">.</span>
-              </h3> */}
+
+          {/* Bio Section */}
+          <div className="h-auto w-full flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-5 justify-end p-4 mb-40">
+            <div className="md:w-2/3 flex justify-center md:justify-end">
+              <div className="w-auto h-full md:w-3/4 md:h-3/4 [clip-path:polygon(25%_0%,100%_0%,75%_100%,0%_100%)]">
+                <Image
+                  src={profileImg2}
+                  width={0}
+                  height={0}
+                  alt="profile photo"
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "100%",
+                    objectPosition: "top",
+                  }}
+                />{" "}
+              </div>
             </div>
 
             <div className="flex flex-col flex-wrap w-full md:w-2/3">
               <div>
-                <p className="text-secTitle leading-[3rem] font-light text-accent-default">
+                <p className="bodyText text-secTitle leading-[3.5rem] md:text-titleSmd md:leading-[4.5rem] font-light pt-10 text-accent-default">
                   <span className="bodyText capitalize italic font-bold ">
                     Hello!
                   </span>{" "}
@@ -63,9 +75,9 @@ function About() {
           </div>
 
           {/* Section 2 */}
-          <div className="w-full h-auto flex flex-col md:flex-row p-4 ">
-            <div className="md:w-1/2 flex flex-col gap-y-16 ">
-              <p className="bodyText text-titleSmd leading-[3.5rem] 2xl:text-titleSm 2xl:leading-[5.5rem] font-light text-accent-default">
+          <div className="w-full h-auto flex flex-col md:flex-row  p-4 ">
+            <div className="md:w-1/2 flex flex-col gap-y-16">
+              <p className="bodyText text-secTitle leading-[3.5rem] md:text-titleSmd md:leading-[4.5rem] font-light pt-10 text-accent-default">
                 This heightened awareness allows me to find beauty in the most
                 unexpected places, transforming the ordinary into extraordinary.
                 As a thoughtful creative, I&apos;m passionate about making
@@ -79,37 +91,26 @@ function About() {
                 </Button>
               </div> */}
             </div>
-            <div className="md:w-1/2 h-auto mx-auto flex justify-center items-start">
-              <div className="max-w-2xl h-auto  flex justify-center items-center ">
-                <Image
-                  src={profileImg2}
-                  width={0}
-                  height={0}
-                  alt="profile photo"
-                  style={{
-                    objectFit: "contain",
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
-              </div>
-            </div>
           </div>
 
           {/* Three */}
-          <div className="w-auto h-auto mx-auto text-tangerine flex flex-col justify-center align-center text-center bg-accent-default py-20 mt-40">
-<h1 className="text-titleSmd font-semibold">Looking for a Unique Creative Partner?</h1>
-<p className="text-Xl w-2/3 mx-auto text-background">Let us craft visually stunning designs that make your brand stand out. Get in touch today and bring your vision to life with a creative touch like no other!</p>
-<div className="w-auto mt-10 ">
-                <Button className="  text-background bg-accent-default hover:bg-tangerine text-lg tracking-widest rounded-none border-solid border-tangerine border-2 hover:text-accent-default hover:border-tangerine">
-                  <Link href={"/Contact"}>Let&apos;s Work</Link>
-                </Button>
-              </div>
+          <div className="w-full h-auto mx-auto text-tangerine flex flex-col justify-center align-center text-center bg-accent-default py-20 px-10 mt-40">
+            <h1 className="text-titleSmd font-semibold">
+              Looking for a Unique Creative Partner?
+            </h1>
+            <p className="text-Xl w-2/3 mx-auto text-background">
+              Let us craft visually stunning designs that make your brand stand
+              out. Get in touch today and bring your vision to life with a
+              creative touch like no other!
+            </p>
+            <div className="w-auto mt-10 ">
+              <Button className="  text-background bg-accent-default hover:bg-tangerine text-lg tracking-widest rounded-none border-solid border-tangerine border-2 hover:text-accent-default hover:border-tangerine">
+                <Link href={"/Contact"}>Let&apos;s Work</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }

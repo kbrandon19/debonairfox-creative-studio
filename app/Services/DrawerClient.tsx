@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/drawer";
 import { Services, servArr } from "@/lib/interface";
 
-const words = ["Web Design & Development.", "Email Templates.", "Content Creation."];
+const words = ["Web Design & Development.", "Content Creation."];
 
 interface DrawerClientProps {
   data: Services;
@@ -85,7 +85,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                         {content.serviceInfo}
                       </p>
                       <div className="w-max my-10 border-b-2 border-tangerine p-2">
-                        <Link href="#" className="text-lg tracking-widest uppercase mb-4 text-accent-default ">View Work</Link>
+                        <Link href={content.serviceLink} className="text-lg tracking-widest uppercase mb-4 text-accent-default ">View Work</Link>
                        
                       </div>
                       
