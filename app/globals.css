@@ -273,65 +273,56 @@ html.lenis, html.lenis body {
 
 /* Parallax Scroll */
 
+/* Main gallery container */
 .gallery {
   height: 175vh;
-
   overflow: hidden;
-
-  /* background: rgb(45, 45, 45); */
-  background:#969777;
+  background: #969777; /* Subtle neutral tone for better focus on images */
 }
 
+/* Wrapper for columns */
 .galleryWrapper {
   position: relative;
-
   top: -12.5vh;
-
   height: 200vh;
-
   display: flex;
-
   gap: 2vw;
-
   padding: 2vw;
 }
 
+/* Columns containing images */
 .column {
   position: relative;
-
   height: 100%;
-
   width: 25%;
-
   min-width: 250px;
-
   display: flex;
-
   flex-direction: column;
-
   gap: 2vw;
-
   white-space: nowrap;
-
 }
 
+/* Individual image container */
 .imageContainer {
-  position: absolute;
-
-  height: 33%;
-
-  width: 100%;
-
   position: relative;
-
+  height: 33%; /* Adjusted for consistent sizing */
+  width: 100%;
   border-radius: 1vw;
-
   overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+/* .imageContainer:hover {
+  transform: scale(1.02); /* Subtle hover effect 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth
+} */
+
+/* Styling for images */
 img {
   object-fit: cover;
 }
 
+/* Parallax offset for each column */
 .column:nth-of-type(1) {
   top: -30%;
 }
@@ -347,3 +338,13 @@ img {
 .column:nth-of-type(4) {
   top: -70%;
 }
+
+/* Responsive adjustments */
+
+
+@media (prefers-reduced-motion: reduce) {
+  .imageContainer {
+    transition: none; /* Disable hover effects for users with motion sensitivity */
+  }
+}
+

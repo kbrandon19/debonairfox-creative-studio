@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useTransform, useScroll, motion, MotionValue } from "framer-motion";
+import { useTransform, useScroll, motion, MotionValue,useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Lenis from "lenis";
@@ -28,6 +28,7 @@ interface Dimension {
 
 const FIXED_HEIGHT = 600; // Define a fixed height for screens 800px or less
 
+
 const Page: React.FC = () => {
   const gallery = useRef<HTMLDivElement>(null);
   const [dimension, setDimension] = useState<Dimension>({ width: 0, height: 0 });
@@ -45,10 +46,10 @@ const Page: React.FC = () => {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
 
   useEffect(() => {
-    const lenis = new Lenis({
-      lerp: 1,
-      duration: 2,
-    });
+const lenis = new Lenis({
+  lerp: 0.2, // Smooth scrolling with easing
+  duration: 1.2, // Optional duration for smoother transitions
+});
     const raf = (time: number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -91,8 +92,15 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
     <motion.div className="column" style={{ y }}>
       {images.map((src, i) => (
         <div key={i} className="imageContainer hover:cursor-pointer">
-          <Link href={"https://www.github.com/kbrandon19"}>
-            <Image src={`/assets/images/${src}`} alt="image" fill />
+          <Link href={"https://www.github.com/kbrandon19"} aria-label={`View Image ${i + 1}`}>
+            <Image 
+            src={`/assets/images/${src}`} 
+            alt={`Image ${i + 1}`}
+            fill 
+            loading={ i === 0 ? "eager":"lazy"}
+            sizes="(max-width: 800px) 100vw, 33vw"
+            priority={i === 0} // Load the first image in each column faster
+            />
           </Link>
         </div>
       ))}

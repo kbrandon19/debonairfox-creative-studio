@@ -12,8 +12,8 @@ export const Links = [
     href: "/About",
   },
   {
-    title: "Case Studies",
-    href: "/case-study",
+    title: "Work",
+    href: "/work",
   },
   {
     title: "Contact",

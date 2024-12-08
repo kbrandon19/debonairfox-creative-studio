@@ -15,7 +15,7 @@ function page() {
               
               <div className="max-w-96 ">
                 <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem] uppercase font-semibold  text-accent-default ">
-                  Case Study<span className="text-tangerine">.</span>
+                  Work<span className="text-tangerine">.</span>
                 </h1>
               </div>
               
@@ -34,7 +34,7 @@ function page() {
           <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
    
           <div className="w-full h-full flex ">
-              <Link href={"case-study/florece"} className="flex justify-center items-center">
+              <Link href={"work/florece"} className="flex justify-center items-center">
           <Image
             src={screenShot}
             width={0}

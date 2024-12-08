@@ -45,14 +45,14 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
   };
 
   return (
-    <div className="px-1 h-auto w-auto flex flex-col justify-center">
+    <div className="px-1 h-screen w-auto flex flex-col justify-start">
       {words.map((word, index) => (
         <div key={index} onClick={() => handleOpen(word)} className="cursor-pointer">
           <div className=" relative w-auto h-auto text-left font-semibold 
             text-titleSmd leading-[4rem]
-            sm:text-titleMd sm:leading-[6rem] 
-            smd:text-titleMd smd:leading-[6.5rem]
-            md:text-titleMd md:leading-[8rem] 
+            sm:text-titleMd sm:leading-[6rem]
+            smd:text-titleLg smd:leading-[7rem]
+            md:text-titleLg md:leading-[8rem] 
             lg:text-titleLg lg:leading-[10rem] 
             2xl:text-titleXl 2xl:leading-[11.75rem]
             opacity-75 text-accent-100 
@@ -68,7 +68,7 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
           {content && (
             <>
               <DrawerHeader>
-                <DrawerTitle className="pl-4 opacity-25">
+                <DrawerTitle className="pl-4 opacity-5">
                   {content.serviceTitle}
                 </DrawerTitle>
                 <DrawerDescription className="md:h-screen flex">
@@ -97,9 +97,9 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                 </DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
-                {/* <DrawerClose onClick={handleClose}>
-                  <Button variant="outline">Close</Button>
-                </DrawerClose> */}
+                <DrawerClose onClick={handleClose}>
+                  <Button variant="outline">X</Button>
+                </DrawerClose>
               </DrawerFooter>
             </>
           )}

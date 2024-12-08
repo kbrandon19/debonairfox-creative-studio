@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Banner />
       <PalScroll />
-      <WindowPane01 />
+      {/* <WindowPane01 /> */}
       {/* <About/> */}
       <Contact />
     </>

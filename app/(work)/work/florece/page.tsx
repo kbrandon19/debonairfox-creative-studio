@@ -48,7 +48,7 @@ function page() {
       <div className="w-5/6 h-full mx-auto bg-white flex flex-col md:flex-row py-20 ">
         <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
-            <h1 className="text-Xl leading-[2.5rem] md:text-titleSmd md:leading-[3.5rem] font-normal opacity-75 text-accent-100 ">
+            <h1 className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
               Stephanie, a seasoned communications expert, decided to launch her
               own consulting firm, Florece Consulting, to focus on the causes
               she’s passionate about. She reached out for a website that would

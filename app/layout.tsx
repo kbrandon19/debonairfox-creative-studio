@@ -43,8 +43,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {/* Wrap the `children` in Suspense */}
             <Suspense fallback={<Loading />}>{children}</Suspense>
             {/* Conditionally render the footer */}
-            {!hideFooter && <Footer01 />}
-            <div className="w-5/6 relative h-auto mx-auto pt-5 mt-5 ">
+            {/* {!hideFooter && <Footer01 />} */}
+            <Footer01 />
+            {/* <div className="w-5/6 relative h-auto mx-auto pt-5 mt-5 ">
               <div className=" w-full h-auto p-5 text-sm text-accent-default">
                 © 2024{" "}
                 <span className="rainbow-text text-sm">
@@ -52,7 +53,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 </span>
                 . All Right Reserved.
               </div>
-            </div>
+            </div> */}
           </SmoothScroll>
           <Analytics />
         </main>
