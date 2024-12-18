@@ -7,18 +7,19 @@ import Link from "next/link";
 import Lenis from "lenis";
 
 const images = [
-  "1.png",
-  "2.png",
-  "3.png",
-  "4.png",
-  "5.png",
-  "6.png",
-  "7.png",
-  "8.png",
-  "9.png",
-  "10.png",
-  "11.png",
-  "12.png",
+  /* col 1 */
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549088/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/5_mihicb.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549092/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_elr3gh.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_vjjggq.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_axax5u.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549084/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_dqwoe0.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_vjjggq.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549092/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_elr3gh.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/8_nudi0v.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
+  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549087/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_gklhdu.png",
 ];
 
 interface Dimension {
@@ -71,7 +72,7 @@ const lenis = new Lenis({
   return (
     <div className="gallery">
       <div className="galleryWrapper" ref={gallery}>
-        <Column images={[images[3], images[0], images[2]]} y={y} />
+        <Column images={[images[6], images[0], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[1]]} y={y2} />
         <Column images={[images[8], images[2], images[6]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} y={y4} />
@@ -92,14 +93,14 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
     <motion.div className="column" style={{ y }}>
       {images.map((src, i) => (
         <div key={i} className="imageContainer hover:cursor-pointer">
-          <Link href={"https://www.github.com/kbrandon19"} aria-label={`View Image ${i + 1}`}>
-            <Image 
-            src={`/assets/images/${src}`} 
-            alt={`Image ${i + 1}`}
-            fill 
-            loading={ i === 0 ? "eager":"lazy"}
-            sizes="(max-width: 800px) 100vw, 33vw"
-            priority={i === 0} // Load the first image in each column faster
+          <Link href="https://www.github.com/kbrandon19" aria-label={`View Image ${i + 1}`}>
+            <Image
+              src={src} // Use the direct URL from the images array
+              alt={`Image ${i + 1}`}
+              fill
+              loading={i === 0 ? "eager" : "lazy"}
+              sizes="(max-width: 800px) 100vw, 33vw"
+              priority={i === 0}
             />
           </Link>
         </div>

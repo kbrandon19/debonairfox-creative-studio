@@ -1,10 +1,13 @@
+
+
 export const revalidate = 0;
+
 
 import React from "react";
 import ContactForm from "../../components/Forms/contact-form";
 import Image from "next/image";
 import Link from "next/link";
-import { FadeIn } from "@/lib/transitions/fadeIn";
+import { FadeIn } from "@/lib/transitions/fadeIn";import transitions from "@/lib/transitions/transition";
 // import { client } from "../../../sanity/lib/client";
 // import { contactSection } from "@/lib/interface";
 // import { urlForImage } from "../../../sanity/lib/image";

@@ -11,7 +11,7 @@ import { ReactNode } from "react";
 import Header01 from "@/components/Header/header01";
 import Footer01 from "@/components/Footer/footer01";
 import Loading from "./loading";
-
+import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const poppins = Poppins({
@@ -38,22 +38,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html suppressHydrationWarning={true} lang="en">
       <body className="w-screen overflow-x-hidden">
         <main className={`${poppins.variable} ${lora.variable}`}>
+          
           <Header01 />
           <SmoothScroll>
             {/* Wrap the `children` in Suspense */}
-            <Suspense fallback={<Loading />}>{children}</Suspense>
-            {/* Conditionally render the footer */}
-            {/* {!hideFooter && <Footer01 />} */}
+            <Suspense fallback={<Loading />}>
+
+            <AnimatePresence>{children}</AnimatePresence>
+            </Suspense>
+
             <Footer01 />
-            {/* <div className="w-5/6 relative h-auto mx-auto pt-5 mt-5 ">
-              <div className=" w-full h-auto p-5 text-sm text-accent-default">
-                © 2024{" "}
-                <span className="rainbow-text text-sm">
-                  Debonair Fox Creative Studio
-                </span>
-                . All Right Reserved.
-              </div>
-            </div> */}
           </SmoothScroll>
           <Analytics />
         </main>

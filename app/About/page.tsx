@@ -1,16 +1,12 @@
+
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import profileImg from "../assets/IMG_1329.jpg";
+
 import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
-import { FadeIn } from "@/lib/transitions/fadeIn";
-import WindowPane from "@/components/WindowPane/windowpane01";
-import AboutImg from "@/lib/transitions/aboutImg";
-import TradeCoffee from "../assets/tradecoffee.png";
-import YoMartez from "../assets/yoMartez.png";
-import Bottomless from "../assets/bottomless.png";
-import Hims from "../assets/hims1685.jpg";
+
 
 function About() {
   return (
