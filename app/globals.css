@@ -6,6 +6,7 @@
   scroll-behavior: auto !important;
 } */
 
+
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -63,36 +64,6 @@ html.lenis, html.lenis body {
     font-family: var(--font-lora);
   }
 
-  /* input,select,text-area{
-  background-color: #24314B;
-  color:#e9e2d2;
-} */
-
-  /* input::placeholder{
-  color:#e9e2d2;
-} */
-  .blob {
-    animation: rotation 50s infinite ease-in-out;
-  }
-
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    25% {
-      transform: rotate(180deg);
-    }
-    50% {
-      transform: rotate(359deg);
-    }
-    75% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
 
   /* HTML: <div class="loader"></div> */
   .loader {
@@ -148,37 +119,6 @@ html.lenis, html.lenis body {
         100% 50%;
     }
   }
-
-  /* styling for dark mode*/
-  /* .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  } */
 }
 
 @layer base {
@@ -233,16 +173,16 @@ html.lenis, html.lenis body {
 
 /* .perspectiveText p:nth-of-type(2):hover{ opacity: 1;} */
 
+/* Footer Animation */
+
 .rainbow-text {
   display: inline-block;
   font-size: 14px;
-  color: #24314b; /* Initial color */
+  color: #e9e2d2; /* Initial color */ 
 
   /* Make text transparent to show gradient */
   transition: color 0.3s ease; /* Transition for color change */
 }
-
-/* Footer Animation */
 
 .rainbow-text:hover {
   animation: rainbow-hover 1.5s ease-in-out infinite;
@@ -277,7 +217,7 @@ html.lenis, html.lenis body {
 .gallery {
   height: 175vh;
   overflow: hidden;
-  background: #969777; /* Subtle neutral tone for better focus on images */
+  background: #e9e2d2; /* Subtle neutral tone for better focus on images */
 }
 
 /* Wrapper for columns */
@@ -346,24 +286,4 @@ img {
   .imageContainer {
     transition: none; /* Disable hover effects for users with motion sensitivity */
   }
-}
-
-.slide-in{
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  background: #0f0f0f;
-  transform-origin: bottom;
-}
-
-.slide-out{
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100vh;
-  background: #0f0f0f;
-  transform-origin: top;
 }

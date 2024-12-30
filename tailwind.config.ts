@@ -55,14 +55,7 @@ const config = {
           main:'#000000',
           text:'#212427'
         },
-        teal:'#1D5B80',
         tangerine:'#F08700',
-        //Light Blue
-        primary:{
-          default:'#6EA0C6',
-          '100':'#A8C6DD',
-          '200':'#8BB3D1',
-        },
         //Green
         secondary:{
           default:'#50521D',

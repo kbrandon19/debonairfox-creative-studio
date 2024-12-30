@@ -32,9 +32,9 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-auto bg-accent-default py-40 "
+      className=" relative z-20 w-full h-auto bg-tangerine py-20 "
     >
-      <div className="h-full w-full fixed -mt-16 -z-[20] -py-40">
+      <div className="h-full w-auto fixed -mt-16 -z-[20] -py-40">
         <Image
           src={
             "https://res.cloudinary.com/dujkjy2e2/image/upload/v1710820177/Debonair%20Fox%20Creative%20Studio/Images/1920_x_banner_u5tgoc.png"
@@ -47,20 +47,20 @@ async function Contact() {
           style={{ objectFit: "cover", opacity: ".3" }}
         />
       </div>
-      <div className="w-full md:w-5/6 h-full mx-auto flex flex-col p-2 md:p-0 ">
-        <div className="h-full flex flex-col justify-evenly gap-y-20 p-2 gap-x-10">
+      <div className="w-5/6 h-full mx-auto flex flex-col ">
+        <div className="h-full flex flex-col justify-evenly gap-y-20 gap-x-10">
           {/* top div */}
           
             <div className="w-full h-auto flex flex-col gap-y-4 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
-              <div className="max-w-96 ">
-                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleLg lg:leading-[8rem]  uppercase font-semibold opacity-75 text-accent-100 ">
-                  Let<span className="text-tangerine">&apos;</span>s Create
+              <div className="w-5/6 ">
+                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleMd lg:leading-[5.5rem]  uppercase font-semibold text-accent-default ">
+                  Let<span className="text-background">&apos;</span>s Create
                   Something
                 </h1>
               </div>
               
-              <div className="font-light  w-full  md:w-1/2  text-l lg:text-xl opacity-75 text-white ">
+              <div className="font-light  w-full  md:w-1/2  text-l lg:text-xl text-black-main ">
                 <p >
                   No matter your digital service needs, I’ll work with you to
                   define a strong visual identity. One that communicates your
@@ -76,33 +76,33 @@ async function Contact() {
           <div className="w-1/2 h-auto text-secTitle xlg:text-titleMid flex flex-col md:flex-row lg:justify-between gap-10">
             <div className="flex flex-row justify-start items-end">
               <div>
-                <p className="text-l text-accent-100 ">Request Information.</p>
+                <p className="text-l text-background ">Request Information.</p>
                 <Link href={"mailto:kbrandon319@gmail.com?subject=Digital%20Services%20Inquiry"}>
-                  <p className="text-background hover:underline hover:text-tangerine transition duration-200 ease ">
+                  <p className="text-black-main hover:text-background transition duration-300 ease-in-out">
                     info@dfsc.com
                   </p>
                 </Link>
               </div>
             </div>
             <div className="">
-              <p className="text-l text-accent-100 ">Stay Connected.</p>
+              <p className="text-l text-background ">Stay Connected.</p>
               <div className="flex flex-col md:flex-row gap-x-4  lowercase ">
                 <Link
                   href="https://linkedin.com/in/kdbrand"
-                  className=" text-background hover:underline hover:text-tangerine transition duration-200 ease"
+                  className=" text-black-main hover:text-background transition duration-300 ease-in-out"
                 >
                   LinkedIn
                 </Link>
 
                 <Link
                   href={"https://instagram.com/mrdebonairfox"}
-                  className=" text-background hover:underline transition hover:text-tangerine duration-200 ease"
+                  className=" text-black-main transition hover:text-background duration-300 ease-in-out"
                 >
                   Instagram
                 </Link>
                 <Link
                   href={"https://github.com/kbrandon19"}
-                  className="text-background hover:underline transition hover:text-tangerine duration-200 ease"
+                  className="text-black-main hover:text-background transition duration-300 ease-in-out"
                 >
                   GitHub
                 </Link>
