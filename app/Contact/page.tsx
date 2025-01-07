@@ -47,7 +47,7 @@ async function Contact() {
           style={{ objectFit: "cover", opacity: ".3" }}
         />
       </div>
-      <div className="w-5/6 h-full mx-auto flex flex-col ">
+      <div className="w-5/6 h-screen mx-auto flex flex-col ">
         <div className="h-full flex flex-col justify-evenly gap-y-20 gap-x-10">
           {/* top div */}
           

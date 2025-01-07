@@ -7,19 +7,22 @@ import Link from "next/link";
 import Lenis from "lenis";
 
 const images = [
-  /* col 1 */
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549088/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/5_mihicb.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549092/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_elr3gh.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_vjjggq.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_axax5u.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549084/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_dqwoe0.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_vjjggq.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549092/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_elr3gh.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549085/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/8_nudi0v.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
-  "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549087/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_gklhdu.png",
+  /* col 0 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
+  /* col 1 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
+  /* col 2 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_skd3hf.jpg",
+
+  /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679047/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_xuhgsh.jpg",
+  /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
+  /* col 5 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
+  
+
+  /* col 6 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
+  /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736199507/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Untitled_design_3_y2afic.gif",
+  /* col 8 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png",
+
+  /* col 9 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/sanity_qsnchr.jpg",
+  /* col 10 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/sanity_qsnchr.jpg",
+  /* col 11 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679074/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_iugerm.jpg",
 ];
 
 interface Dimension {
@@ -72,9 +75,9 @@ const lenis = new Lenis({
   return (
     <div className="gallery">
       <div className="galleryWrapper" ref={gallery}>
-        <Column images={[images[6], images[0], images[2]]} y={y} />
-        <Column images={[images[3], images[4], images[1]]} y={y2} />
-        <Column images={[images[8], images[2], images[6]]} y={y3} />
+        <Column images={[images[0], images[1], images[2]]} y={y} />
+        <Column images={[images[3], images[4], images[5]]} y={y2} />
+        <Column images={[images[6], images[7], images[8]]} y={y3} />
         <Column images={[images[9], images[10], images[11]]} y={y4} />
       </div>
     </div>
