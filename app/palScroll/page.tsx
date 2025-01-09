@@ -8,8 +8,8 @@ import Lenis from "lenis";
 
 const images = [
   /* col 0 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
-  /* col 1 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
-  /* col 2 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/12_skd3hf.jpg",
+  /* col 1 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448219/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_bj3pil.jpg",
+  /* col 2 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448223/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_d8itr0.jpg",
 
   /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679047/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_xuhgsh.jpg",
   /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
@@ -17,7 +17,7 @@ const images = [
   
 
   /* col 6 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
-  /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736199507/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Untitled_design_3_y2afic.gif",
+  /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
   /* col 8 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png",
 
   /* col 9 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/sanity_qsnchr.jpg",
