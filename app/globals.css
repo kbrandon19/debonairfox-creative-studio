@@ -1,77 +1,289 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+/* .lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+} */
+
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Add to the respective elements if needed */
+.z-hero-text {
+  z-index: -10; /* Ensure it's above the background image */
+}
+
+.z-background {
+  z-index: -1; /* Keep background image behind */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
   }
 
-.bodyText {
-  font-family: var(--font-lora);
-}
-
-.blob{
-  
-    animation: rotation 50s infinite ease-in-out;
-}
-  
-  @keyframes rotation {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    25%{
-      transform: rotate(180deg);
-    }
-    50% {
-      transform: rotate(359deg);
-    }
-    75%{
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  ::-webkit-scrollbar {
+    display: none;
   }
-  
 
-
- /* styling for dark mode*/
-  /* .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  } */
-}
- 
-@layer base {
+  /* Hide scrollbar in Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+  }
 
   body {
-    @apply bg-background;
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  .bodyText {
+    font-family: var(--font-lora);
+  }
+
+
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 100px;
+    height: 40px;
+    --test: #f08700;
+    --g: radial-gradient(
+        farthest-side,
+        #0000 calc(95% - 3px),
+        #fff calc(100% - 3px) 98%,
+        #0000 101%
+      )
+      no-repeat;
+    background: var(--test), var(--test), var(--test);
+    background-size: 30px 30px;
+    animation: l9 1s infinite alternate;
+  }
+  @keyframes l9 {
+    0% {
+      background-position:
+        0 50%,
+        50% 50%,
+        100% 50%;
+    }
+    20% {
+      background-position:
+        0 0,
+        50% 50%,
+        100% 50%;
+    }
+    40% {
+      background-position:
+        0 100%,
+        50% 0,
+        100% 50%;
+    }
+    60% {
+      background-position:
+        0 50%,
+        50% 100%,
+        100% 0;
+    }
+    80% {
+      background-position:
+        0 50%,
+        50% 50%,
+        100% 100%;
+    }
+    100% {
+      background-position:
+        0 50%,
+        50% 50%,
+        100% 50%;
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-white;
+  }
+}
+
+/* Perspective */
+
+.perspectiveText {
+  display: flex;
+
+  /* flex-direction: column; */
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100%;
+
+  width: 100%;
+
+  transform-style: preserve-3d;
+
+  transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* .perspectiveText:hover{
+
+    transform: rotateX(90deg);} */
+
+.perspectiveText p {
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+
+  pointer-events: none;
+
+  text-transform: uppercase;
+}
+/* 
+  .perspectiveText p:nth-of-type(1):hover{transform:translateY(-100%); opacity:0;} */
+
+.perspectiveText p:nth-of-type(2) {
+  position: absolute;
+
+  transform-origin: bottom center;
+
+  transform: rotateX(-90deg) translateY(9px);
+
+  opacity: 0;
+}
+
+/* .perspectiveText p:nth-of-type(2):hover{ opacity: 1;} */
+
+/* Footer Animation */
+
+.rainbow-text {
+  display: inline-block;
+  font-size: 14px;
+  color: #e9e2d2; /* Initial color */ 
+
+  /* Make text transparent to show gradient */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.rainbow-text:hover {
+  animation: rainbow-hover 1.5s ease-in-out infinite;
+  color: transparent; /* Ensure text remains transparent to show gradient */
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 400%;
+  background-clip: text;
+  cursor: pointer;
+}
+
+@keyframes rainbow-hover {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* Parallax Scroll */
+
+/* Main gallery container */
+.gallery {
+  height: 175vh;
+  overflow: hidden;
+  background: #e9e2d2; /* Subtle neutral tone for better focus on images */
+}
+
+/* Wrapper for columns */
+.galleryWrapper {
+  position: relative;
+  top: -12.5vh;
+  height: 200vh;
+  display: flex;
+  gap: 1vw;
+  padding: 3vw;
+}
+
+/* Columns containing images */
+.column {
+  position: relative;
+  height: 100%;
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  white-space: nowrap;
+}
+
+/* Individual image container */
+.imageContainer {
+  position: relative;
+  height: 33%; /* Adjusted for consistent sizing */
+  width: 100%;
+  border-radius: 1vw;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* .imageContainer:hover {
+  transform: scale(1.03); /* Subtle hover effect 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth
+} */
+
+/* Styling for images */
+img {
+  object-fit: cover;
+}
+
+/* Parallax offset for each column */
+.column:nth-of-type(1) {
+  top: -30%;
+}
+
+.column:nth-of-type(2) {
+  top: -70%;
+}
+
+.column:nth-of-type(3) {
+  top: -30%;
+}
+
+.column:nth-of-type(4) {
+  top: -70%;
+}
+
+/* Responsive adjustments */
+
+
+@media (prefers-reduced-motion: reduce) {
+  .imageContainer {
+    transition: none; /* Disable hover effects for users with motion sensitivity */
   }
 }

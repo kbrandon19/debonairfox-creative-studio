@@ -29,6 +29,7 @@ const config = {
         base: '1rem', //16px
         l: '1.25rem',//20px
         xl: '1.5rem', //24px
+        Xl: '2rem' //32px
         
       },
     
@@ -36,6 +37,7 @@ const config = {
       fontSize:{
         secTitle: '2.5rem', //40px
         titleMid: '3rem',
+        titleSmd:'4rem',
         titleSm:'5rem', //80px
         titleMd:'6.25rem', //100px
         titleLg:'9.375rem', //150px
@@ -48,18 +50,12 @@ const config = {
         //custom colors
         transparent: 'transparent',
         current: 'currentColor',
-        white:'#FFFFFF',
+        white:'#F4F4F4',
         black:{
           main:'#000000',
           text:'#212427'
         },
-        teal:'#1D5B80',
-        //Light Blue
-        primary:{
-          default:'#6EA0C6',
-          '100':'#A8C6DD',
-          '200':'#8BB3D1',
-        },
+        tangerine:'#F08700',
         //Green
         secondary:{
           default:'#50521D',
@@ -78,11 +74,18 @@ const config = {
           '100':'#7C8393',
           '200':'#505A6F',
         },
+        //Florece Colors
+        'fc-charcoal':'#353A47',
+        'fc-plum':'#E0A1D1',
+        'fc-white':'#FAF9F9',
     background: '#E9E2D2',
       },
   },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@xpd/tailwind-3dtransforms")
+  ],
 } satisfies Config;
 
 export default config;

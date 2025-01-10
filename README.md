@@ -4,7 +4,7 @@
 
 # Debonair Fox Creative Studio
 
-This project is a revision and update to my current web [portfolio](https://www.kbrandon19.github.io). In addition to updating the visuals and experience I will use this project as a learning opportunity to improve my UI/UX skill, design system implementation, Nextjs, TypeScript and to add some depth to my site I want to include GSAP for the animations.
+This project is a revision and update to my current web [portfolio](https://www.kbrandon19.github.io). In addition to updating the visuals and experience I will use this project as a learning opportunity to improve my UI/UX skill, design system implementation, Nextjs, TypeScript and to add some depth to my site I will include Framer Motion animations.
 
 <br>
 
@@ -36,13 +36,15 @@ I hope to stream this build process on [Twitch](https://www.twitch.tv/mrdebfx) s
  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="50" height="50"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" title="VSCode" alt="VSCode" width="50" height="50"/>&nbsp;
  <img src=" https://github.com/devicons/devicon/blob/master/icons/vercel/vercel-original.svg" title="Vercel" alt="Vercel" width="50" height="50"/>&nbsp;
+    <img src="https://react.email/_next/image?url=%2Fstatic%2Flogo.png&w=128&q=75" title="ReactEmail" alt="React-Email" width="50" height="50"/>&nbsp;
+      <img src="https://github.com/devicons/devicon/blob/master/icons/sanity/sanity-original.svg" title="Sanity" alt="Sanity" width="50" height="50" />&nbsp;
 
 
 </div>
 
 ### Design & UI/UX
 <div>
- <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="50" height="50"/>&nbsp;
+   <img src="https://github.com/devicons/devicon/blob/master/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="50" height="50"/>&nbsp;
   <img src="https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256" title="GSAP" alt="GSAP" width="50" height="50"/>
   <img src="https://avatars.githubusercontent.com/u/139895814?s=280&v=4" title="shadecn/ui" alt="shadecn/ui" width="50px" height="50px">
  </div>
