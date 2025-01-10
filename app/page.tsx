@@ -1,7 +1,5 @@
 import Banner from "../components/Banner/page";
 import Hero from "@/components/Hero/page";
-import About from "./About/page";
-import Services from "./Services/page";
 import Footer from '../components/Footer/footer01';
 import Contact from "./Contact/page";
 import React from 'react';
@@ -12,11 +10,10 @@ export default function Home() {
   return (
     <>
     
- {/* <ComingSoon/> */}
+
     <Hero/>
     <Banner/>
-    <About/>
-    <Services/>
+    <PalScroll/>
     <Contact/>
     <Footer/>
   

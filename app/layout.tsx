@@ -9,7 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 import SmoothScroll from "@/components/SmoothScroll";
 import { ReactNode } from "react";
 import Header01 from "@/components/Header/header01";
-import Footer01 from "@/components/Footer/footer01";
+// import Footer01 from "@/components/Footer/footer01";
 import Loading from "./loading";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -46,16 +46,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   
         
           {/* <Header/> */}
-          <main className={`${poppins.variable} ${lora.variable}`}>
-            {children}
-            <Analytics />
-          </main>
-          <Footer01/>
 
             <AnimatePresence>{children}</AnimatePresence>
             </Suspense>
 
-            <Footer01 />
+            
           </SmoothScroll>
           <Analytics />
         </main>
