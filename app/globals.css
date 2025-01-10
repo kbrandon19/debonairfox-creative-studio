@@ -226,8 +226,8 @@ html.lenis, html.lenis body {
   top: -12.5vh;
   height: 200vh;
   display: flex;
-  gap: 2vw;
-  padding: 2vw;
+  gap: 1vw;
+  padding: 3vw;
 }
 
 /* Columns containing images */
@@ -253,7 +253,7 @@ html.lenis, html.lenis body {
 }
 
 /* .imageContainer:hover {
-  transform: scale(1.02); /* Subtle hover effect 
+  transform: scale(1.03); /* Subtle hover effect 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth
 } */
 

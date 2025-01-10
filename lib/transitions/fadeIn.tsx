@@ -7,7 +7,7 @@ interface Props {
   children: JSX.Element;
 }
 
-export const FadeIn = ({ children }: Props) => {
+ const FadeIn = ({ children }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -34,3 +34,5 @@ export const FadeIn = ({ children }: Props) => {
     </div>
   );
 };
+
+export default FadeIn;

@@ -32,7 +32,7 @@ async function Contact() {
   return (
     <div
       id="contact"
-      className=" relative z-20 w-full h-auto bg-tangerine py-20 "
+      className=" relative z-20 w-screen h-auto bg-tangerine py-20 "
     >
       <div className="h-full w-auto fixed -mt-16 -z-[20] -py-40">
         <Image
@@ -54,7 +54,7 @@ async function Contact() {
             <div className="w-full h-auto flex flex-col gap-y-4 xl:gap-y-0  xl:justify-between content-center xl:items-center">
               
               <div className="w-5/6 ">
-                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleMd lg:leading-[5.5rem]  uppercase font-semibold text-accent-default ">
+                <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleMd lg:leading-[5.5rem]  2xl:text-titleLg 2xl:leading-[8rem] uppercase font-semibold text-accent-default ">
                   Let<span className="text-background">&apos;</span>s Create
                   Something
                 </h1>
@@ -78,7 +78,7 @@ async function Contact() {
               <div>
                 <p className="text-l text-background ">Request Information.</p>
                 <Link href={"mailto:kbrandon319@gmail.com?subject=Digital%20Services%20Inquiry"}>
-                  <p className="text-black-main hover:text-background transition duration-300 ease-in-out">
+                  <p className="text-accent-default hover:text-background transition duration-300 ease-in-out">
                     info@dfsc.com
                   </p>
                 </Link>
@@ -89,20 +89,20 @@ async function Contact() {
               <div className="flex flex-col md:flex-row gap-x-4  lowercase ">
                 <Link
                   href="https://linkedin.com/in/kdbrand"
-                  className=" text-black-main hover:text-background transition duration-300 ease-in-out"
+                  className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
                   LinkedIn
                 </Link>
 
                 <Link
                   href={"https://instagram.com/mrdebonairfox"}
-                  className=" text-black-main transition hover:text-background duration-300 ease-in-out"
+                  className=" text-accent-default transition hover:text-background duration-300 ease-in-out"
                 >
                   Instagram
                 </Link>
                 <Link
                   href={"https://github.com/kbrandon19"}
-                  className="text-black-main hover:text-background transition duration-300 ease-in-out"
+                  className="text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
                   GitHub
                 </Link>

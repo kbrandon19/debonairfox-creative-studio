@@ -11,8 +11,8 @@ const images = [
   /* col 1 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448219/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_bj3pil.jpg",
   /* col 2 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448223/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_d8itr0.jpg",
 
-  /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679047/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_xuhgsh.jpg",
-  /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
+  /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
+  /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736463188/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Untitled_design_4_agxhvf.jpg",
   /* col 5 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
   
 
@@ -20,8 +20,8 @@ const images = [
   /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
   /* col 8 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png",
 
-  /* col 9 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/sanity_qsnchr.jpg",
-  /* col 10 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189186/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/sanity_qsnchr.jpg",
+  /* col 9 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736188655/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Meia_tlo2ft.jpg",
+  /* col 10 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549088/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/5_mihicb.png",
   /* col 11 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679074/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_iugerm.jpg",
 ];
 
@@ -44,10 +44,10 @@ const Page: React.FC = () => {
   const height = dimension.width > 800 ? dimension.height : FIXED_HEIGHT;
 
   // Conditional transforms based on screen width
-  const y = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.5]);
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 0.8]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, height * 1]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
+  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3.5]);
 
   useEffect(() => {
 const lenis = new Lenis({
@@ -95,8 +95,8 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
   return (
     <motion.div className="column" style={{ y }}>
       {images.map((src, i) => (
-        <div key={i} className="imageContainer hover:cursor-pointer">
-          <Link href="https://www.github.com/kbrandon19" aria-label={`View Image ${i + 1}`}>
+        <div key={i} className="imageContainer">
+          
             <Image
               src={src} // Use the direct URL from the images array
               alt={`Image ${i + 1}`}
@@ -105,7 +105,7 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
               sizes="(max-width: 800px) 100vw, 33vw"
               priority={i === 0}
             />
-          </Link>
+          
         </div>
       ))}
     </motion.div>

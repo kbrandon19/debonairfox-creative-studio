@@ -38,8 +38,7 @@ export default function Paragraph({ value }: ParagraphProps) {
       className="w-5/6 h-auto mx-auto 
       text-titleMid
       smd:text-titleSmd
-      lg:text-titleSm 
-      2xl:text-titleMd font-semibold leading-tight uppercase text-background drop-shadow-md flex flex-wrap "
+      lg:text-titleSm font-semibold leading-tight uppercase text-background drop-shadow-md flex flex-wrap "
       ref={element}
     >
       {words.map((word, i) => {

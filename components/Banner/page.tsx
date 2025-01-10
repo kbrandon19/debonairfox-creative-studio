@@ -2,7 +2,7 @@ import React from "react";
 import Paragraph from "./paragraph";
 
 const paragraph =
-  "Transform your brand with our unique blend of creativity and tech-savvy expertise—crafting dynamic websites, immersive content, and captivating campaigns that leave a lasting impression.";
+  "Transform your brand with our unique blend of creativity and expertise—crafting dynamic websites and captivating content that will leave a lasting impression.";
 
 function page() {
   return (
