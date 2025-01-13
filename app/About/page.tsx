@@ -52,7 +52,7 @@ function About() {
                     height: "100%",
                     objectPosition: "top",
                   }}
-                  loading="lazy"
+                  priority
                 />{" "}
               </div>
             </div>
