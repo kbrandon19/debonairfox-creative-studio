@@ -7,14 +7,14 @@ export const Links = [
     title: "Services",
     href: "/Services",
   },
-  {
-    title: "About",
-    href: "/About",
-  },
-  {
-    title: "Work",
-    href: "/work",
-  },
+  // {
+  //   title: "About",
+  //   href: "/About",
+  // },
+  // {
+  //   title: "Work",
+  //   href: "/work",
+  // },
   {
     title: "Contact",
     href: "/Contact",

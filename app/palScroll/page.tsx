@@ -13,10 +13,10 @@ const images = [
 
   /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
   /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736463188/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Untitled_design_4_agxhvf.jpg",
-  /* col 5 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
+  /* col 5 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
   
 
-  /* col 6 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
+  /* col 6 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
   /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
   /* col 8 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png",
 

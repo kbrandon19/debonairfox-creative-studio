@@ -84,10 +84,10 @@ const DrawerClient: React.FC<DrawerClientProps> = ({ data }) => {
                       <p className="text-l lg:text-xl 2xl:text-Xl text-black-text">
                         {content.serviceInfo}
                       </p>
-                      <div className="w-max my-10 border-b-2 border-tangerine p-2">
+                      {/* <div className="w-max my-10 border-b-2 border-tangerine p-2">
                         <Link href={content.serviceLink} className="text-lg tracking-widest uppercase mb-4 text-accent-default ">View Work</Link>
                        
-                      </div>
+                      </div> */}
                       
                       
 
