@@ -52,7 +52,7 @@ function page() {
      
 
 {/* Case Study 2 */}
-        <div className="w-full  lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+        {/* <div className="w-full  lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
 
           <div className="w-full h-full flex ">
           <Link href={"case-study/website"} className="flex justify-center items-center">
@@ -68,10 +68,10 @@ function page() {
           </div>
 
          
-        </div>
+        </div> */}
 
 {/* Case Study 3 */}
-        <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
+        {/* <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
 
 <div className="w-full h-full flex ">
 <Link href={"case-study/website"} className="flex justify-center items-center">
@@ -87,9 +87,11 @@ function page() {
 </div>
 
 
-</div>
+</div> */}
 
       </div>
+      
+      
     </div>
   );
 }
