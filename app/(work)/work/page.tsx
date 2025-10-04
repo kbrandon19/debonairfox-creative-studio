@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 
 import screenShot from "../../assets/screenshot.png";
-import jdaniel from "../../assets/jdaniel.png";
+// import jdaniel from "../../assets/jdaniel.png";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 
 function page() {
   return (
-    <div className="w-full h-auto xl:h-screen bg-white my-20 2xl:my-0 pt-20 xl:pt-0">
+    <div className="w-full h-auto xl:h-screen bg-white my-20 2xl:my-0 pt-10 xl:pt-0">
 
       <div className="w-5/6 h-auto mx-auto my-10 ">
       <div className="w-full h-auto flex flex-col gap-y-2 xl:gap-y-0  xl:justify-between content-center xl:items-center">
@@ -47,8 +47,6 @@ function page() {
               </Link>
             </div>
           </div>
-
-          
      
 
 {/* Case Study 2 */}
@@ -69,25 +67,6 @@ function page() {
 
          
         </div> */}
-
-{/* Case Study 3 */}
-        {/* <div className="w-full lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
-
-<div className="w-full h-full flex ">
-<Link href={"case-study/website"} className="flex justify-center items-center">
-  <Image
-    src={jdaniel}
-    width={0}
-    height={0}
-    alt="profile photo"
-    style={{ objectFit: "contain", width: "90%", height: "90%" }}
-    className="drop-shadow-xl"
-  />
-  </Link>
-</div>
-
-
-</div> */}
 
       </div>
       

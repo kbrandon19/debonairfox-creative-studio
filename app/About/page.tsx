@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import profileImg2 from "../assets/IMG_3498-Edit.png";
+// import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
 
 
@@ -37,25 +37,22 @@ function About() {
 
           {/* Bio Section */}
           <div className="h-auto w-full flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-5 justify-end">
-            <div className="md:w-2/3 flex justify-center">
-              <div className="w-auto h-full md:w-3/4 md:h-3/4  
-              md:[clip-path:polygon(0_0%,75%_0%,100%_100%,25%_100%)] 
-              2xl:[clip-path:polygon(25%_0%,100%_0%,75%_100%,0%_100%)]">
-                <Image
-                  src={profileImg2}
-                  width={0}
-                  height={0}
-                  alt="profile photo"
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "100%",
-                    objectPosition: "top",
-                  }}
-                  priority
-                />{" "}
-              </div>
-            </div>
+<div className="md:w-2/3 flex justify-center">
+  <Image
+    src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1736807679/Debonair%20Fox%20Creative%20Studio/Images/IMG_3498-Edit_ssoooq.jpg"
+    alt="profile photo"
+    width={800}   // example
+    height={1000} // example, maintain aspect ratio
+    style={{
+      objectFit: "contain",
+      width: "100%",
+      height: "auto",
+      objectPosition: "top",
+    }}
+    priority
+  />
+</div>
+
 
             <div className="flex flex-col content-center flex-wrap w-full md:w-2/3 p-4">
               <div>
@@ -84,6 +81,8 @@ function About() {
                 impactful first impressions and bringing my clients unique
                 narratives to life.
               </p>
+
+              
 
             </div>
           </div>
