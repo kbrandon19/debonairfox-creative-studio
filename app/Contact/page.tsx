@@ -4,31 +4,14 @@ export const revalidate = 0;
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { client } from "../../../sanity/lib/client";
-// import { contactSection } from "@/lib/interface";
-// import { urlForImage } from "../../../sanity/lib/image";
 
-// async function getData() {
-//   const query = `
-//   *[_type == 'contact'][0]{
-//     contactTitle,
-//     contactHeading,
-//     contactImage
-//   }`;
-
-//   const data = await client.fetch(query,{
-//     revalidate: new Date().getSeconds(),
-//   });
-//   return data;
-// }
 
 async function Contact() {
-  // const data: contactSection = await getData();
 
   return (
     <div
       id="contact"
-      className=" relative z-20 w-screen h-auto bg-tangerine py-20 "
+      className=" relative z-20 w-screen h-auto bg-tangerine py-10 "
     >
       <div className="h-full w-auto fixed -mt-16 -z-[20] -py-40">
         <Image

@@ -25,7 +25,7 @@ function About() {
         />
       </div>
 
-      <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-28 xl:mt-40">
+      <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-[80px] xl:mt-40">
         <div className="w-full mx-auto h-auto   flex flex-col">
           {/* Top Intro Text */}
           <div className="w-5/6 h-screen xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-center break-words">
@@ -37,24 +37,28 @@ function About() {
 
           {/* Bio Section */}
           <div className="h-auto w-full flex flex-col md:flex-row gap-y-10 md:gap-y-0 gap-x-5 justify-end">
-<div className="md:w-2/3 flex justify-center">
-  <Image
-    src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1736807679/Debonair%20Fox%20Creative%20Studio/Images/IMG_3498-Edit_ssoooq.jpg"
-    alt="profile photo"
-    width={800}   // example
-    height={1000} // example, maintain aspect ratio
-    style={{
-      objectFit: "contain",
-      width: "100%",
-      height: "auto",
-      objectPosition: "top",
-    }}
-    priority
-  />
-</div>
+
+            {/* Image */}
+            <div className="md:w-2/3 flex justify-center">
+              <Image
+                src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1736807679/Debonair%20Fox%20Creative%20Studio/Images/IMG_3498-Edit_ssoooq.jpg"
+                alt="profile photo"
+                width={800}   // example
+                height={1000} // example, maintain aspect ratio
+                style={{
+                  objectFit: "contain",
+                  width: "100%",
+                  height: "auto",
+                  objectPosition: "top",
+                }}
+                priority
+              />
+            </div>
 
 
             <div className="flex flex-col content-center flex-wrap w-full md:w-2/3 p-4">
+
+            {/* Bio Paragraph */}
               <div>
                 <p className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
                   <span className="bodyText capitalize italic font-bold text-titleMid ">
@@ -65,29 +69,20 @@ function About() {
                   elegance and creativity. With a background steeped in diverse
                   creative pursuits, I have honed a keen eye for intriguing
                   visuals and the subtleties of our environment.
-                </p>
-               
-              </div>
-            </div>
-          </div>
-
-          {/* Section 2 */}
-          <div className="w-full h-auto flex p-4">
-            <div className="md:w-1/2 ">
-              <p className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light text-accent-default ">
-                This heightened awareness allows me to find beauty in the most
+<br/><br/>
+                  This heightened awareness allows me to find beauty in the most
                 unexpected places, transforming the ordinary into extraordinary.
                 As a thoughtful creative, I&apos;m passionate about making
                 impactful first impressions and bringing my clients unique
                 narratives to life.
-              </p>
+                </p>
 
+              </div>
               
-
             </div>
           </div>
 
-          {/* Three */}
+          {/* Banner CTA */}
           <div className="w-full h-auto mx-auto text-tangerine flex flex-col gap-y-10 justify-center align-center text-center bg-accent-default py-20 px-10 mt-40">
             <h1 className="text-titleSmd leading-[4rem] font-semibold">
               Looking for a Unique Creative Partner?
