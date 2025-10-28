@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import phoneImg2 from "../../../assets/mockup.png";
-import Image3 from "../../../assets/Image3.png";
-import Gif from "../../../assets/download.gif";
-import screenShot from "../../../assets/screenshot.png";
+// import screenShot from "../../../assets/screenshot.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -35,13 +32,14 @@ function page() {
         </div>
 
         <div className="h-screen md:basis-3/6 drop-shadow-xl">
-          <Image
-            src={phoneImg2}
-            width={0}
-            height={0}
-            alt="profile photo"
-            style={{ objectFit: "cover", objectPosition: 'right',width: "100%", height: "100%" }}
-          />
+        <Image
+  src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617797/Debonair%20Fox%20Creative%20Studio/Work/Florece/mockup_nakssn.png"
+  alt="profile photo"
+  fill
+  className="object-cover object-right"
+  unoptimized
+/>
+
         </div>
       </div>
 
@@ -106,17 +104,16 @@ function page() {
       </div>
 
       {/* Large Image */}
-      <div className="w-full md:w-5/6 h-auto mx-auto bg-white my-20 drop-shadow-xl">
+      {/* <div className="w-full md:w-5/6 h-auto mx-auto bg-white my-20 drop-shadow-xl">
         <div>
           <Image
-            src={screenShot}
-            width={0}
-            height={0}
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617796/Debonair%20Fox%20Creative%20Studio/Work/Florece/screenshot_jshej7.png"
+            fill
             alt="profile photo"
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Case Study 2 */}
       <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
@@ -156,11 +153,11 @@ function page() {
         {/* image */}
         <div className="basis-1/2 drop-shadow-xl">
           <Image
-            src={Image3}
-            width={0}
-            height={0}
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617797/Debonair%20Fox%20Creative%20Studio/Work/Florece/Image3_woocjj.png"
+            fill
             alt="profile photo"
-            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            className="object-cover object-right"
+            unoptimized
           />
         </div>
       </div>
@@ -171,11 +168,11 @@ function page() {
       {/* image */}
         <div className="basis-1/2 drop-shadow-xl">
           <Image
-            src={Gif}
-            width={0}
-            height={0}
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617812/Debonair%20Fox%20Creative%20Studio/Work/Florece/download_oqbzd1.gif"
+            fill
             alt="profile photo"
-            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+           className="object-contain"
+            unoptimized
           />
         </div>
 

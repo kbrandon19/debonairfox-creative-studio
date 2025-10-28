@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 import screenShot from "../../assets/screenshot.png";
-// import jdaniel from "../../assets/jdaniel.png";
 import Link from "next/link";
 // import { Button } from "@/components/ui/button";
 
@@ -47,27 +46,6 @@ function page() {
               </Link>
             </div>
           </div>
-     
-
-{/* Case Study 2 */}
-        {/* <div className="w-full  lg:w-1/2 h-1/2  bg-gradient-to-tr from-gray-300 to-black-main flex flex-col-reverse justify-end items-center  drop-shadow-xl py-10">
-
-          <div className="w-full h-full flex ">
-          <Link href={"case-study/website"} className="flex justify-center items-center">
-            <Image
-              src={jdaniel}
-              width={0}
-              height={0}
-              alt="profile photo"
-              style={{ objectFit: "contain", width: "90%", height: "90%" }}
-              className="drop-shadow-xl"
-            />
-            </Link>
-          </div>
-
-         
-        </div> */}
-
       </div>
       
       
