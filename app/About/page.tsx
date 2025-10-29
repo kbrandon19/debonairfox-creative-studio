@@ -28,8 +28,8 @@ function About() {
       <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-[80px] xl:mt-40">
         <div className="w-full mx-auto h-auto   flex flex-col">
           {/* Top Intro Text */}
-          <div className="w-5/6 h-screen xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-center break-words">
-            <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5.5rem]  2xl:text-titleLg 2xl:leading-[8rem] font-semibold  text-accent-default uppercase">
+          <div className="w-2/3 h-screen xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-content-end break-words">
+            <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5.5rem]  font-semibold  text-accent-default uppercase">
               Crafting unique digital creations that resonate and inspire
               <span className="text-tangerine">.</span>
             </h1>
@@ -56,34 +56,42 @@ function About() {
             </div>
 
 
-            <div className="flex flex-col content-center flex-wrap w-full md:w-2/3 p-4">
+            <div className="flex flex-col content-center  flex-wrap w-full md:w-2/3 p-4">
 
-            {/* Bio Paragraph */}
-              <div>
-                <p className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
+              {/* Bio Paragraph */}
+              <div className="w-auto h-full flex flex-col content-center justify-around">
+                <div>
+                <p className="bodyText text-Xl leading-[2rem] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
                   <span className="bodyText capitalize italic font-bold text-titleMid ">
                     Hello!
                   </span>{" "}
                   I&apos;m Kenneth, the mind behind Debonair Fox Creative
                   Studio. I believe that every story deserves to be told with
-                  elegance and creativity. With a background steeped in diverse
-                  creative pursuits, I have honed a keen eye for intriguing
+                  elegance and creativity. <br /><br />
+                  As a thoughtful creative, I&apos;m passionate about making
+                  impactful first impressions and bringing my clients unique
+                  narratives to life.
+                  {/*With a background steeped in diverse
+                   creative pursuits, I have honed a keen eye for intriguing
                   visuals and the subtleties of our environment.
-<br/><br/>
-                  This heightened awareness allows me to find beauty in the most
-                unexpected places, transforming the ordinary into extraordinary.
-                As a thoughtful creative, I&apos;m passionate about making
-                impactful first impressions and bringing my clients unique
-                narratives to life.
-                </p>
 
+                  This heightened awareness allows me to find beauty in the most
+                unexpected places, transforming the ordinary into extraordinary. */}
+
+                </p></div>
+                <div className="w-auto h-auto ">
+                  <p className="bodyText text-Xl leading-[2rem]">Ready to bring your vision to life? Let’s create something captivating—crafted with creativity, purpose, and style.</p>
+                  <Button className="  text-background bg-accent-default text-lg tracking-widest rounded-none">
+                <Link href="mailto:kbrandon319@gmail.com">Let&apos;s Work</Link>
+              </Button>
+                </div>
               </div>
-              
+
             </div>
           </div>
 
-          {/* Banner CTA */}
-          <div className="w-full h-auto mx-auto text-tangerine flex flex-col gap-y-10 justify-center align-center text-center bg-accent-default py-20 px-10 mt-40">
+          {/* remove Banner CTA */}
+          {/* <div className="w-full h-auto mx-auto text-tangerine flex flex-col gap-y-10 justify-center align-center text-center bg-accent-default py-20 px-10 mt-40">
             <h1 className="text-titleSmd leading-[4rem] font-semibold">
               Looking for a Unique Creative Partner?
             </h1>
@@ -97,7 +105,7 @@ function About() {
                 <Link href={"/Contact"}>Let&apos;s Work</Link>
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
