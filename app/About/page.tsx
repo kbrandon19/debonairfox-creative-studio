@@ -6,24 +6,16 @@ import Link from "next/link";
 
 // import profileImg2 from "../assets/IMG_3498-Edit.png";
 import { Button } from "@/components/ui/button";
+import BackgroundImage from "@/components/BackgroundImage/page";
 
 
 function About() {
   return (
     <div id="about" className=" relative w-full h-auto  flex flex-col mb-40">
       {/* BackgroundImage */}
-      <div className="h-full w-full fixed -mt-16 -z-10">
-        <Image
-          src={
-            "https://res.cloudinary.com/dujkjy2e2/image/upload/v1710820177/Debonair%20Fox%20Creative%20Studio/Images/1920_x_banner_u5tgoc.png"
-          }
-          fill={true}
-          quality={80}
-          priority={true}
-          alt="mobile-background"
-          style={{ objectFit: "cover", opacity: ".3" }}
-        />
-      </div>
+
+  <BackgroundImage/>
+
 
       <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-[80px] xl:mt-40">
         <div className="w-full mx-auto h-auto   flex flex-col">

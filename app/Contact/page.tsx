@@ -13,23 +13,6 @@ async function Contact() {
       id="contact"
       className=" relative z-20 w-screen h-auto bg-tangerine "
     >
-
-      {/* Background Image Banner */}
-      {/* <div className="h-full w-auto fixed -mt-16 -z-[20] -py-40">
-        <Image
-          src={
-            "https://res.cloudinary.com/dujkjy2e2/image/upload/v1710820177/Debonair%20Fox%20Creative%20Studio/Images/1920_x_banner_u5tgoc.png"
-          }
-          fill={true}
-          quality={80}
-          priority={true}
-          alt="mobile-background"
-          blurDataURL="blur"
-          style={{ objectFit: "cover", opacity: ".3" }}
-        />
-      </div> */}
-
-
       <div className="w-5/6 h-screen mx-auto flex flex-col ">
         <div className="h-full flex flex-col justify-evenly gap-y-20 gap-x-10">
           {/* top div */}
