@@ -26,7 +26,7 @@ function page() {
             </div>
       </div>
 
-      <div className="w-full md:w-5/6 h-auto  mx-auto flex flex-col  md:flex-row gap-5 md:justify-center">
+      <div className="w-full md:w-5/6 h-auto  mx-auto flex flex-col  md:flex-row gap-5 ">
 
 {/* Case Study 1 */}
         

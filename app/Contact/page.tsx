@@ -9,10 +9,7 @@ import Link from "next/link";
 async function Contact() {
 
   return (
-    <div
-      id="contact"
-      className=" relative z-20 w-screen h-auto bg-tangerine "
-    >
+    <div id="contact" className=" relative z-20 w-screen h-auto bg-tangerine ">
       <div className="w-5/6 h-screen mx-auto flex flex-col ">
         <div className="h-full flex flex-col justify-evenly gap-y-20 gap-x-10">
           {/* top div */}
@@ -36,7 +33,6 @@ async function Contact() {
             </div>
           </div>
 
-
           {/* bottom div */}
 
           <div className="w-1/2 h-auto text-secTitle xlg:text-titleMid flex flex-col md:flex-row lg:justify-between gap-10">
@@ -53,12 +49,9 @@ async function Contact() {
             <div className="">
               <p className="text-l text-background ">Stay Connected.</p>
               <div className="flex flex-col md:flex-row gap-x-4  lowercase ">
-                <Link
-                  href="https://linkedin.com/in/kdbrand"
-                  className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
+                <Link href="https://linkedin.com/in/kdbrand" className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
-                  LinkedIn
-                </Link>
+                  LinkedIn</Link>
 
                 <Link
                   href={"https://instagram.com/mrdebonairfox"}
@@ -74,8 +67,6 @@ async function Contact() {
                 </Link>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
