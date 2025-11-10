@@ -96,7 +96,7 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
     <motion.div className="column" style={{ y }}>
       {images.map((src, i) => (
         <div key={i} className="imageContainer">
-          
+          <Link href="/work">
             <Image
               src={src} // Use the direct URL from the images array
               alt={`Image ${i + 1}`}
@@ -105,7 +105,7 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
               sizes="(max-width: 800px) 100vw, 33vw"
               priority={i === 0}
             />
-          
+          </Link>
         </div>
       ))}
     </motion.div>

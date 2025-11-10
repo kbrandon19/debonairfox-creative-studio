@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-// import screenShot from "../../../assets/screenshot.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -37,7 +36,8 @@ function page() {
   alt="profile photo"
   fill
   className="object-cover object-right"
-  unoptimized
+  loading="eager"
+  
 />
 
         </div>
@@ -103,17 +103,6 @@ function page() {
         </div>
       </div>
 
-      {/* Large Image */}
-      {/* <div className="w-full md:w-5/6 h-auto mx-auto bg-white my-20 drop-shadow-xl">
-        <div>
-          <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617796/Debonair%20Fox%20Creative%20Studio/Work/Florece/screenshot_jshej7.png"
-            fill
-            alt="profile photo"
-            style={{ objectFit: "cover", width: "100%", height: "100%" }}
-          />
-        </div>
-      </div> */}
 
       {/* Case Study 2 */}
       <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
@@ -220,22 +209,6 @@ function page() {
           engagement.
         </h1>
       </div>
-
-      <div className="w-full h-auto mx-auto text-tangerine flex flex-col gap-y-10 justify-center align-center text-center bg-accent-default py-20 px-10 mt-40">
-            <h1 className="text-titleSmd leading-[4rem] font-semibold">
-              Looking for a Unique Creative Partner?
-            </h1>
-            <p className="text-xl md:text-Xl w-full md:w-2/3 mx-auto text-background">
-              Let us craft visually stunning designs that make your brand stand
-              out. Get in touch today and bring your vision to life with a
-              creative touch like no other!
-            </p>
-            <div className="w-auto mt-10 ">
-              <Button className="  text-background bg-accent-default hover:bg-tangerine text-lg tracking-widest rounded-none border-solid border-tangerine border-2 hover:text-accent-default hover:border-tangerine">
-                <Link href={"/Contact"}>Let&apos;s Work</Link>
-              </Button>
-            </div>
-          </div>
     </div>
   );
 }

@@ -20,11 +20,14 @@ function About() {
       <div className="w-full h-full flex flex-col md:flex-row items-center lg:mt-[80px] xl:mt-40">
         <div className="w-full mx-auto h-auto   flex flex-col">
           {/* Top Intro Text */}
-          <div className="w-2/3 h-screen xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-content-end break-words">
-            <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5.5rem]  font-semibold  text-accent-default uppercase">
+          <div className="w-5/6 h-screen mx-auto xl:h-auto mt-36 md:mt-10 pl-2 md:pl-0 flex align-content-end break-words">
+            {/* <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5.5rem]  font-semibold  text-accent-default uppercase">
               Crafting unique digital creations that resonate and inspire
               <span className="text-tangerine">.</span>
-            </h1>
+            </h1> */}
+            <h1 className="w-full md:w-2/3 text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] uppercase font-semibold  text-accent-default ">
+                  Crafting unique digital creations that resonate and inspire<span className="text-tangerine">.</span>
+                </h1>
           </div>
 
           {/* Bio Section */}
@@ -53,7 +56,7 @@ function About() {
               {/* Bio Paragraph */}
               <div className="w-auto h-full flex flex-col content-center justify-around">
                 <div>
-                <p className="bodyText text-Xl leading-[2rem] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
+                <p className="bodyText leading-[2rem] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
                   <span className="bodyText capitalize italic font-bold text-titleMid ">
                     Hello!
                   </span>{" "}
@@ -71,9 +74,11 @@ function About() {
                 unexpected places, transforming the ordinary into extraordinary. */}
 
                 </p></div>
-                <div className="w-auto h-auto ">
-                  <p className="bodyText text-Xl leading-[2rem]">Ready to bring your vision to life? Let’s create something captivating—crafted with creativity, purpose, and style.</p>
-                  <Button className="  text-background bg-accent-default text-lg tracking-widest rounded-none">
+                <div className="w-auto h-auto">
+                  <p className=" bodyText  text-Xl leading-[2.5rem] font-light pt-10 text-accent-default mb-10">
+                    <span className=" bodyText capitalize italic font-bold text-titleMid ">Ready to bring your vision to life?</span> Let’s create something captivating, crafted with creativity, purpose & style.</p>
+                  
+                  <Button className="  text-background bg-accent-default text-lg tracking-widest rounded-none hover:bg-tangerine hover:rounded-lg hover:text-black-text transition">
                 <Link href="mailto:kbrandon319@gmail.com">Let&apos;s Work</Link>
               </Button>
                 </div>
