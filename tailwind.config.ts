@@ -79,6 +79,10 @@ const config = {
         'fc-plum':'#E0A1D1',
         'fc-white':'#FAF9F9',
     background: '#E9E2D2',
+
+    //Common Grounds Colors
+    'cg-green':'#0f4c4d',
+    'cg-red':'#9c002b',
       },
   },
   },

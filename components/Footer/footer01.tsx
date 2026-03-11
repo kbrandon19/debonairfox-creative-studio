@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="w-full relative z-40 h-auto flex flex-row justify-end content-end bg-background">
       <div className=" w-auto h-auto p-2 text-sm text-accent-default">
-        © 2025 Debonair Fox Creative Studio. All Right Reserved.
+        © 2026 Debonair Fox Creative Studio. All Right Reserved.
       </div>
     </footer>
   );

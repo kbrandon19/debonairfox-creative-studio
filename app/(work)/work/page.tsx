@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import screenShot from "../../assets/screenshot.png";
+import screenShotCG from "../../assets/screenshot-cg.png";
 import Link from "next/link";
 // import { Button } from "@/components/ui/button";
 
@@ -40,12 +41,12 @@ function page() {
           </div>
         </div>
 
-        {/* Remaining projects */}
-        {/* <div className="">
+        {/* Common Grounds */}
+        {/* <div className="w-full bg-gradient-to-tr from-cg-red to-cg-green flex flex-col-reverse justify-end items-center  drop-shadow-xl">
           <div className="w-full h-full flex justify-center">
-            <Link href={"work/florece"} className="flex justify-center items-center">
+            <Link href={"work/common-grounds"} className="flex justify-center items-center">
               <Image
-                src={screenShot}
+                src={screenShotCG}
                 width={0}
                 height={0}
                 alt="Profile photo"
@@ -55,8 +56,8 @@ function page() {
 
             </Link>
           </div>
-        </div>
-
+        </div> */}
+ {/*
         <div className="">
           <div className="w-full h-full flex justify-center">
             <Link href={"work/florece"} className="flex justify-center items-center">
