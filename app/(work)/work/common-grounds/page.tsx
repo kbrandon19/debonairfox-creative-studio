@@ -31,15 +31,13 @@ function page() {
         </div>
 
         <div className="h-screen md:basis-3/6 drop-shadow-xl">
-        <Image
-  src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773199234/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/2_upskky.png"
-  alt="profile photo"
-  fill
-  className="object-cover object-right"
-  loading="eager"
-  
-/>
-
+          <Image
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773199234/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/2_upskky.png"
+            alt="profile photo"
+            fill
+            className="object-cover object-right"
+            loading="eager"
+          />
         </div>
       </div>
 
@@ -48,14 +46,19 @@ function page() {
         <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
             <h1 className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
-              Stephanie, a seasoned communications expert, decided to launch her
-              own consulting firm, Florece Consulting, to focus on the causes
-              she’s passionate about. She reached out for a website that would
-              not only reflect her brand’s mission but also provide the
-              functionality she needed to manage her business efficiently.
+              Common Grounds is a local breakfast and brunch restaurant that
+              serves a unique mix of Ecuadorian and American-style dishes.
+              Recently, the restaurant updated its physical menu to improve
+              readability and visual appeal. While the redesign helped modernize
+              the in-store experience, the brand still lacked a digital presence
+              that reflected the same updated look and feel. This project
+              focused on designing and developing a website that would complete
+              the restaurant’s visual refresh while making it easier for
+              customers to explore the menu, find the location, and build trust
+              before visiting.
             </h1>
           </div>
-<hr />
+          <hr />
           <div className="h-auto w-auto flex flex-col md:flex-row gap-x-5 justify-between">
             <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               The Need<span className="text-tangerine">.</span>
@@ -64,45 +67,38 @@ function page() {
             <div className="flex flex-row flex-wrap">
               <div className="h-auto w-auto md:w-1/2 md:p-4 mt-5 md:mt-0">
                 <h3 className="text-xl bodyText font-bold opacity-75 text-accent-100">
-                  Simple Yet Engaging Web Design:{" "}
+                  Easy Content Management:{" "}
                 </h3>
                 <p className="text-l font-light">
-                  Stephanie wanted a clean, modern site that was easy to
-                  navigate yet visually compelling.
+                  A user-friendly CMS that allows the restaurant to quickly
+                  update menu items, images, and information without requiring
+                  technical knowledge.
                 </p>
               </div>
               <div className="h-auto w-auto md:w-1/2 md:p-4 mt-5 md:mt-0">
                 <h3 className="text-xl bodyText font-bold opacity-75 text-accent-100">
-                  Easy Content Management:
+                  Modern yet Engaging UI/ UX Design :
                 </h3>{" "}
                 <p className="text-l font-light">
-                  A user-friendly CMS for quick content updates without
-                  technical hurdles.
+                  A visually appealing interface that reflects the restaurant’s
+                  vibrant personality while ensuring the menu and key
+                  information remain easy to read and navigate.
                 </p>
               </div>
               <div className="h-auto w-auto md:w-1/2 md:p-4 mt-5 md:mt-0">
                 <h3 className="text-xl bodyText font-bold opacity-75 text-accent-100">
-                  Customized Logo and Color Scheme:
+                  Web Design:
                 </h3>{" "}
                 <p className="text-l font-light">
-                  A brand identity that resonates with the name “Florece,”
-                  meaning to bloom and flourish.
-                </p>
-              </div>
-              <div className="h-auto w-auto md:w-1/2 md:p-4 mt-5 md:mt-0">
-                <h3 className="text-xl bodyText font-bold opacity-75 text-accent-100">
-                  Analytics and Integrations:{" "}
-                </h3>
-                <p className="text-l font-light">
-                  Web traffic monitoring, email submissions, and calendar
-                  integrations for appointments.
+                  A responsive website that helps potential customers discover
+                  the restaurant, view the menu, and build trust through visuals
+                  and customer reviews.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       {/* Case Study 2 */}
       <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
@@ -112,16 +108,22 @@ function page() {
               Web Design<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
-              To achieve the desired simplicity and engagement, the site was
-              structured into six main sections: Hero, About, Services, Founder
-              Bio, Media Appearances, and Contact. The design ethos was
-              minimalism with purpose, avoiding unnecessary elements while
-              focusing on what’s essential. A prominent Hero section greets
-              users with the company’s core message, followed by clean,
-              straightforward sections that clearly communicate Stephanie&apos;s
-              services. The Contact section balances form and function, with a
-              streamlined design enhanced by visual elements that prevent the
-              page from feeling text-heavy.
+              From the beginning, I knew I wanted the hero section to be
+              visually bold, with large typography acting as the main focal
+              point. The goal was to immediately communicate the restaurant’s
+              identity while creating a visually engaging first impression. I
+              approached the design from a customer’s perspective. When choosing
+              where to eat, people often rely on visual cues and social proof.
+              As the saying goes, we eat with our eyes first.
+            </p>
+            <p className="text-l font-light">
+              To support this idea, I incorporated Google review ratings
+              directly into the hero section. This provides immediate
+              credibility while also helping persuade visitors who may be
+              unfamiliar with the restaurant. Food imagery was also added to
+              complement the design and reinforce the restaurant’s offerings.
+              Combined with vibrant colors and coffee-themed illustrations
+              inspired by the restaurant’s menu design.
             </p>
           </div>
 
@@ -130,11 +132,24 @@ function page() {
               Content Management System<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
-              Sanity was chosen as the CMS to meet Stephanie’s need for easy
-              content management. With a customizable dashboard, Sanity provides
-              her the flexibility to update content effortlessly. Each document
-              in the CMS maps directly to sections on the site, ensuring a
-              smooth user experience when editing.
+              To make the website easy to maintain, I implemented a headless CMS
+              using Sanity. Sanity allows the restaurant to update content
+              without needing to modify code or manage complex backend systems. This approach removes the need for
+              plugins, server panels, or manual stylesheet changes, making
+              ongoing maintenance simple and efficient.
+            </p>
+          </div>
+
+                 <div className="flex flex-col gap-3">
+            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
+              Third Party Integration<span className="text-tangerine">.</span>
+            </h3>
+            <p className="text-l font-light">
+              To enhance the user experience and provide real-time information,
+              I integrated the Google Places API. This integration allows the
+              website to dynamically display the restaurant’s location details
+              and customer review ratings directly from Google, giving visitors
+              an immediate sense of trust and authenticity.
             </p>
           </div>
         </div>
@@ -142,7 +157,7 @@ function page() {
         {/* image */}
         <div className="basis-1/2 drop-shadow-xl">
           <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617797/Debonair%20Fox%20Creative%20Studio/Work/Florece/Image3_woocjj.png"
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773421462/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/3_cl3bvl.png"
             fill
             alt="profile photo"
             className="object-cover object-right"
@@ -151,16 +166,15 @@ function page() {
         </div>
       </div>
 
-      {/* Case Study 3 */}
+      {/* Case Study 3 
       <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
-
-      {/* image */}
+       
         <div className="basis-1/2 drop-shadow-xl">
           <Image
             src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617812/Debonair%20Fox%20Creative%20Studio/Work/Florece/download_oqbzd1.gif"
             fill
             alt="profile photo"
-           className="object-contain"
+            className="object-contain"
             unoptimized
           />
         </div>
@@ -168,45 +182,31 @@ function page() {
         <div className="basis-1/2 flex flex-col gap-y-10">
           <div className="flex flex-col gap-3">
             <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
-              Brand Identity<span className="text-tangerine">.</span>
+              Third Party Integration<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
-              The color palette and logo were carefully crafted to reflect the
-              brand’s name and mission. The palette combines dark base tones
-              with floral accents of lavender and pink, symbolizing growth and
-              resilience. The lotus flower logo, representing enlightenment and
-              beauty in adversity, encapsulates Florece Consulting&apos;s
-              mission to help communications efforts bloom even in challenging
-              environments.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
-              Technology Integration<span className="text-tangerine">.</span>
-            </h3>
-            <p className="text-l font-light">
-              To enhance functionality, Google Analytics was integrated for web
-              traffic monitoring, while Google Calendar facilitates client
-              appointments directly from the site. For email submissions, Resend
-              was selected as an affordable, reliable solution, complemented by
-              a custom email template.
+              To enhance the user experience and provide real-time information,
+              I integrated the Google Places API. This integration allows the
+              website to dynamically display the restaurant’s location details
+              and customer review ratings directly from Google, giving visitors
+              an immediate sense of trust and authenticity.
             </p>
           </div>
         </div>
-      </div>
+      </div>*/}
 
       {/* Conclusion */}
-      <div className="w-full h-auto md:h-screen bg-fc-charcoal flex flex-col py-40 md:py-0 mt-40 justify-center ">
+      <div className="w-full h-auto md:h-screen bg-cg-red flex flex-col py-40 md:py-0 mt-40 justify-center ">
         <h1 className=" w-5/6 mx-auto text-secTitle md:text-titleMid leading-[3rem] font-normal text-fc-white align-center">
-          The final product is a website that not only meets Stephanie’s
-          business needs but also embodies the essence of{" "}
-          <span className="text-fc-plum font-semibold italic">
-            <Link href="https://florececonsulting.com">Florece Consulting</Link>
-          </span>
-          . The balance between visual appeal and functionality ensures that the
-          site serves as both a marketing tool and a platform for meaningful
-          engagement.
+          The final result is a modern, engaging website that captures the
+          relaxed, vibrant atmosphere of the restaurant. Through bold
+          typography, colorful design elements, and carefully chosen imagery,
+          the site reflects the energy of a beach-town brunch spot while
+          providing customers with the key information they need. By combining
+          thoughtful design, dynamic content management, and real-time
+          integrations, the website completes the restaurant’s brand refresh and
+          creates a cohesive digital experience for both new and returning
+          customers.
         </h1>
       </div>
     </div>
