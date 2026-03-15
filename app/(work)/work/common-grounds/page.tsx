@@ -11,17 +11,15 @@ function page() {
         <div className=" h-screen md:basis-4/6 p-4 md:p-24 flex flex-col gap-y-5 md:gap-y-10 justify-center content-center">
           <h1
             className="text-titleSmd leading-[3rem] 
-            smd:text-titleMd smd:leading-[4.5rem]
+            smd:text-titleMd smd:leading-[5rem]
           xl:text-titleXl xl:leading-[9.375rem] 
-          font-semibold opacity-75 text-accent-100 "
+          font-semibold opacity-75 text-cg-red"
           >
             Common Grounds Coffee House
           </h1>
           <div className="max-w-screen-smd flex flex-col gap-y-5">
             <p className="text-l">
-              florece is a dynamic communications and advocacy consultancy with
-              a steadfast commitment to partner with leaders who do the
-              transformational work of justice and liberation.
+              Common Grounds is a cozy breakfast and brunch café offering a mix of Ecuadorian and American-style dishes. 
             </p>
             <p className="text-sm text-cg-red uppercase tracking-wider font-semibold">
               {" "}
@@ -32,7 +30,7 @@ function page() {
 
         <div className="h-screen md:basis-3/6 drop-shadow-xl">
           <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773199234/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/2_upskky.png"
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773583474/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/Mobile_App_Phone_Mockup_Sales_Marketing_Presentation_in_Blue_and_White_Modern_Photocentric_Style_allvh9.jpg"
             alt="profile photo"
             fill
             className="object-cover object-right"
@@ -46,8 +44,8 @@ function page() {
         <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
             <h1 className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
-              Common Grounds is a local breakfast and brunch restaurant that
-              serves a unique mix of Ecuadorian and American-style dishes.
+              {/* Common Grounds is a local breakfast and brunch restaurant that
+              serves a unique mix of Ecuadorian and American-style dishes. */}
               Recently, the restaurant updated its physical menu to improve
               readability and visual appeal. While the redesign helped modernize
               the in-store experience, the brand still lacked a digital presence
@@ -108,7 +106,7 @@ function page() {
               Web Design<span className="text-tangerine">.</span>
             </h3>
             <p className="text-l font-light">
-              From the beginning, I knew I wanted the hero section to be
+              I wanted the hero section to be
               visually bold, with large typography acting as the main focal
               point. The goal was to immediately communicate the restaurant’s
               identity while creating a visually engaging first impression. I
@@ -156,30 +154,50 @@ function page() {
 
         {/* image */}
         <div className="basis-1/2 drop-shadow-xl">
-          <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773421462/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/3_cl3bvl.png"
+          {/* <Image
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773499302/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/v2_yotlcr.png"
             fill
             alt="profile photo"
-            className="object-cover object-right"
+            className="object-contain"
+            unoptimized
+          /> */}
+          <Image
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773199234/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/2_upskky.png"
+            fill
+            alt="profile photo"
+            className="object-cover"
             unoptimized
           />
         </div>
       </div>
 
-      {/* Case Study 3 
-      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40">
-       
-        <div className="basis-1/2 drop-shadow-xl">
+      {/* Case Study 3 */}
+      <div className="w-5/6 h-auto mx-auto bg-white flex flex-col md:flex-row gap-x-10 gap-y-10 md:gap-y-0 mt-40 justify-center">
+        <div className="w-full h-auto basis-3/4 drop-shadow-xl">
           <Image
-            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1761617812/Debonair%20Fox%20Creative%20Studio/Work/Florece/download_oqbzd1.gif"
-            fill
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773499302/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/v2_yotlcr.png"
+            
             alt="profile photo"
             className="object-contain"
             unoptimized
+            height={600}
+            width={900}
           />
         </div>
 
-        <div className="basis-1/2 flex flex-col gap-y-10">
+        <div className="w-full h-auto basis-1/4 drop-shadow-xl">
+          <Image
+            src="https://res.cloudinary.com/dujkjy2e2/image/upload/v1773421464/Debonair%20Fox%20Creative%20Studio/Work/Common%20Grounds/5_dcjjrw.png"
+            
+            alt="profile photo"
+            className="object-contain"
+            unoptimized
+            height={600}
+            width={900}
+          />
+        </div>
+
+        {/* <div className="basis-1/2 flex flex-col gap-y-10 ">
           <div className="flex flex-col gap-3">
             <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
               Third Party Integration<span className="text-tangerine">.</span>
@@ -192,8 +210,8 @@ function page() {
               an immediate sense of trust and authenticity.
             </p>
           </div>
-        </div>
-      </div>*/}
+        </div> */}
+      </div>
 
       {/* Conclusion */}
       <div className="w-full h-auto md:h-screen bg-cg-red flex flex-col py-40 md:py-0 mt-40 justify-center ">

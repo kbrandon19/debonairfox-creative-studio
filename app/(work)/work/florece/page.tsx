@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 function page() {
+
+  
   return (
     <div className="w-full h-auto bg-white">
       {/* Intro */}
@@ -11,9 +13,9 @@ function page() {
         <div className=" h-screen md:basis-4/6 p-4 md:p-24 flex flex-col gap-y-5 md:gap-y-10 justify-center content-center">
           <h1
             className="text-titleSmd leading-[3rem] 
-            smd:text-titleMd smd:leading-[4.5rem]
+            smd:text-titleMd smd:leading-[5rem]
           xl:text-titleXl xl:leading-[9.375rem] 
-          font-semibold opacity-75 text-accent-100 "
+          font-semibold opacity-75 text-fc-charcoal"
           >
             florece consulting
           </h1>

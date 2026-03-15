@@ -25,9 +25,9 @@ function page() {
           </div>
         </div>
         {/* Featured project */}
-        <div className="w-full bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl">
+        <div className="w-full bg-white flex flex-col-reverse justify-end items-center">
           <div className="w-full h-full flex justify-center items-center">
-            <Link href={"work/florece"} className="flex justify-center items-center">
+            {/* <Link href={"work/florece"} className="flex justify-center items-center">
               <Image
                 src={screenShot}
                 width={0}
@@ -37,11 +37,12 @@ function page() {
                 className="drop-shadow-xl block"
               />
 
-            </Link>
+            </Link> */}
           </div>
         </div>
 
         {/* Common Grounds */}
+        
         {/* <div className="w-full bg-gradient-to-tr from-cg-red to-cg-green flex flex-col-reverse justify-end items-center  drop-shadow-xl">
           <div className="w-full h-full flex justify-center">
             <Link href={"work/common-grounds"} className="flex justify-center items-center">
@@ -57,6 +58,22 @@ function page() {
             </Link>
           </div>
         </div> */}
+
+         <div className="w-full bg-gradient-to-tr from-fc-charcoal to-fc-plum flex flex-col-reverse justify-end items-center  drop-shadow-xl">
+          <div className="w-full h-full flex justify-center">
+            <Link href={"work/florece"} className="flex justify-center items-center">
+              <Image
+                src={screenShot}
+                width={0}
+                height={0}
+                alt="Profile photo"
+                style={{ objectFit: "contain", width: "90%", height: "90%" }}
+                className="drop-shadow-xl block"
+              />
+
+            </Link>
+          </div>
+        </div>
  {/*
         <div className="">
           <div className="w-full h-full flex justify-center">

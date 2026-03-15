@@ -7,22 +7,23 @@ import Link from "next/link";
 import Lenis from "lenis";
 
 const images = [
-  /* col 0 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
-  /* col 1 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448219/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_bj3pil.jpg",
-  /* col 2 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448223/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_d8itr0.jpg",
+  /* col 0 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
+  /* col 1  florece image */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448219/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/1_bj3pil.jpg",
+  /* col 2 j daniel website */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736448223/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_d8itr0.jpg",
 
-  /* col 3 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
-  /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
-  /* col 5 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679098/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/9_ztwn7a.jpg",
+  /* col 3 perfect trifecta*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679074/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_iugerm.jpg",  
+  /* col 4 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1773195076/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_hhw3di.png",
+  /* col 5 barefoot movement*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736189185/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/barefoot_ipx5h7.jpg",
+
   
 
-  /* col 6 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1773195076/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/2_yq5kqw.png",
-  /* col 7 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736198748/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/11_wcqpab.jpg",
+  /* col 6 common ground*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549123/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/6_egevfp.png",
+  /* col 7 florece screenshot*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549108/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/4_wj9ek0.png",
   /* col 8 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1654008427/Product/IMG_0056_krpoi4.png",
 
-  /* col 9 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1773195076/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/3_ryfh90.png",
-  /* col 10 */"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549088/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/5_mihicb.png",
-  /* col 11 */ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679074/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_iugerm.jpg",
+  /* col 9  common ground screenshot*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1736463188/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/Untitled_design_4_agxhvf.jpg",
+  /* col 10 sommsation email*/"https://res.cloudinary.com/dujkjy2e2/image/upload/v1734549088/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/5_mihicb.png",
+  /* col 11 df clothing*/ "https://res.cloudinary.com/dujkjy2e2/image/upload/v1735679074/Debonair%20Fox%20Creative%20Studio/Parallax%20Gallery/7_iugerm.jpg",
 ];
 
 interface Dimension {
