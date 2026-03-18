@@ -210,6 +210,9 @@ function page() {
           site serves as both a marketing tool and a platform for meaningful
           engagement.
         </h1>
+        <div className="w-5/6 mx-auto my-10">
+<Button className="bg-white text-fc-charcoal hover:bg-fc-plum h-10 w-30 uppercase tracking-wider font-semibold"><Link href="https://florececonsulting.com" target="_blank">Live Site</Link></Button>
+</div>
       </div>
     </div>
   );

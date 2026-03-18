@@ -44,8 +44,7 @@ function page() {
         <div className="flex flex-col gap-y-20  ">
           <div className="h-full w-auto">
             <h1 className="bodyText text-Xl leading-[2re] md:text-titleMid md:leading-[3.5rem] font-light pt-10 text-accent-default ">
-              {/* Common Grounds is a local breakfast and brunch restaurant that
-              serves a unique mix of Ecuadorian and American-style dishes. */}
+
               Recently, the restaurant updated its physical menu to improve
               readability and visual appeal. While the redesign helped modernize
               the in-store experience, the brand still lacked a digital presence
@@ -197,35 +196,18 @@ function page() {
           />
         </div>
 
-        {/* <div className="basis-1/2 flex flex-col gap-y-10 ">
-          <div className="flex flex-col gap-3">
-            <h3 className="w-full uppercase text-xl font-semibold text-accent-default leading-5 md:leading-0">
-              Third Party Integration<span className="text-tangerine">.</span>
-            </h3>
-            <p className="text-l font-light">
-              To enhance the user experience and provide real-time information,
-              I integrated the Google Places API. This integration allows the
-              website to dynamically display the restaurant’s location details
-              and customer review ratings directly from Google, giving visitors
-              an immediate sense of trust and authenticity.
-            </p>
-          </div>
-        </div> */}
       </div>
 
       {/* Conclusion */}
       <div className="w-full h-auto md:h-screen bg-cg-red flex flex-col py-40 md:py-0 mt-40 justify-center ">
         <h1 className=" w-5/6 mx-auto text-secTitle md:text-titleMid leading-[3rem] font-normal text-fc-white align-center">
-          The final result is a modern, engaging website that captures the
-          relaxed, vibrant atmosphere of the restaurant. Through bold
-          typography, colorful design elements, and carefully chosen imagery,
-          the site reflects the energy of a beach-town brunch spot while
-          providing customers with the key information they need. By combining
-          thoughtful design, dynamic content management, and real-time
-          integrations, the website completes the restaurant’s brand refresh and
-          creates a cohesive digital experience for both new and returning
-          customers.
+          The final result is a modern, engaging website that captures the relaxed, vibrant atmosphere of the restaurant. Through bold
+          typography, colorful design elements, and carefully chosen imagery, the site reflects the energy of a beach-town brunch spot by combining thoughtful design, dynamic content management, and real-time
+          integrations.
         </h1>
+{/* <div className="w-5/6 mx-auto my-10">
+<Button className="bg-white text-cg-red hover:bg-cg-green hover:text-white h-10 w-30 uppercase tracking-wider font-semibold"><Link href="https://commongroundssalinas.com" target="_blank">Live Site</Link></Button>
+</div> */}
       </div>
     </div>
   );
