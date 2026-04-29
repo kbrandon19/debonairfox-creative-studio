@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import screenShot from "../../assets/screenshot.png";
-import jdaniel from "../../assets/jdaniel.png";
+import screenShotFC from "../../assets/screenshots/florece.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -35,7 +34,7 @@ function page() {
           <div className="w-full h-full flex ">
               <Link href={"case-study/florece"} className="flex justify-center items-center">
           <Image
-            src={screenShot}
+            src={screenShotFC}
             width={0}
             height={0}
             alt="Profile photo"
@@ -52,7 +51,7 @@ function page() {
           <div className="w-full h-full flex ">
               <Link href={"case-study/florece"} className="flex justify-center items-center">
           <Image
-            src={screenShot}
+            src={screenShotFC}
             width={0}
             height={0}
             alt="Profile photo"

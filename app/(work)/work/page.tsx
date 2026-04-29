@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import screenShotCG from "../../assets/screenshots/commong-ground.png";
+import screenShotCG from "../../assets/screenshots/common-ground.png";
 import screenShotFC from "../../assets/screenshots/florece.png";
 import Link from "next/link";
 // import { Button } from "@/components/ui/button";
