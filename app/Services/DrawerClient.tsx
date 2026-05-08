@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/drawer";
 import { Services, servArr } from "@/lib/interface";
 
-const words = ["Web Design & Development.", "Content Creation."];
+const words = ["Web Design & Development.", "Content Creation.","Photography"];
 
 interface DrawerClientProps {
   data: Services;

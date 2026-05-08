@@ -46,7 +46,7 @@ function Header() {
     <>
       <div className="fixed z-50  top-[15px] md:top-[40px] left-[25px] md:left-[50px]">
         <div className="flex items-center w-auto h-auto">
-          <Link href={"/"} className="flex flex-row gap-2">
+          <Link href={"/"} aria-label="Home" className="flex flex-row gap-2">
             <div className="h-5 w-5 bg-accent-default rounded-full  "> </div>
             <div className="h-5 w-5 bg-tangerine rounded-full  "> </div>
             <div className="h-5 w-5 bg-background rounded-full "> </div>

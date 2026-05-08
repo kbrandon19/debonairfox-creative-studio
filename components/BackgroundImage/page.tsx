@@ -17,7 +17,8 @@ function BackgroundImage() {
           loading="eager"
           quality={80}
           priority={true}
-          alt="mobile-background"
+          fetchPriority="high"
+          alt="background"
           style={{ objectFit: "cover", opacity: ".3" }}
         />
       </div>

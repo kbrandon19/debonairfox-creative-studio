@@ -36,6 +36,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
   return (
     <html suppressHydrationWarning={true} lang="en">
+      <title>DFSC</title>
+      
       <body className="w-screen overflow-x-hidden">
         <main className={`${poppins.variable} ${lora.variable}`}>
           
