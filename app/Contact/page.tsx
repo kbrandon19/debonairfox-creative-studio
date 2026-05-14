@@ -1,13 +1,10 @@
 export const revalidate = 0;
 
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 async function Contact() {
-
   return (
     <div id="contact" className=" relative z-20 w-screen h-auto bg-tangerine ">
       <div className="w-5/6 h-screen mx-auto flex flex-col ">
@@ -15,7 +12,6 @@ async function Contact() {
           {/* top div */}
 
           <div className="w-full h-auto flex flex-col gap-y-4 xl:gap-y-0  xl:justify-between content-center xl:items-center">
-
             <div className="w-5/6 ">
               <h1 className="text-titleSmd leading-[3.5rem] md:text-titleMd md:leading-[5rem] lg:text-titleMd lg:leading-[5.5rem]  2xl:text-titleLg 2xl:leading-[8rem] uppercase font-semibold text-accent-default ">
                 Let<span className="text-background">&apos;</span>s Create
@@ -24,7 +20,7 @@ async function Contact() {
             </div>
 
             <div className="font-light  w-full  md:w-1/2  text-l lg:text-xl text-black-main ">
-              <p >
+              <p>
                 No matter your digital service needs, I’ll work with you to
                 define a strong visual identity. One that communicates your
                 personality and vision through a visual cohesive story.
@@ -39,19 +35,23 @@ async function Contact() {
             <div className="flex flex-row justify-start items-end">
               <div>
                 <p className="text-l text-background ">Request Information.</p>
-                <Link href={"mailto:kbrandon319@gmail.com?subject=Digital%20Services%20Inquiry"}>
-                  <p className="text-accent-default hover:text-background transition duration-300 ease-in-out">
-                    info@dfsc.com
-                  </p>
-                </Link>
+                <a
+                  href="mailto:kbrandon319@gmail.com"
+                  className="text-accent-default hover:text-background transition duration-300 ease-in-out"
+                >
+                  info@dfsc.com
+                </a>
               </div>
             </div>
             <div className="">
               <p className="text-l text-background ">Stay Connected.</p>
               <div className="flex flex-col md:flex-row gap-x-4  lowercase ">
-                <Link href="https://linkedin.com/in/kdbrand" className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
+                <Link
+                  href="https://linkedin.com/in/kdbrand"
+                  className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
-                  LinkedIn</Link>
+                  LinkedIn
+                </Link>
 
                 <Link
                   href={"https://instagram.com/mrdebonairfox"}

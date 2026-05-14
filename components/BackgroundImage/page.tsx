@@ -15,7 +15,7 @@ function BackgroundImage() {
           }
           fill={true}
           loading="eager"
-          quality={80}
+          // quality={80}
           priority={true}
           fetchPriority="high"
           alt="background"
