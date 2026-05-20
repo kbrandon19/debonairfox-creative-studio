@@ -35,32 +35,32 @@ async function Contact() {
             <div className="flex flex-row justify-start items-end">
               <div>
                 <p className="text-l text-background ">Request Information.</p>
-                <a
-                  href="mailto:kbrandon319@gmail.com"
+                <Link
+                  href="mailto:kbrandon319@gmail.com" target="_blank"
                   className="text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
                   info@dfsc.com
-                </a>
+                </Link>
               </div>
             </div>
             <div className="">
               <p className="text-l text-background ">Stay Connected.</p>
               <div className="flex flex-col md:flex-row gap-x-4  lowercase ">
                 <Link
-                  href="https://linkedin.com/in/kdbrand"
+                  href="https://linkedin.com/in/kdbrand" target="_blank"
                   className=" text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
                   LinkedIn
                 </Link>
 
                 <Link
-                  href={"https://instagram.com/mrdebonairfox"}
+                  href={"https://instagram.com/mrdebonairfox"} target="_blank"
                   className=" text-accent-default transition hover:text-background duration-300 ease-in-out"
                 >
                   Instagram
                 </Link>
                 <Link
-                  href={"https://github.com/kbrandon19"}
+                  href={"https://github.com/kbrandon19"} target="_blank"
                   className="text-accent-default hover:text-background transition duration-300 ease-in-out"
                 >
                   GitHub
